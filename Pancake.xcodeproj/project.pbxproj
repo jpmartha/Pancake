@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8C087B1C4EE17B00DDBBDD /* Pancake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* Pancake.framework */; };
+		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E8C087C1C4EE17B00DDBBDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8C08671C4EE17B00DDBBDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8C086F1C4EE17B00DDBBDD;
+			remoteInfo = Pancake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E8C08701C4EE17B00DDBBDD /* Pancake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pancake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8C08731C4EE17B00DDBBDD /* Pancake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pancake.h; sourceTree = "<group>"; };
+		2E8C08751C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
+		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E8C086C1C4EE17B00DDBBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8C08771C4EE17B00DDBBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8C087B1C4EE17B00DDBBDD /* Pancake.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E8C08661C4EE17B00DDBBDD = {
+			isa = PBXGroup;
+			children = (
+				2E8C08721C4EE17B00DDBBDD /* Pancake */,
+				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
+				2E8C08711C4EE17B00DDBBDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E8C08711C4EE17B00DDBBDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C08701C4EE17B00DDBBDD /* Pancake.framework */,
+				2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E8C08721C4EE17B00DDBBDD /* Pancake */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
+				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
+			);
+			path = Pancake;
+			sourceTree = "<group>";
+		};
+		2E8C087E1C4EE17B00DDBBDD /* PancakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
+				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
+			);
+			path = PancakeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E8C086D1C4EE17B00DDBBDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E8C086F1C4EE17B00DDBBDD /* Pancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "Pancake" */;
+			buildPhases = (
+				2E8C086B1C4EE17B00DDBBDD /* Sources */,
+				2E8C086C1C4EE17B00DDBBDD /* Frameworks */,
+				2E8C086D1C4EE17B00DDBBDD /* Headers */,
+				2E8C086E1C4EE17B00DDBBDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pancake;
+			productName = Pancake;
+			productReference = 2E8C08701C4EE17B00DDBBDD /* Pancake.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2E8C08791C4EE17B00DDBBDD /* PancakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeTests" */;
+			buildPhases = (
+				2E8C08761C4EE17B00DDBBDD /* Sources */,
+				2E8C08771C4EE17B00DDBBDD /* Frameworks */,
+				2E8C08781C4EE17B00DDBBDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E8C087D1C4EE17B00DDBBDD /* PBXTargetDependency */,
+			);
+			name = PancakeTests;
+			productName = PancakeTests;
+			productReference = 2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E8C08671C4EE17B00DDBBDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JPMartha;
+				TargetAttributes = {
+					2E8C086F1C4EE17B00DDBBDD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					2E8C08791C4EE17B00DDBBDD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "Pancake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E8C08661C4EE17B00DDBBDD;
+			productRefGroup = 2E8C08711C4EE17B00DDBBDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E8C086F1C4EE17B00DDBBDD /* Pancake */,
+				2E8C08791C4EE17B00DDBBDD /* PancakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E8C086E1C4EE17B00DDBBDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8C08781C4EE17B00DDBBDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E8C086B1C4EE17B00DDBBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E8C08761C4EE17B00DDBBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E8C087D1C4EE17B00DDBBDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8C086F1C4EE17B00DDBBDD /* Pancake */;
+			targetProxy = 2E8C087C1C4EE17B00DDBBDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E8C08821C4EE17B00DDBBDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E8C08831C4EE17B00DDBBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E8C08851C4EE17B00DDBBDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Pancake/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.Pancake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E8C08861C4EE17B00DDBBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Pancake/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.Pancake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2E8C08881C4EE17B00DDBBDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PancakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E8C08891C4EE17B00DDBBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PancakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "Pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8C08821C4EE17B00DDBBDD /* Debug */,
+				2E8C08831C4EE17B00DDBBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "Pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8C08851C4EE17B00DDBBDD /* Debug */,
+				2E8C08861C4EE17B00DDBBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8C08881C4EE17B00DDBBDD /* Debug */,
+				2E8C08891C4EE17B00DDBBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E8C08671C4EE17B00DDBBDD /* Project object */;
+}
