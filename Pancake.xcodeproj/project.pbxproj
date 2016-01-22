@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E56234F1C50F1B600EAAEF9 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */; };
+		2E5623531C50F4DD00EAAEF9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623521C50F4DD00EAAEF9 /* Model.swift */; };
+		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
+		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
+		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
+		2E627F391C5179E400AFB753 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E627F381C5179E400AFB753 /* Commandant.framework */; };
+		2E627F3B1C5179E900AFB753 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E627F3A1C5179E900AFB753 /* Result.framework */; };
+		2E77DC131C4F135F0020BE7A /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */; };
+		2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8C087B1C4EE17B00DDBBDD /* Pancake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* Pancake.framework */; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
+		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
+		2E5623521C50F4DD00EAAEF9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
+		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
+		2E627F381C5179E400AFB753 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Commandant.framework"; sourceTree = "<group>"; };
+		2E627F3A1C5179E900AFB753 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
+		2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
+		2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftXPC.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SwiftXPC.framework"; sourceTree = "<group>"; };
 		2E8C08701C4EE17B00DDBBDD /* Pancake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pancake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C08731C4EE17B00DDBBDD /* Pancake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pancake.h; sourceTree = "<group>"; };
 		2E8C08751C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
+		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E627F3B1C5179E900AFB753 /* Result.framework in Frameworks */,
+				2E627F391C5179E400AFB753 /* Commandant.framework in Frameworks */,
+				2E56234F1C50F1B600EAAEF9 /* SWXMLHash.framework in Frameworks */,
+				2E77DC131C4F135F0020BE7A /* SourceKittenFramework.framework in Frameworks */,
+				2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8C087B1C4EE17B00DDBBDD /* Pancake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +76,11 @@
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
+				2E627F3A1C5179E900AFB753 /* Result.framework */,
+				2E627F381C5179E400AFB753 /* Commandant.framework */,
+				2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */,
+				2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */,
+				2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */,
 				2E8C08721C4EE17B00DDBBDD /* Pancake */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
@@ -72,6 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
+				2EEBBB811C4EE43D00168E05 /* Pancake.swift */,
+				2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */,
+				2E5623521C50F4DD00EAAEF9 /* Model.swift */,
+				2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = Pancake;
@@ -81,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
+				2E5A62021C50BF4700346318 /* ModelTests.swift */,
 				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = PancakeTests;
@@ -194,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
+				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
+				2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */,
+				2E5623531C50F4DD00EAAEF9 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
+				2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +271,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -280,7 +318,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -305,11 +343,20 @@
 		2E8C08851C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Pancake/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -317,17 +364,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.Pancake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2E8C08861C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Pancake/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -342,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
+				);
 				INFOPLIST_FILE = PancakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
@@ -353,6 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
+				);
 				INFOPLIST_FILE = PancakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
@@ -379,6 +444,7 @@
 				2E8C08861C4EE17B00DDBBDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +453,7 @@
 				2E8C08891C4EE17B00DDBBDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

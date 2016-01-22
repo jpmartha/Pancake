@@ -3,7 +3,7 @@
 //  Pancake
 //
 //  Created by JPMartha on 2016/01/20.
-//  Copyright © 2016年 JPMartha. All rights reserved.
+//  Copyright © 2016 JPMartha. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
