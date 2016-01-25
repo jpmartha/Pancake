@@ -1,1 +1,2 @@
 github "jpsim/SourceKitten"
+github "ikesyo/Himotoki" ~> 1.3

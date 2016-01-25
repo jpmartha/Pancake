@@ -19,6 +19,9 @@
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
+		2EFFB7761C55B21C0034F60C /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Methods.md */; };
+		2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */; };
+		2EFFB7791C55B4C90034F60C /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Methods.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
+		2EFFB7741C55B1FB0034F60C /* Methods.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Methods.md; sourceTree = "<group>"; };
+		2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 				2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */,
 				2E8C08721C4EE17B00DDBBDD /* Pancake */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
+				2EFFB7731C55B1FB0034F60C /* Resources */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,9 +120,18 @@
 			children = (
 				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
 				2E5A62021C50BF4700346318 /* ModelTests.swift */,
+				2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */,
 				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = PancakeTests;
+			sourceTree = "<group>";
+		};
+		2EFFB7731C55B1FB0034F60C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EFFB7741C55B1FB0034F60C /* Methods.md */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFFB7761C55B21C0034F60C /* Methods.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFFB7791C55B4C90034F60C /* Methods.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 			files = (
 				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
 				2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */,
+				2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,7 @@ struct SwiftFile {
 struct SwiftObject {
     var kind: String
     var parsed_declaration: String
+    var doc_comment: String?
     var name: String
     var accessibility: String
     var substructure: [SwiftObject]?
@@ -56,6 +57,12 @@ struct SwiftObject {
         
         self.kind = kind
         self.parsed_declaration = parsed_declaration
+        
+        if let doc_comment = dictionary["key.doc.comment"] as? String {
+            self.doc_comment = doc_comment
+        } else {
+            self.doc_comment = nil
+        }
 
         self.name = name
         self.accessibility = accessibility

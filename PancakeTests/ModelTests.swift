@@ -25,19 +25,35 @@ class ModelTests: XCTestCase {
     }
     
     func testSwiftFileCount() {
-        XCTAssertEqual(swiftFiles.count, 2)
+        XCTAssertEqual(swiftFiles.count, 6)
     }
     
-    func testSwiftObject() {
+    func testSwiftClass() {
+        if let class1 = swiftFiles.first?.substructure.first {
+            XCTAssertEqual(class1.kind, "source.lang.swift.decl.class")
+            XCTAssertEqual(class1.parsed_declaration, "class ViewController: NSViewController")
+            XCTAssertEqual(class1.name, "ViewController")
+            XCTAssertEqual(class1.accessibility, "source.lang.swift.accessibility.internal")
+        } else {
+            XCTFail()
+        }
         
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.kind, "source.lang.swift.decl.enum")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.parsed_declaration, "enum TestEnumerationType")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.name, "TestEnumerationType")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.accessibility, "source.lang.swift.accessibility.internal")
-        
-        XCTAssertEqual(swiftFiles.first?.substructure[1].kind, "source.lang.swift.decl.class")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].parsed_declaration, "class ViewController: NSViewController")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].name, "ViewController")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].accessibility, "source.lang.swift.accessibility.internal")
+        let class2 = swiftFiles[2].substructure[1]
+        XCTAssertEqual(class2.kind, "source.lang.swift.decl.class")
+        XCTAssertEqual(class2.parsed_declaration, "public class Demo")
+        XCTAssertEqual(class2.name, "Demo")
+        XCTAssertEqual(class2.accessibility, "source.lang.swift.accessibility.public")
+    }
+    
+    func testSwiftMethod() {
+        if let method1 = swiftFiles[2].substructure[1].substructure?.first {
+            XCTAssertEqual(method1.kind, "source.lang.swift.decl.function.method.instance")
+            XCTAssertEqual(method1.parsed_declaration, "public func doAction(pram1: Int, pram2: String) -> Bool")
+            XCTAssertEqual(method1.doc_comment!, "DoAction\n- parameters:\n  - pram1: aaa\n  - pram2: bbb\n- returns: true/false")
+            XCTAssertEqual(method1.name, "doAction(_:pram2:)")
+            XCTAssertEqual(method1.accessibility, "source.lang.swift.accessibility.public")
+        } else {
+            XCTFail()
+        }
     }
 }
