@@ -12,10 +12,7 @@
 		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
 		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
-		2E627F391C5179E400AFB753 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E627F381C5179E400AFB753 /* Commandant.framework */; };
-		2E627F3B1C5179E900AFB753 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E627F3A1C5179E900AFB753 /* Result.framework */; };
 		2E77DC131C4F135F0020BE7A /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */; };
-		2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
 		2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* Class.md */; };
@@ -25,7 +22,6 @@
 		2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* SeeAlso.md */; };
 		2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* Comment.md */; };
 		2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C7A1C5641EA002E6ABC /* Declaration.md */; };
-		2EC7E3371C56F07500079048 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7E3361C56F07500079048 /* SWXMLHash.framework */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
 		2EFFB7761C55B21C0034F60C /* Method.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Method.md */; };
 		2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */; };
@@ -47,10 +43,7 @@
 		2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
 		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
-		2E627F381C5179E400AFB753 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Commandant.framework"; sourceTree = "<group>"; };
-		2E627F3A1C5179E900AFB753 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
-		2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftXPC.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SwiftXPC.framework"; sourceTree = "<group>"; };
 		2E8C08701C4EE17B00DDBBDD /* Pancake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pancake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C08731C4EE17B00DDBBDD /* Pancake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pancake.h; sourceTree = "<group>"; };
 		2E8C08751C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +57,6 @@
 		2E8C4C751C56403A002E6ABC /* SeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SeeAlso.md; sourceTree = "<group>"; };
 		2E8C4C791C5641EA002E6ABC /* Comment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Comment.md; sourceTree = "<group>"; };
 		2E8C4C7A1C5641EA002E6ABC /* Declaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Declaration.md; sourceTree = "<group>"; };
-		2EC7E3361C56F07500079048 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
 		2EFFB7741C55B1FB0034F60C /* Method.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Method.md; sourceTree = "<group>"; };
 		2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTests.swift; sourceTree = "<group>"; };
@@ -75,11 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC7E3371C56F07500079048 /* SWXMLHash.framework in Frameworks */,
-				2E627F3B1C5179E900AFB753 /* Result.framework in Frameworks */,
-				2E627F391C5179E400AFB753 /* Commandant.framework in Frameworks */,
 				2E77DC131C4F135F0020BE7A /* SourceKittenFramework.framework in Frameworks */,
-				2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,14 +84,10 @@
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
-				2EC7E3361C56F07500079048 /* SWXMLHash.framework */,
-				2E627F3A1C5179E900AFB753 /* Result.framework */,
-				2E627F381C5179E400AFB753 /* Commandant.framework */,
-				2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */,
 				2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */,
 				2E8C08721C4EE17B00DDBBDD /* Pancake */,
-				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
 				2EFFB7731C55B1FB0034F60C /* Templates */,
+				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 			);
 			sourceTree = "<group>";

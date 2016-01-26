@@ -93,27 +93,43 @@ struct SwiftObject {
     init?(objectDictionary: [String: SourceKitRepresentable]) {
         var swiftObjects = [SwiftObject]()
         guard let kind = objectDictionary["key.kind"] as? String else {
-            print("Failed to convert to kind.")
+            print("Failed to convert to kind: kind = \(objectDictionary["key.kind"])")
             return nil
         }
-        guard let name = objectDictionary["key.name"] as? String else {
-            print("Failed to convert to name.")
+        
+        var targetDictionary = [String: SourceKitRepresentable]()
+        if kind == "source.lang.swift.decl.enumcase" {
+            guard let array = objectDictionary["key.substructure"] as? [SourceKitRepresentable] else {
+                print("Failed to convert to array: kind = \(objectDictionary["key.kind"])")
+                return nil
+            }
+            guard let dictionary = array.first as? [String: SourceKitRepresentable] else {
+                print("Failed to convert to dictionary: kind = \(objectDictionary["key.kind"])")
+                return nil
+            }
+            targetDictionary = dictionary
+        } else {
+            targetDictionary = objectDictionary
+        }
+        
+        guard let name = targetDictionary["key.name"] as? String else {
+            print("Failed to convert to name: kind = \(objectDictionary["key.kind"])")
             return nil
         }
-        guard let accessibility = objectDictionary["key.accessibility"] as? String else {
-            print("Failed to convert to accessibility.")
+        guard let accessibility = targetDictionary["key.accessibility"] as? String else {
+            print("Failed to convert to accessibility: name = \(objectDictionary["key.name"])")
             return nil
         }
         
         self.kind = kind
         
-        if let parsed_declaration = objectDictionary["key.parsed_declaration"] as? String {
+        if let parsed_declaration = targetDictionary["key.parsed_declaration"] as? String {
             self.parsed_declaration = parsed_declaration
         } else {
             self.parsed_declaration = nil
         }
         
-        if let doc_comment = objectDictionary["key.doc.comment"] as? String {
+        if let doc_comment = targetDictionary["key.doc.comment"] as? String {
             self.doc_comment = doc_comment
         } else {
             self.doc_comment = nil
@@ -122,7 +138,7 @@ struct SwiftObject {
         self.name = name
         self.accessibility = accessibility
         
-        if let substructure = objectDictionary["key.substructure"] as? [SourceKitRepresentable] {
+        if let substructure = targetDictionary["key.substructure"] as? [SourceKitRepresentable] {
             for objectSubstructure in substructure {
                 guard let dictionary = objectSubstructure as? [String: SourceKitRepresentable] else {
                     print("Failed to convert Dictionary.")

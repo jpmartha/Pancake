@@ -1,4 +1,6 @@
 [submodule "Carthage/Checkouts/SWXMLHash"]
+	path = Carthage/Checkouts/SWXMLHash
 	url = https://github.com/drmohundro/SWXMLHash.git
 [submodule "Carthage/Checkouts/SourceKitten"]
+	path = Carthage/Checkouts/SourceKitten
 	url = https://github.com/jpsim/SourceKitten.git

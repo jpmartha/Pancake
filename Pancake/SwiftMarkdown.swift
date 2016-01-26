@@ -58,19 +58,6 @@ class SwiftMarkdown {
         return methodMarkdownString
     }
     
-    /* 共通化断念
-    static func markdownString(target: String, withString replacement: String) -> String {
-        guard let markdownString = commentTemplate else {
-            return ""
-        }
-        guard !target.isEmpty else {
-            return ""
-        }
-        
-        return markdownString.stringByReplacingOccurrencesOfString(target, withString: replacement)
-    }
-    */
-    
     static func commentMarkdown(swiftObject: SwiftObject) -> String {
         guard var commentMarkdownString = commentTemplate else {
             return ""
