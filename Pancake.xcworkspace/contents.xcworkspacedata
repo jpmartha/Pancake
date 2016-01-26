@@ -7,4 +7,7 @@
    <FileRef
       location = "group:Pancake.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/SourceKitten/sourcekitten.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4BF3861C573B41003924BE /* SwiftEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF3851C573B41003924BE /* SwiftEnumerations.swift */; };
+		2E4BF3881C573C1B003924BE /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF3871C573C1B003924BE /* PancakeError.swift */; };
 		2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* TemplateTests.swift */; };
 		2E5623531C50F4DD00EAAEF9 /* SwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */; };
 		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E4BF3851C573B41003924BE /* SwiftEnumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftEnumerations.swift; sourceTree = "<group>"; };
+		2E4BF3871C573C1B003924BE /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
 		2E4BFB881C56A361006E3528 /* TemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
 		2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModel.swift; sourceTree = "<group>"; };
 		2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */,
 				2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */,
 				2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */,
+				2E4BF3851C573B41003924BE /* SwiftEnumerations.swift */,
+				2E4BF3871C573C1B003924BE /* PancakeError.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = Pancake;
@@ -258,7 +264,9 @@
 			files = (
 				2E8C4C711C5625D5002E6ABC /* SwiftMarkdownTemplate.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
+				2E4BF3881C573C1B003924BE /* PancakeError.swift in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
+				2E4BF3861C573B41003924BE /* SwiftEnumerations.swift in Sources */,
 				2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */,
 				2E5623531C50F4DD00EAAEF9 /* SwiftModel.swift in Sources */,
 			);
