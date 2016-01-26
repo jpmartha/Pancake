@@ -8,7 +8,6 @@
 
 import Foundation
 import SourceKittenFramework
-import SwiftXPC
 
 class SwiftDocsParser {
     
@@ -18,20 +17,22 @@ class SwiftDocsParser {
         guard swiftDocs.count > 0 else {
             return
         }
-        
-        for swiftDoc in swiftDocs {
-            let xpcDictionary = swiftDoc.docsDictionary
+        print("swiftDocs.count: \(swiftDocs.count)")
+
+        let _ = swiftDocs.map {
             
-            guard let xpcSubstructure = xpcDictionary["key.substructure"] as? [XPCRepresentable] else {
-                print("Failed to convert.")
+            print($0.description)
+            
+            let xpcDictionary = $0.docsDictionary
+            guard let fileSubstructure = xpcDictionary["key.substructure"] as? [SourceKitRepresentable] else {
+                print("Failed to convert FileSubstructure.")
                 return
             }
             
-            if let swiftFile = SwiftFile(substructure: xpcSubstructure) {
+            if let swiftFile = SwiftFile(fileSubstructure: fileSubstructure) {
                 swiftFiles.append(swiftFile)
             }
         }
-        
         SwiftMarkdown.outputMarkdown()
     }
 }

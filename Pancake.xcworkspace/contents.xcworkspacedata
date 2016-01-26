@@ -10,19 +10,4 @@
    <FileRef
       location = "group:Carthage/Checkouts/SourceKitten/sourcekitten.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SwiftXPC/SwiftXPC.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SWXMLHash/SWXMLHash.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/Commandant.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/Curry.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Result/Result.xcodeproj">
-   </FileRef>
 </Workspace>

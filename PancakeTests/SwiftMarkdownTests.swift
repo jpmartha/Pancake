@@ -7,24 +7,17 @@
 //
 
 import XCTest
+@testable import Pancake
 
 class SwiftMarkdownTests: XCTestCase {
-    
-    func testReadMarkdown() {
-        guard let methodMarkdownPath = NSBundle(forClass: self.dynamicType).pathForResource("Methods", ofType: "md") else {
-            XCTFail("MethodMarkdownPath is invalid.")
-            return
-        }
-        
-        let markdownString: String
-        do {
-            markdownString = try String(contentsOfFile: methodMarkdownPath, encoding: NSUTF8StringEncoding)
-        } catch let error as NSError {
-            XCTFail(error.debugDescription)
-            return
-        }
-        
-        let m = markdownString.stringByReplacingOccurrencesOfString("%name%", withString: "Name")
-        print(m)
+
+    func testSwiftMarkdownTemplate() {
+        XCTAssertNotNil(SwiftMarkdown.classTemplate)
+        XCTAssertNotNil(SwiftMarkdown.methodTemplate)
+        XCTAssertNotNil(SwiftMarkdown.commentTemplate)
+        XCTAssertNotNil(SwiftMarkdown.declarationTemplate)
+        XCTAssertNotNil(SwiftMarkdown.parametersTemplate)
+        XCTAssertNotNil(SwiftMarkdown.returnValueTemplate)
+        XCTAssertNotNil(SwiftMarkdown.seeAlsoTemplate)
     }
 }

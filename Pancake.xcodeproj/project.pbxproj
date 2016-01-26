@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E56234F1C50F1B600EAAEF9 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */; };
-		2E5623531C50F4DD00EAAEF9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623521C50F4DD00EAAEF9 /* Model.swift */; };
+		2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* TemplateTests.swift */; };
+		2E5623531C50F4DD00EAAEF9 /* SwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */; };
 		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
 		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
@@ -18,10 +18,17 @@
 		2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
+		2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* Class.md */; };
+		2E8C4C711C5625D5002E6ABC /* SwiftMarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */; };
+		2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* Parameters.md */; };
+		2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* ReturnValue.md */; };
+		2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* SeeAlso.md */; };
+		2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* Comment.md */; };
+		2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C7A1C5641EA002E6ABC /* Declaration.md */; };
+		2EC7E3371C56F07500079048 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7E3361C56F07500079048 /* SWXMLHash.framework */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
-		2EFFB7761C55B21C0034F60C /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Methods.md */; };
+		2EFFB7761C55B21C0034F60C /* Method.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Method.md */; };
 		2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */; };
-		2EFFB7791C55B4C90034F60C /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Methods.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
-		2E5623521C50F4DD00EAAEF9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2E4BFB881C56A361006E3528 /* TemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
+		2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModel.swift; sourceTree = "<group>"; };
 		2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
 		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
@@ -50,8 +57,16 @@
 		2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8C4C6D1C560E63002E6ABC /* Class.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Class.md; sourceTree = "<group>"; };
+		2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTemplate.swift; sourceTree = "<group>"; };
+		2E8C4C731C56403A002E6ABC /* Parameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Parameters.md; sourceTree = "<group>"; };
+		2E8C4C741C56403A002E6ABC /* ReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReturnValue.md; sourceTree = "<group>"; };
+		2E8C4C751C56403A002E6ABC /* SeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SeeAlso.md; sourceTree = "<group>"; };
+		2E8C4C791C5641EA002E6ABC /* Comment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Comment.md; sourceTree = "<group>"; };
+		2E8C4C7A1C5641EA002E6ABC /* Declaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Declaration.md; sourceTree = "<group>"; };
+		2EC7E3361C56F07500079048 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
-		2EFFB7741C55B1FB0034F60C /* Methods.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Methods.md; sourceTree = "<group>"; };
+		2EFFB7741C55B1FB0034F60C /* Method.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Method.md; sourceTree = "<group>"; };
 		2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,9 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC7E3371C56F07500079048 /* SWXMLHash.framework in Frameworks */,
 				2E627F3B1C5179E900AFB753 /* Result.framework in Frameworks */,
 				2E627F391C5179E400AFB753 /* Commandant.framework in Frameworks */,
-				2E56234F1C50F1B600EAAEF9 /* SWXMLHash.framework in Frameworks */,
 				2E77DC131C4F135F0020BE7A /* SourceKittenFramework.framework in Frameworks */,
 				2E77DC181C4F2A570020BE7A /* SwiftXPC.framework in Frameworks */,
 			);
@@ -81,14 +96,14 @@
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
+				2EC7E3361C56F07500079048 /* SWXMLHash.framework */,
 				2E627F3A1C5179E900AFB753 /* Result.framework */,
 				2E627F381C5179E400AFB753 /* Commandant.framework */,
-				2E56234E1C50F1B600EAAEF9 /* SWXMLHash.framework */,
 				2E77DC161C4F2A570020BE7A /* SwiftXPC.framework */,
 				2E77DC111C4F135F0020BE7A /* SourceKittenFramework.framework */,
 				2E8C08721C4EE17B00DDBBDD /* Pancake */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
-				2EFFB7731C55B1FB0034F60C /* Resources */,
+				2EFFB7731C55B1FB0034F60C /* Templates */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,8 +123,9 @@
 				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
 				2EEBBB811C4EE43D00168E05 /* Pancake.swift */,
 				2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */,
-				2E5623521C50F4DD00EAAEF9 /* Model.swift */,
+				2E5623521C50F4DD00EAAEF9 /* SwiftModel.swift */,
 				2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */,
+				2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = Pancake;
@@ -121,17 +137,24 @@
 				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
 				2E5A62021C50BF4700346318 /* ModelTests.swift */,
 				2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */,
+				2E4BFB881C56A361006E3528 /* TemplateTests.swift */,
 				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = PancakeTests;
 			sourceTree = "<group>";
 		};
-		2EFFB7731C55B1FB0034F60C /* Resources */ = {
+		2EFFB7731C55B1FB0034F60C /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				2EFFB7741C55B1FB0034F60C /* Methods.md */,
+				2E8C4C6D1C560E63002E6ABC /* Class.md */,
+				2EFFB7741C55B1FB0034F60C /* Method.md */,
+				2E8C4C791C5641EA002E6ABC /* Comment.md */,
+				2E8C4C7A1C5641EA002E6ABC /* Declaration.md */,
+				2E8C4C731C56403A002E6ABC /* Parameters.md */,
+				2E8C4C741C56403A002E6ABC /* ReturnValue.md */,
+				2E8C4C751C56403A002E6ABC /* SeeAlso.md */,
 			);
-			path = Resources;
+			path = Templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EFFB7761C55B21C0034F60C /* Methods.md in Resources */,
+				2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */,
+				2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */,
+				2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */,
+				2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */,
+				2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */,
+				2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */,
+				2EFFB7761C55B21C0034F60C /* Method.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EFFB7791C55B4C90034F60C /* Methods.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8C4C711C5625D5002E6ABC /* SwiftMarkdownTemplate.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
 				2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */,
-				2E5623531C50F4DD00EAAEF9 /* Model.swift in Sources */,
+				2E5623531C50F4DD00EAAEF9 /* SwiftModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
+				2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */,
 				2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */,
 				2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */,
 			);
