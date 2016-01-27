@@ -2,22 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DemoApp/DemoApp.xcodeproj">
+      location = "group:Pancake.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pancake.xcodeproj">
+      location = "group:DemoApp/DemoApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/SourceKitten/sourcekitten.xcodeproj">
    </FileRef>
    <FileRef
-<<<<<<< Updated upstream
       location = "group:Carthage/Checkouts/Himotoki/Himotoki.xcodeproj">
-=======
-      location = "group:Carthage/Checkouts/Commandant/Commandant.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/Result/Result.xcodeproj">
->>>>>>> Stashed changes
    </FileRef>
 </Workspace>

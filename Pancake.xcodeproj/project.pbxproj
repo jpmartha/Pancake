@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E4BF3901C5766BD003924BE /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftFile.swift */; };
-		2E4BF3961C57BBCC003924BE /* Enumeration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF3951C57BBCC003924BE /* Enumeration.md */; };
+		2E4BF3961C57BBCC003924BE /* Enumeration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BF3951C57BBCC003924BE /* Enumeration.md */; };
 		2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* TemplateTests.swift */; };
 		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
 		2E57C4811C585F19004053F5 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E57C4801C585F19004053F5 /* Himotoki.framework */; };
@@ -241,6 +241,7 @@
 			files = (
 				2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */,
 				2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */,
+				2E4BF3961C57BBCC003924BE /* Enumeration.md in Resources */,
 				2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */,
 				2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */,
 				2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */,
@@ -267,7 +268,6 @@
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftFile.swift in Sources */,
-				2E4BF3961C57BBCC003924BE /* Enumeration.md in Sources */,
 				2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
