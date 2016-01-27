@@ -4,3 +4,6 @@
 [submodule "Carthage/Checkouts/SourceKitten"]
 	path = Carthage/Checkouts/SourceKitten
 	url = https://github.com/jpsim/SourceKitten.git
+[submodule "Carthage/Checkouts/Himotoki"]
+	path = Carthage/Checkouts/Himotoki
+	url = https://github.com/ikesyo/Himotoki.git

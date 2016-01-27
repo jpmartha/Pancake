@@ -1,0 +1,6 @@
+- `%name%`
+
+%Declaration.md%
+
+===
+

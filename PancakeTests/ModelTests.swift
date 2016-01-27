@@ -10,7 +10,6 @@ import XCTest
 @testable import Pancake
 
 class ModelTests: XCTestCase {
-    
     var swiftFiles = [SwiftFile]()
     
     override func setUp() {
@@ -24,8 +23,8 @@ class ModelTests: XCTestCase {
         super.tearDown()
     }
     
+
     func testSwiftFile() {
-        XCTAssertEqual(swiftFiles.count, 3)
         if let file1 = swiftFiles.first?.substructure.first {
             XCTAssertEqual(file1.kind, "source.lang.swift.decl.class")
             XCTAssertEqual(file1.parsed_declaration, "class ViewController: NSViewController")

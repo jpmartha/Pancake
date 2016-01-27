@@ -10,5 +10,4 @@ import XCTest
 @testable import Pancake
 
 class PancakeTests: XCTestCase {
-    
 }

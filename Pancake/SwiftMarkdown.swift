@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SourceKittenFramework
 
 class SwiftMarkdown {
     static let testPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
@@ -18,25 +19,15 @@ class SwiftMarkdown {
     static let returnValueTemplate = SwiftMarkdownTemplate(fileName: "ReturnValue.md")?.markdownString
     static let seeAlsoTemplate = SwiftMarkdownTemplate(fileName: "SeeAlso.md")?.markdownString
     
-    static func classMarkdownWithSwiftModule(swiftModule: SwiftModule) -> String? {
+    static func classMarkdownWithSwiftModule(swiftObject: SwiftObject) -> String? {
         guard var classMarkdownString = classTemplate else {
             return nil
         }
-        guard !swiftModule.name.isEmpty else {
+        guard let name = swiftObject.name else {
             return nil
         }
         
-        classMarkdownString = classMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: swiftModule.name)
-        
-        if let doc_comment = swiftModule.doc_comment {
-            classMarkdownString = classMarkdownString.stringByReplacingOccurrencesOfString("%doc_comment%", withString: doc_comment)
-        } else {
-            classMarkdownString = classMarkdownString.stringByReplacingOccurrencesOfString("%doc_comment%", withString: "")
-        }
-        
-        if let swiftObject = swiftModule.substructure?.first {
-            classMarkdownString = classMarkdownString.stringByReplacingOccurrencesOfString("%methods%", withString: swiftObject.name)
-        }
+        classMarkdownString = classMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
         
         return classMarkdownString
     }
@@ -45,18 +36,27 @@ class SwiftMarkdown {
         guard var methodMarkdownString = methodTemplate else {
             return ""
         }
-        guard !swiftObject.name.isEmpty else {
+        guard let name = swiftObject.name else {
             return ""
         }
         
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: swiftObject.name)
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
         
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Comment.md%", withString: commentMarkdown(swiftObject))
         
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Declaration.md%", withString: declarationMarkdown(swiftObject))
         
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Parameters.md%", withString: parametersMarkdown(swiftObject))
+        
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ReturnValue.md%", withString: returnValueMarkdown(swiftObject))
+        
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%SeeAlso.md%", withString: seeAlsoMarkdown(swiftObject))
+        
+        
         return methodMarkdownString
     }
+    
+    // MARK: -
     
     static func commentMarkdown(swiftObject: SwiftObject) -> String {
         guard var commentMarkdownString = commentTemplate else {
@@ -66,7 +66,7 @@ class SwiftMarkdown {
         if let doc_comment = swiftObject.doc_comment {
             commentMarkdownString = commentMarkdownString.stringByReplacingOccurrencesOfString("%doc_comment%", withString: doc_comment)
         } else {
-            commentMarkdownString = commentMarkdownString.stringByReplacingOccurrencesOfString("%doc_comment%", withString: "")
+            return ""
         }
         
         return commentMarkdownString
@@ -80,46 +80,48 @@ class SwiftMarkdown {
         if let parsed_declaration = swiftObject.parsed_declaration {
             declarationMarkdownString = declarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: parsed_declaration)
         } else {
-            declarationMarkdownString = declarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: "")
+            return ""
         }
         
         return declarationMarkdownString
     }
     
+    static func parametersMarkdown(swiftObject: SwiftObject) -> String {
+        return ""
+    }
+    
+    static func returnValueMarkdown(swiftObject: SwiftObject) -> String {
+        return ""
+    }
+    
+    static func seeAlsoMarkdown(swiftObject: SwiftObject) -> String {
+        return ""
+    }
+    
+    // MARK: -
+    
     static func outputMarkdown() {
         for swiftFile in SwiftDocsParser.swiftFiles {
-            for swiftModule in swiftFile.substructure {
-                
-                writeSwiftMarkdownFile(swiftModule)
-                
-                print(swiftModule.kind)
-                print(swiftModule.parsed_declaration)
-                print(swiftModule.doc_comment)
-                print(swiftModule.name)
-                print(swiftModule.accessibility)
-                print(swiftModule.substructure?.count)
+            for swiftObject in swiftFile.substructure {
+                writeSwiftMarkdownFile(swiftObject)
             }
         }
     }
     
-    static func writeSwiftMarkdownFile(swiftModule: SwiftModule) {
-        
-        var moduleString: String?
-        switch swiftModule.kind {
-        case "source.lang.swift.decl.class":
-            moduleString = classMarkdownWithSwiftModule(swiftModule)
-            let _ = swiftModule.substructure?.map {
-                moduleString = moduleString! + methodMarkdownWithSwiftObject($0)
-            }
-        default:
-            return
+    static func writeSwiftMarkdownFile(swiftObject: SwiftObject) {
+        var moduleString = classMarkdownWithSwiftModule(swiftObject)
+        let _ = swiftObject.substructure?.map {
+            moduleString = moduleString! + methodMarkdownWithSwiftObject($0)
         }
-        
+
         guard let string = moduleString else {
             return
         }
+        guard let name = swiftObject.name else {
+            return
+        }
         
-        let filePath = testPath + "/" + swiftModule.name + ".md"
+        let filePath = testPath + "/" + name + ".md"
         do {
             try string.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {

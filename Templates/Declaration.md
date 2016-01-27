@@ -3,4 +3,3 @@
   ```swift
   %parsed_declaration%
   ```
-

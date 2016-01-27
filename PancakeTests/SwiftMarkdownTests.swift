@@ -10,7 +10,6 @@ import XCTest
 @testable import Pancake
 
 class SwiftMarkdownTests: XCTestCase {
-
     func testSwiftMarkdownTemplate() {
         XCTAssertNotNil(SwiftMarkdown.classTemplate)
         XCTAssertNotNil(SwiftMarkdown.methodTemplate)
