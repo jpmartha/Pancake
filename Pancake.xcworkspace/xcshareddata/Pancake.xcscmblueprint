@@ -4,17 +4,23 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : 0,
     "A18E5D9D4805307E527040F5A6CFF9AE33C36780" : 0,
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 0,
+    "D23C0CEAADB77074FDA4459000068A7940EB7AD0" : 0,
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : 0,
     "FD7DA18210A2C280E9107E37D7344F243FEE5F75" : 0,
-    "E084C86B03F81D63323C9E7510697EA528A758C7" : 0
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : 0,
+    "EB2210CFD48672E403BED699D5D7F01B844069CF" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C4FC2BE-5CAE-40F1-B226-20BF606304B7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : "Pancake\/Carthage\/Checkouts\/Himotoki\/",
     "A18E5D9D4805307E527040F5A6CFF9AE33C36780" : "Pancake\/",
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "Pancake\/Carthage\/Checkouts\/SourceKitten\/Carthage\/Checkouts\/Result\/",
+    "D23C0CEAADB77074FDA4459000068A7940EB7AD0" : "Pancake\/Carthage\/Checkouts\/SourceKitten\/Carthage\/Checkouts\/Commandant\/",
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : "Pancake\/Carthage\/Checkouts\/SourceKitten\/Carthage\/Checkouts\/xcconfigs\/",
     "FD7DA18210A2C280E9107E37D7344F243FEE5F75" : "Pancake\/Carthage\/Checkouts\/SourceKitten\/",
-    "E084C86B03F81D63323C9E7510697EA528A758C7" : "Pancake\/Carthage\/Checkouts\/SourceKitten\/Carthage\/Checkouts\/xcconfigs\/"
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : "Pancake\/Carthage\/Checkouts\/Himotoki\/",
+    "EB2210CFD48672E403BED699D5D7F01B844069CF" : "Pancake\/Carthage\/Checkouts\/SWXMLHash\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Pancake",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -26,14 +32,29 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "892A392662EFD968ECAC00BEDD3BE4AF0F19F413"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JPMartha\/Pancake.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A18E5D9D4805307E527040F5A6CFF9AE33C36780"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Carthage\/Commandant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D23C0CEAADB77074FDA4459000068A7940EB7AD0"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jspahrsummers\/xcconfigs.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E084C86B03F81D63323C9E7510697EA528A758C7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/drmohundro\/SWXMLHash.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB2210CFD48672E403BED699D5D7F01B844069CF"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jpsim\/SourceKitten.git",

@@ -2,15 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DemoApp/DemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pancake.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DemoApp/DemoApp.xcodeproj">
+      location = "group:Carthage/Checkouts/Himotoki/Himotoki.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/SourceKitten/sourcekitten.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Himotoki/Himotoki.xcodeproj">
+      location = "group:Carthage/Checkouts/SWXMLHash/SWXMLHash.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/Commandant.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Result/Result.xcodeproj">
    </FileRef>
 </Workspace>
