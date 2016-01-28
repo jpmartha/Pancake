@@ -63,6 +63,14 @@ class TemplateTests: XCTestCase {
         }
     }
     
+    func testParameterTemplate() {
+        if let template = SwiftMarkdownTemplate(fileName: "Parameter.md") {
+            XCTAssertNotNil(template)
+        } else {
+            XCTFail("Parameter Template is invalid.")
+        }
+    }
+    
     func testReturnValueTemplate() {
         if let template = SwiftMarkdownTemplate(fileName: "ReturnValue.md") {
             XCTAssertNotNil(template)
@@ -79,7 +87,15 @@ class TemplateTests: XCTestCase {
             XCTAssertTrue(template.markdownString.hasPrefix("  ##### See Also"))
             XCTAssertTrue(template.markdownString.containsString("  %see_also%"))
         } else {
-            XCTFail("Return Value Template is invalid.")
+            XCTFail("See Also Template is invalid.")
+        }
+    }
+    
+    func testEnumerationTemplate() {
+        if let template = SwiftMarkdownTemplate(fileName: "Enumeration.md") {
+            XCTAssertNotNil(template)
+        } else {
+            XCTFail("Enumeration Template is invalid.")
         }
     }
 }

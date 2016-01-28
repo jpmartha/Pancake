@@ -14,6 +14,8 @@ public enum TestEnumerationType {
 }
 
 public class Demo {
+    
+    let string = "This is String."
     /**
     DoAction
     - parameters:

@@ -1,5 +1,5 @@
 //
-//  SwiftFile.swift
+//  SwiftObject.swift
 //  Pancake
 //
 //  Created by JPMartha on 2016/01/26.
@@ -10,19 +10,7 @@ import Foundation
 import SourceKittenFramework
 import Himotoki
 
-protocol SwiftObjectType {}
-
-struct SwiftFile: Decodable {
-    let substructure: [SwiftObject]
-    
-    static func decode(e: Extractor) throws -> SwiftFile {
-        return try SwiftFile(
-            substructure: e <|| "key.substructure"
-        )
-    }
-}
-
-struct SwiftObject: Decodable, SwiftObjectType {
+struct SwiftObject: Decodable {
     let accessibility: String?
     let kind: String?
     let name: String?

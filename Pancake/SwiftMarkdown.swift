@@ -16,10 +16,13 @@ class SwiftMarkdown {
     static let commentTemplate = SwiftMarkdownTemplate(fileName: "Comment.md")?.markdownString
     static let declarationTemplate = SwiftMarkdownTemplate(fileName: "Declaration.md")?.markdownString
     static let parametersTemplate = SwiftMarkdownTemplate(fileName: "Parameters.md")?.markdownString
+    static let parameterTemplate = SwiftMarkdownTemplate(fileName: "Parameter.md")?.markdownString
     static let returnValueTemplate = SwiftMarkdownTemplate(fileName: "ReturnValue.md")?.markdownString
     static let seeAlsoTemplate = SwiftMarkdownTemplate(fileName: "SeeAlso.md")?.markdownString
+    static let enumerationTemplate = SwiftMarkdownTemplate(fileName: "Enumeration.md")?.markdownString
+    static let enumerationDeclarationTemplate = SwiftMarkdownTemplate(fileName: "EnumerationDeclaration.md")?.markdownString
     
-    static func classMarkdownWithSwiftModule(swiftObject: SwiftObject) -> String? {
+    static func classMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String? {
         guard var classMarkdownString = classTemplate else {
             return nil
         }
@@ -54,6 +57,65 @@ class SwiftMarkdown {
         
         
         return methodMarkdownString
+    }
+    
+    static func enumerationMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
+        guard var enumerationMarkdownString = enumerationTemplate else {
+            print("EnumerationMarkdownString Error")
+            return ""
+        }
+        guard var declarationMarkdownString = enumerationDeclarationTemplate else {
+            print("DeclarationMarkdownString Error")
+            return ""
+        }
+        /*
+        guard let kind = swiftObject.kind else {
+            print("Kind Error")
+            return ""
+        }
+        */
+        guard let name = swiftObject.name else {
+            print("Name Error")
+            return ""
+        }
+        guard let parsed_declaration = swiftObject.parsed_declaration else {
+            print("Parsed Declaration Error")
+            return ""
+        }
+        
+        // FIXME:
+        /*
+        guard let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) else {
+            print("SwiftDeclarationKind Error")
+            return ""
+        }
+        guard swiftDeclarationKind.rawValue != SwiftDeclarationKind.Enum.rawValue else {
+            print("SwiftDeclarationKind is not .Enum: \(swiftDeclarationKind.rawValue)")
+            return ""
+        }
+        */
+        
+        enumerationMarkdownString = enumerationMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
+        
+        var enumDeclarationString = parsed_declaration + " {"
+        if let enumCases = swiftObject.substructure {
+            let _ = enumCases.map {
+                if let enumElements = $0.substructure {
+                    let _ = enumElements.map {
+                        if let parsed_declaration = $0.parsed_declaration {
+                            enumDeclarationString = enumDeclarationString + "\n      " + parsed_declaration
+                        }
+                    }
+                }
+            }
+            enumDeclarationString = enumDeclarationString + "\n  }"
+        }
+        
+        declarationMarkdownString = declarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: enumDeclarationString)
+        
+        enumerationMarkdownString = enumerationMarkdownString.stringByReplacingOccurrencesOfString("%Declaration.md%", withString: declarationMarkdownString)
+        
+        return enumerationMarkdownString
     }
     
     // MARK: -
@@ -101,17 +163,53 @@ class SwiftMarkdown {
     // MARK: -
     
     static func outputMarkdown() {
-        for swiftFile in SwiftDocsParser.swiftFiles {
-            for swiftObject in swiftFile.substructure {
+        let _ = SwiftDocsParser.swiftObjects.map {
+            if let swiftObject = $0.substructure {
+                let _ = swiftObject.map {
+                    writeSwiftMarkdownFile($0)
+                }
+            }
+        }
+        
+        /*
+        for swiftObject in SwiftDocsParser.swiftObjects {
+            for swiftObject in swiftObject.substructure {
                 writeSwiftMarkdownFile(swiftObject)
             }
         }
+        */
     }
     
     static func writeSwiftMarkdownFile(swiftObject: SwiftObject) {
-        var moduleString = classMarkdownWithSwiftModule(swiftObject)
+        var moduleString: String?
+        if let kind = swiftObject.kind {
+            if let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
+                switch swiftDeclarationKind {
+                case .Class:
+                    moduleString = classMarkdownWithSwiftObject(swiftObject)!
+                case .Enum:
+                    moduleString = enumerationMarkdownWithSwiftObject(swiftObject)
+                    print("Enumeration: \(moduleString)")
+                default:
+                    moduleString = nil
+                }
+            }
+        }
+        
         let _ = swiftObject.substructure?.map {
-            moduleString = moduleString! + methodMarkdownWithSwiftObject($0)
+            // Method以外もある
+            if let kind = swiftObject.kind {
+                if let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
+                    switch swiftDeclarationKind {
+                    case .Class:
+                        moduleString = moduleString! + methodMarkdownWithSwiftObject($0)
+                    case .Enum:
+                        break
+                    default:
+                        moduleString = nil
+                    }
+                }
+            }
         }
 
         guard let string = moduleString else {

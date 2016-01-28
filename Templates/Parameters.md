@@ -1,4 +1,6 @@
   ##### Parameters
 
+  Parameter | Description
+  ----------|------------
   %parameters%
 

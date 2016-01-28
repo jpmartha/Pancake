@@ -1,6 +1,3 @@
-- `%name%`
+# %name%
 
 %Declaration.md%
-
-===
-

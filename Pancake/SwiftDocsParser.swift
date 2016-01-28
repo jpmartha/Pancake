@@ -11,7 +11,7 @@ import SourceKittenFramework
 import Himotoki
 
 class SwiftDocsParser {
-    static var swiftFiles = [SwiftFile]()
+    static var swiftObjects = [SwiftObject]()
     
     static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {
         guard swiftDocs.count > 0 else {
@@ -32,9 +32,9 @@ class SwiftDocsParser {
                 if let filePath = swiftDoc.file.path {
                     if let dic = anyObject as? NSDictionary {
                         if let dic1 = dic[filePath] {
-                            let swiftFile: SwiftFile? = try? decode(dic1)
-                            if let file = swiftFile {
-                                self.swiftFiles.append(file)
+                            let swiftObject: SwiftObject? = try? decode(dic1)
+                            if let file = swiftObject {
+                                self.swiftObjects.append(file)
                             }
                         }
                     }
