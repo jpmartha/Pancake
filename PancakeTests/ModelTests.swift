@@ -10,34 +10,36 @@ import XCTest
 @testable import Pancake
 
 class ModelTests: XCTestCase {
-    
-    var swiftFiles = [SwiftFile]()
+    var swiftObjects = [SwiftObject]()
     
     override func setUp() {
         super.setUp()
         Pancake.docs()
-        swiftFiles = SwiftDocsParser.swiftFiles
+        swiftObjects = SwiftDocsParser.swiftObjects
     }
     
     override func tearDown() {
-        swiftFiles = [SwiftFile]()
+        swiftObjects = [SwiftObject]()
         super.tearDown()
     }
-    
-    func testSwiftFileCount() {
-        XCTAssertEqual(swiftFiles.count, 2)
-    }
-    
+
     func testSwiftObject() {
+        if let file1 = swiftObjects.first?.substructure?.first {
+            XCTAssertEqual(file1.kind, "source.lang.swift.decl.class")
+            XCTAssertEqual(file1.parsed_declaration, "class ViewController: NSViewController")
+            XCTAssertEqual(file1.name, "ViewController")
+            XCTAssertEqual(file1.accessibility, "source.lang.swift.accessibility.internal")
+        } else {
+            XCTFail()
+        }
         
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.kind, "source.lang.swift.decl.enum")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.parsed_declaration, "enum TestEnumerationType")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.name, "TestEnumerationType")
-        XCTAssertEqual(swiftFiles.first?.substructure.first?.accessibility, "source.lang.swift.accessibility.internal")
-        
-        XCTAssertEqual(swiftFiles.first?.substructure[1].kind, "source.lang.swift.decl.class")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].parsed_declaration, "class ViewController: NSViewController")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].name, "ViewController")
-        XCTAssertEqual(swiftFiles.first?.substructure[1].accessibility, "source.lang.swift.accessibility.internal")
+        if let file2 = swiftObjects[1].substructure?.first {
+            XCTAssertEqual(file2.kind, "source.lang.swift.decl.class")
+            XCTAssertEqual(file2.parsed_declaration, "class AppDelegate: NSObject, NSApplicationDelegate")
+            XCTAssertEqual(file2.name, "AppDelegate")
+            XCTAssertEqual(file2.accessibility, "source.lang.swift.accessibility.internal")
+        } else {
+            XCTFail()
+        }
     }
 }

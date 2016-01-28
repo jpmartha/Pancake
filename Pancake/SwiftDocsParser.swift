@@ -8,30 +8,39 @@
 
 import Foundation
 import SourceKittenFramework
-import SwiftXPC
+import Himotoki
 
 class SwiftDocsParser {
-    
-    static var swiftFiles = [SwiftFile]()
+    static var swiftObjects = [SwiftObject]()
     
     static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {
         guard swiftDocs.count > 0 else {
             return
         }
-        
+
         for swiftDoc in swiftDocs {
-            let xpcDictionary = swiftDoc.docsDictionary
-            
-            guard let xpcSubstructure = xpcDictionary["key.substructure"] as? [XPCRepresentable] else {
-                print("Failed to convert.")
-                return
-            }
-            
-            if let swiftFile = SwiftFile(substructure: xpcSubstructure) {
-                swiftFiles.append(swiftFile)
+            let string = swiftDoc.description
+            print(string)
+            if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
+                var anyObject: AnyObject
+                do {
+                    anyObject = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                } catch let error as NSError {
+                    anyObject = error.debugDescription
+                }
+                
+                if let filePath = swiftDoc.file.path {
+                    if let dictionary = anyObject as? NSDictionary {
+                        if let filePathValue = dictionary[filePath] {
+                            let swiftObject: SwiftObject? = try? decode(filePathValue)
+                            if let file = swiftObject {
+                                self.swiftObjects.append(file)
+                            }
+                        }
+                    }
+                }
             }
         }
-        
-        SwiftMarkdown.outputMarkdown()
+        Markdown.outputMarkdown()
     }
 }

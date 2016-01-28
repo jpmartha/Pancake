@@ -10,12 +10,10 @@ import Foundation
 import SourceKittenFramework
 
 public class Pancake {
-    
-    static let testPath = NSHomeDirectory() + "/Pancake/DemoApp"
+    static let inPath = NSHomeDirectory() + "/Pancake/DemoApp"
 
     public static func docs() {
-        let module = Module(xcodeBuildArguments: ["-scheme", "DemoApp"], name: nil, inPath: testPath)
-        
+        let module = Module(xcodeBuildArguments: ["-scheme", "DemoApp"], name: nil, inPath: inPath)
         if let docs = module?.docs {
             SwiftDocsParser.parse(SwiftDocs: docs)
         }

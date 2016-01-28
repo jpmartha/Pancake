@@ -9,11 +9,6 @@
 import Cocoa
 import Pancake
 
-enum TestEnumerationType {
-    case Enumeration0
-    case Enumeration1
-}
-
 class ViewController: NSViewController {
     
     override func viewDidLoad() {
