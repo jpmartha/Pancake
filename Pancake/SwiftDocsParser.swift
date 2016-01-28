@@ -30,9 +30,9 @@ class SwiftDocsParser {
                 }
                 
                 if let filePath = swiftDoc.file.path {
-                    if let dic = anyObject as? NSDictionary {
-                        if let dic1 = dic[filePath] {
-                            let swiftObject: SwiftObject? = try? decode(dic1)
+                    if let dictionary = anyObject as? NSDictionary {
+                        if let filePathValue = dictionary[filePath] {
+                            let swiftObject: SwiftObject? = try? decode(filePathValue)
                             if let file = swiftObject {
                                 self.swiftObjects.append(file)
                             }
@@ -41,6 +41,6 @@ class SwiftDocsParser {
                 }
             }
         }
-        SwiftMarkdown.outputMarkdown()
+        Markdown.outputMarkdown()
     }
 }

@@ -11,14 +11,14 @@
 		2E17FC5F1C58CEF900200BA7 /* EnumerationDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
 		2E4BF3961C57BBCC003924BE /* Enumeration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BF3951C57BBCC003924BE /* Enumeration.md */; };
-		2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* TemplateTests.swift */; };
-		2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */; };
+		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
+		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
 		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
 		2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* Class.md */; };
-		2E8C4C711C5625D5002E6ABC /* SwiftMarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */; };
+		2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */; };
 		2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* Parameters.md */; };
 		2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* ReturnValue.md */; };
 		2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* SeeAlso.md */; };
@@ -31,7 +31,7 @@
 		2E97905D1C59DCDF009115D2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
 		2EFFB7761C55B21C0034F60C /* Method.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Method.md */; };
-		2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */; };
+		2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* MarkdownTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = EnumerationDeclaration.md; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
 		2E4BF3951C57BBCC003924BE /* Enumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumeration.md; sourceTree = "<group>"; };
-		2E4BFB881C56A361006E3528 /* TemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
-		2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdown.swift; sourceTree = "<group>"; };
+		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; };
+		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
 		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
 		2E8C08701C4EE17B00DDBBDD /* Pancake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pancake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +60,7 @@
 		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C4C6D1C560E63002E6ABC /* Class.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Class.md; sourceTree = "<group>"; };
-		2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTemplate.swift; sourceTree = "<group>"; };
+		2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTemplate.swift; sourceTree = "<group>"; };
 		2E8C4C731C56403A002E6ABC /* Parameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Parameters.md; sourceTree = "<group>"; };
 		2E8C4C741C56403A002E6ABC /* ReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReturnValue.md; sourceTree = "<group>"; };
 		2E8C4C751C56403A002E6ABC /* SeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SeeAlso.md; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		2E97905C1C59DCDF009115D2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
 		2EFFB7741C55B1FB0034F60C /* Method.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Method.md; sourceTree = "<group>"; };
-		2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMarkdownTests.swift; sourceTree = "<group>"; };
+		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +129,8 @@
 				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
 				2EEBBB811C4EE43D00168E05 /* Pancake.swift */,
 				2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */,
-				2E5623541C5103DE00EAAEF9 /* SwiftMarkdown.swift */,
-				2E8C4C701C5625D5002E6ABC /* SwiftMarkdownTemplate.swift */,
+				2E5623541C5103DE00EAAEF9 /* Markdown.swift */,
+				2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */,
 				2E4BF38F1C5766BD003924BE /* SwiftObject.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
 			);
@@ -142,8 +142,8 @@
 			children = (
 				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
 				2E5A62021C50BF4700346318 /* ModelTests.swift */,
-				2EFFB7771C55B3150034F60C /* SwiftMarkdownTests.swift */,
-				2E4BFB881C56A361006E3528 /* TemplateTests.swift */,
+				2EFFB7771C55B3150034F60C /* MarkdownTests.swift */,
+				2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */,
 				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = PancakeTests;
@@ -284,11 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8C4C711C5625D5002E6ABC /* SwiftMarkdownTemplate.swift in Sources */,
+				2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
-				2E5623551C5103DE00EAAEF9 /* SwiftMarkdown.swift in Sources */,
+				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
-				2E4BFB891C56A361006E3528 /* TemplateTests.swift in Sources */,
+				2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */,
 				2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */,
-				2EFFB7781C55B3150034F60C /* SwiftMarkdownTests.swift in Sources */,
+				2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  TemplateTests.swift
+//  MarkdownTemplateTests.swift
 //  PancakeTests
 //
 //  Created by JPMartha on 2016/01/26.
@@ -11,7 +11,7 @@ import XCTest
 
 class TemplateTests: XCTestCase {
     func testClassTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Class.md") {
+        if let template = MarkdownTemplate(fileName: "Class.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("# %name%"))
             XCTAssertTrue(template.markdownString.containsString("### Methods"))
@@ -21,7 +21,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testMethodTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Method.md") {
+        if let template = MarkdownTemplate(fileName: "Method.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("- `%name%`"))
             XCTAssertTrue(template.markdownString.containsString("%Comment.md%"))
@@ -35,7 +35,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testCommentTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Comment.md") {
+        if let template = MarkdownTemplate(fileName: "Comment.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("  %doc_comment%"))
         } else {
@@ -44,7 +44,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testDeclarationTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Declaration.md") {
+        if let template = MarkdownTemplate(fileName: "Declaration.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("  ##### Declaration"))
             XCTAssertTrue(template.markdownString.containsString("  ```swift\n  %parsed_declaration%\n  ```"))
@@ -54,7 +54,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testParametersTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Parameters.md") {
+        if let template = MarkdownTemplate(fileName: "Parameters.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("  ##### Parameters"))
             XCTAssertTrue(template.markdownString.containsString("  %parameters%"))
@@ -64,7 +64,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testParameterTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Parameter.md") {
+        if let template = MarkdownTemplate(fileName: "Parameter.md") {
             XCTAssertNotNil(template)
         } else {
             XCTFail("Parameter Template is invalid.")
@@ -72,7 +72,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testReturnValueTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "ReturnValue.md") {
+        if let template = MarkdownTemplate(fileName: "ReturnValue.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("  ##### Return Value"))
             XCTAssertTrue(template.markdownString.containsString("  %returns%"))
@@ -82,7 +82,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testSeeAlsoTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "SeeAlso.md") {
+        if let template = MarkdownTemplate(fileName: "SeeAlso.md") {
             XCTAssertNotNil(template)
             XCTAssertTrue(template.markdownString.hasPrefix("  ##### See Also"))
             XCTAssertTrue(template.markdownString.containsString("  %see_also%"))
@@ -92,7 +92,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testEnumerationTemplate() {
-        if let template = SwiftMarkdownTemplate(fileName: "Enumeration.md") {
+        if let template = MarkdownTemplate(fileName: "Enumeration.md") {
             XCTAssertNotNil(template)
         } else {
             XCTFail("Enumeration Template is invalid.")
