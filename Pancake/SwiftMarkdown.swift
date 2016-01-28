@@ -10,7 +10,7 @@ import Foundation
 import SourceKittenFramework
 
 class SwiftMarkdown {
-    static let testPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
+    static let outPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
     static let classTemplate = SwiftMarkdownTemplate(fileName: "Class.md")?.markdownString
     static let methodTemplate = SwiftMarkdownTemplate(fileName: "Method.md")?.markdownString
     static let commentTemplate = SwiftMarkdownTemplate(fileName: "Comment.md")?.markdownString
@@ -44,17 +44,11 @@ class SwiftMarkdown {
         }
         
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
-        
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Comment.md%", withString: commentMarkdown(swiftObject))
-        
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Declaration.md%", withString: declarationMarkdown(swiftObject))
-        
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Parameters.md%", withString: parametersMarkdown(swiftObject))
-        
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ReturnValue.md%", withString: returnValueMarkdown(swiftObject))
-        
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%SeeAlso.md%", withString: seeAlsoMarkdown(swiftObject))
-        
         
         return methodMarkdownString
     }
@@ -68,12 +62,6 @@ class SwiftMarkdown {
             print("DeclarationMarkdownString Error")
             return ""
         }
-        /*
-        guard let kind = swiftObject.kind else {
-            print("Kind Error")
-            return ""
-        }
-        */
         guard let name = swiftObject.name else {
             print("Name Error")
             return ""
@@ -83,18 +71,6 @@ class SwiftMarkdown {
             return ""
         }
         
-        // FIXME:
-        /*
-        guard let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) else {
-            print("SwiftDeclarationKind Error")
-            return ""
-        }
-        guard swiftDeclarationKind.rawValue != SwiftDeclarationKind.Enum.rawValue else {
-            print("SwiftDeclarationKind is not .Enum: \(swiftDeclarationKind.rawValue)")
-            return ""
-        }
-        */
-        
         enumerationMarkdownString = enumerationMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
         
         var enumDeclarationString = parsed_declaration + " {"
@@ -103,12 +79,12 @@ class SwiftMarkdown {
                 if let enumElements = $0.substructure {
                     let _ = enumElements.map {
                         if let parsed_declaration = $0.parsed_declaration {
-                            enumDeclarationString = enumDeclarationString + "\n      " + parsed_declaration
+                            enumDeclarationString = enumDeclarationString + "\n    " + parsed_declaration
                         }
                     }
                 }
             }
-            enumDeclarationString = enumDeclarationString + "\n  }"
+            enumDeclarationString = enumDeclarationString + "\n}"
         }
         
         declarationMarkdownString = declarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: enumDeclarationString)
@@ -170,14 +146,6 @@ class SwiftMarkdown {
                 }
             }
         }
-        
-        /*
-        for swiftObject in SwiftDocsParser.swiftObjects {
-            for swiftObject in swiftObject.substructure {
-                writeSwiftMarkdownFile(swiftObject)
-            }
-        }
-        */
     }
     
     static func writeSwiftMarkdownFile(swiftObject: SwiftObject) {
@@ -197,7 +165,6 @@ class SwiftMarkdown {
         }
         
         let _ = swiftObject.substructure?.map {
-            // Method以外もある
             if let kind = swiftObject.kind {
                 if let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
                     switch swiftDeclarationKind {
@@ -219,14 +186,13 @@ class SwiftMarkdown {
             return
         }
         
-        let filePath = testPath + "/" + name + ".md"
+        let filePath = outPath + "/" + name + ".md"
         do {
             try string.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {
             print(error.debugDescription)
             return
         }
-        
         print(filePath)
     }
 }

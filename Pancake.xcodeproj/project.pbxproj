@@ -152,8 +152,8 @@
 		2EFFB7731C55B1FB0034F60C /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */,
 				2E4BF3951C57BBCC003924BE /* Enumeration.md */,
+				2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */,
 				2E8C4C6D1C560E63002E6ABC /* Class.md */,
 				2EFFB7741C55B1FB0034F60C /* Method.md */,
 				2E8C4C791C5641EA002E6ABC /* Comment.md */,
