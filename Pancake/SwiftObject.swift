@@ -16,6 +16,8 @@ struct SwiftObject: Decodable {
     let name: String?
     let parsed_declaration: String?
     let doc_comment: String?
+    let parameters: [DocParameters]?
+    let result_discussion: [Discussion]?
     let substructure: [SwiftObject]?
     
     static func decode(e: Extractor) throws -> SwiftObject {
@@ -25,7 +27,31 @@ struct SwiftObject: Decodable {
             name: e <|? "key.name",
             parsed_declaration: e <|? "key.parsed_declaration",
             doc_comment: e <|? "key.doc_comment",
+            parameters: e <||? "key.doc.parameters",
+            result_discussion: e <||? "key.doc.result_discussion",
             substructure: e <||? "key.substructure"
+        )
+    }
+}
+
+struct DocParameters: Decodable {
+    let name: String?
+    let discussion: [Discussion]?
+    
+    static func decode(e: Extractor) throws -> DocParameters {
+        return try DocParameters(
+            name: e <|? "name",
+            discussion: e <||? "discussion"
+        )
+    }
+}
+
+struct Discussion: Decodable {
+    let para: String?
+    
+    static func decode(e: Extractor) throws -> Discussion {
+        return try Discussion(
+            para: e <|? "Para"
         )
     }
 }

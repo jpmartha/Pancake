@@ -1,3 +1,3 @@
-# %name%
+# %name% Enumeration Reference
 
 %Declaration.md%

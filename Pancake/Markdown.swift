@@ -9,66 +9,30 @@
 import Foundation
 import SourceKittenFramework
 
-class Markdown {
+final class Markdown {
     static let outPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
-    static let classTemplate = MarkdownTemplate(fileName: "Class.md")?.markdownString
-    static let methodTemplate = MarkdownTemplate(fileName: "Method.md")?.markdownString
-    static let commentTemplate = MarkdownTemplate(fileName: "Comment.md")?.markdownString
-    static let declarationTemplate = MarkdownTemplate(fileName: "Declaration.md")?.markdownString
-    static let parametersTemplate = MarkdownTemplate(fileName: "Parameters.md")?.markdownString
-    static let parameterTemplate = MarkdownTemplate(fileName: "Parameter.md")?.markdownString
-    static let returnValueTemplate = MarkdownTemplate(fileName: "ReturnValue.md")?.markdownString
-    static let seeAlsoTemplate = MarkdownTemplate(fileName: "SeeAlso.md")?.markdownString
-    static let enumTemplate = MarkdownTemplate(fileName: "Enumeration.md")?.markdownString
-    static let enumDeclarationTemplate = MarkdownTemplate(fileName: "EnumerationDeclaration.md")?.markdownString
+    static let classTemplate = MarkdownTemplate(fileName: "Class.md").markdownString
+    static let propertiesTemplate = MarkdownTemplate(fileName: "Properties.md").markdownString
+    static let methodsTemplate = MarkdownTemplate(fileName: "Methods.md").markdownString
+    static let c_propertyTemplate = MarkdownTemplate(fileName: "ClassProperty.md").markdownString
+    static let c_methodTemplate = MarkdownTemplate(fileName: "ClassMethod.md").markdownString
+    static let c_commentTemplate = MarkdownTemplate(fileName: "ClassComment.md").markdownString
+    static let c_DeclarationTemplate = MarkdownTemplate(fileName: "ClassDeclaration.md").markdownString
+    static let c_parametersTemplate = MarkdownTemplate(fileName: "ClassParameters.md").markdownString
+    static let c_parameterTemplate = MarkdownTemplate(fileName: "ClassParameter.md").markdownString
+    static let c_returnValueTemplate = MarkdownTemplate(fileName: "ClassReturnValue.md").markdownString
+    static let c_seeAlsoTemplate = MarkdownTemplate(fileName: "ClassSeeAlso.md").markdownString
+    static let enumTemplate = MarkdownTemplate(fileName: "Enumeration.md").markdownString
+    static let enumDeclarationTemplate = MarkdownTemplate(fileName: "EnumerationDeclaration.md").markdownString
     
-    static func classMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String? {
-        guard let classMarkdownString = classTemplate else {
-            return nil
-        }
-        guard let name = swiftObject.name else {
-            return nil
-        }
-        return classMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
-    }
-    
-    static func methodMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
-        guard var methodMarkdownString = methodTemplate else {
-            return ""
-        }
-        guard let name = swiftObject.name else {
-            return ""
-        }
-        
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Comment.md%", withString: commentMarkdownString(swiftObject))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Declaration.md%", withString: declarationMarkdownString(swiftObject))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%Parameters.md%", withString: parametersMarkdownString(swiftObject))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ReturnValue.md%", withString: returnValueMarkdownString(swiftObject))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%SeeAlso.md%", withString: seeAlsoMarkdownString(swiftObject))
-        
-        return methodMarkdownString
-    }
+    // MARK: - Enumerations
     
     static func enumMarkdownStringWithSwiftObject(swiftObject: SwiftObject) -> String {
-        guard var enumMarkdownString = enumTemplate else {
-            print("EnumerationMarkdownString Error")
-            return ""
-        }
-        guard var enumDeclarationMarkdownString = enumDeclarationTemplate else {
-            print("DeclarationMarkdownString Error")
-            return ""
-        }
-        guard let name = swiftObject.name else {
-            print("Name Error")
-            return ""
-        }
-        guard let parsed_declaration = swiftObject.parsed_declaration else {
-            print("Parsed Declaration Error")
+        guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
             return ""
         }
         
-        enumMarkdownString = enumMarkdownString.stringByReplacingOccurrencesOfString("%name%", withString: name)
+        let enumMarkdownString = enumTemplate.stringByReplacingOccurrencesOfString("%name%", withString: name)
         
         var enumDeclaration = parsed_declaration + " {"
         if let enumCases = swiftObject.substructure {
@@ -76,7 +40,7 @@ class Markdown {
                 if let enumElements = $0.substructure {
                     _ = enumElements.map {
                         if let parsed_declaration = $0.parsed_declaration {
-                            enumDeclaration = enumDeclaration + "\n    " + parsed_declaration
+                            enumDeclaration += "\n    " + parsed_declaration
                         }
                     }
                 }
@@ -84,46 +48,105 @@ class Markdown {
             enumDeclaration = enumDeclaration + "\n}"
         }
         
-        enumDeclarationMarkdownString = enumDeclarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: enumDeclaration)
+        let enumDeclarationMarkdownString = enumDeclarationTemplate.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: enumDeclaration)
         
         return enumMarkdownString.stringByReplacingOccurrencesOfString("%Declaration.md%", withString: enumDeclarationMarkdownString)
     }
     
+    // MARK: - Classes
+    
+    static func classMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
+        guard let name = swiftObject.name else {
+            return ""
+        }
+        return classTemplate.stringByReplacingOccurrencesOfString("%name%", withString: name)
+    }
+    
+    static func classMethodMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
+        guard let name = swiftObject.name else {
+            return ""
+        }
+        
+        var methodMarkdownString = c_methodTemplate.stringByReplacingOccurrencesOfString("%name%", withString: name)
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassComment.md%", withString: classCommentMarkdownString(swiftObject))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassDeclaration.md%", withString: classDeclarationMarkdownString(swiftObject))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassParameters.md%", withString: classParametersMarkdownString(swiftObject))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassReturnValue.md%", withString: classReturnValueMarkdownString(swiftObject))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassSeeAlso.md%", withString: classSeeAlsoMarkdownString(swiftObject))
+        
+        return methodMarkdownString
+    }
+    
+    static func classPropertyMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
+        guard let name = swiftObject.name else {
+            return ""
+        }
+        
+        var propertyMarkdownString = c_propertyTemplate.stringByReplacingOccurrencesOfString("%name%", withString: name)
+        propertyMarkdownString = propertyMarkdownString.stringByReplacingOccurrencesOfString("%ClassComment.md%", withString: classCommentMarkdownString(swiftObject))
+        propertyMarkdownString = propertyMarkdownString.stringByReplacingOccurrencesOfString("%ClassDeclaration.md%", withString: classDeclarationMarkdownString(swiftObject))
+        
+        return propertyMarkdownString
+    }
+    
     // MARK: - If invalid, return empty string.
     
-    static func commentMarkdownString(swiftObject: SwiftObject) -> String {
-        guard let commentMarkdownString = commentTemplate else {
-            return ""
-        }
-        
+    static func classCommentMarkdownString(swiftObject: SwiftObject) -> String {
         if let doc_comment = swiftObject.doc_comment {
-            return commentMarkdownString.stringByReplacingOccurrencesOfString("%doc_comment%", withString: doc_comment)
+            return c_commentTemplate.stringByReplacingOccurrencesOfString("%doc_comment%", withString: doc_comment)
         } else {
             return ""
         }
     }
     
-    static func declarationMarkdownString(swiftObject: SwiftObject) -> String {
-        guard let declarationMarkdownString = declarationTemplate else {
+    static func classDeclarationMarkdownString(swiftObject: SwiftObject) -> String {
+        if let parsed_declaration = swiftObject.parsed_declaration {
+            return c_DeclarationTemplate.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: parsed_declaration)
+        } else {
+            return ""
+        }
+    }
+    
+    // MARK: - doc
+    
+    static func classParametersMarkdownString(swiftObject: SwiftObject) -> String {
+        guard let parameters = swiftObject.parameters else {
             return ""
         }
         
-        if let parsed_declaration = swiftObject.parsed_declaration {
-            return declarationMarkdownString.stringByReplacingOccurrencesOfString("%parsed_declaration%", withString: parsed_declaration)
-        } else {
+        var parametersString = ""
+        _ = parameters.map {
+            if let name = $0.name {
+                var parameter = c_parameterTemplate.stringByReplacingOccurrencesOfString("%parameter_name%", withString: name)
+                if let discussion = $0.discussion {
+                    _ = discussion.map {
+                        let para = $0.para ?? ""
+                        parameter = parameter.stringByReplacingOccurrencesOfString("%parameter_description%", withString: para)
+                    }
+                }
+                parametersString += parameter
+            }
+        }
+        
+        return c_parametersTemplate.stringByReplacingOccurrencesOfString("%parameters%", withString: parametersString)
+    }
+    
+    static func classReturnValueMarkdownString(swiftObject: SwiftObject) -> String {
+        guard let result_discussion = swiftObject.result_discussion else {
             return ""
         }
+        
+        var returnValueString = ""
+        _ = result_discussion.map {
+            if let para = $0.para {
+               returnValueString += para
+            }
+        }
+        
+        return c_returnValueTemplate.stringByReplacingOccurrencesOfString("%result_discussion%", withString: returnValueString)
     }
     
-    static func parametersMarkdownString(swiftObject: SwiftObject) -> String {
-        return ""
-    }
-    
-    static func returnValueMarkdownString(swiftObject: SwiftObject) -> String {
-        return ""
-    }
-    
-    static func seeAlsoMarkdownString(swiftObject: SwiftObject) -> String {
+    static func classSeeAlsoMarkdownString(swiftObject: SwiftObject) -> String {
         return ""
     }
     
@@ -140,52 +163,47 @@ class Markdown {
     }
     
     static func writeMarkdownFile(swiftObject: SwiftObject) {
-        var moduleString: String?
-        if let kind = swiftObject.kind {
-            if let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
-                switch swiftDeclarationKind {
-                case .Class:
-                    if let classMarkdown = classMarkdownWithSwiftObject(swiftObject) {
-                        moduleString = classMarkdown
-                    }
-                case .Enum:
-                    moduleString = enumMarkdownStringWithSwiftObject(swiftObject)
-                    print("Enumeration: \(moduleString)")
-                default:
-                    break
-                }
-            }
+        guard let name = swiftObject.name, kind = swiftObject.kind, swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) else {
+            return
         }
         
+        var moduleString = ""
+        switch swiftDeclarationKind {
+        case .Class:
+            moduleString = classMarkdownWithSwiftObject(swiftObject)
+        case .Enum:
+            moduleString = enumMarkdownStringWithSwiftObject(swiftObject)
+        default:
+            return
+        }
+        
+        var enumerationsString = ""
+        var propertiesString = ""
+        var methodsString = ""
         _ = swiftObject.substructure?.map {
-            if let kind = swiftObject.kind {
-                if let swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
+            if swiftObject.kind == SwiftDeclarationKind.Class.rawValue {
+                if let kind = $0.kind, swiftDeclarationKind = SwiftDeclarationKind(rawValue: kind) {
                     switch swiftDeclarationKind {
-                    case .Class:
-                        if let string = moduleString {
-                            moduleString = string + methodMarkdownWithSwiftObject($0)
-                        }
+                    case .VarInstance:
+                        propertiesString += classPropertyMarkdownWithSwiftObject($0)
+                    case .FunctionMethodClass, .FunctionMethodInstance, .FunctionMethodStatic:
+                        methodsString += classMethodMarkdownWithSwiftObject($0)
                     default:
                         break
                     }
                 }
             }
         }
-
-        guard let string = moduleString else {
-            return
-        }
-        guard let name = swiftObject.name else {
-            return
-        }
+        
+        moduleString = moduleString.stringByReplacingOccurrencesOfString("%Enumerations%", withString: enumerationsString)
+        
+        let p = propertiesTemplate.stringByReplacingOccurrencesOfString("%ClassProperties%", withString: propertiesString)
+        moduleString = moduleString.stringByReplacingOccurrencesOfString("%Properties%", withString: p)
+        
+        let m = methodsTemplate.stringByReplacingOccurrencesOfString("%ClassMethods%", withString: methodsString)
+        moduleString = moduleString.stringByReplacingOccurrencesOfString("%Methods%", withString: m)
         
         let filePath = outPath + "/" + name + ".md"
-        do {
-            try string.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
-        } catch let error as NSError {
-            print(error.debugDescription)
-            return
-        }
-        print(filePath)
+        WriteToFile.writeToFileWithString(moduleString, filePath: filePath)
     }
 }

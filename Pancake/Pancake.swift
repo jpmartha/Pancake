@@ -9,7 +9,7 @@
 import Foundation
 import SourceKittenFramework
 
-public class Pancake {
+public final class Pancake {
     static let inPath = NSHomeDirectory() + "/Pancake/DemoApp"
 
     public static func docs() {

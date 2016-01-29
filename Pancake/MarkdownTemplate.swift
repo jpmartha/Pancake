@@ -12,13 +12,13 @@ struct MarkdownTemplate {
     let fileDirectory = NSHomeDirectory() + "/Pancake/Templates"
     let markdownString: String
     
-    init?(fileName: String) {
+    init(fileName: String) {
         let filePath = fileDirectory + "/" + fileName
         do {
             self.markdownString = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {
             print(error.debugDescription)
-            return nil
+            self.markdownString = ""
         }
     }
 }

@@ -1,4 +1,3 @@
-# %name%
+# %name% Class Reference
 
-### Methods
-
+%Enumerations%%Properties%%Methods%

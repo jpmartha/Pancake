@@ -1,4 +1,4 @@
   ##### Return Value
 
-  %returns%
+  %result_discussion%
 

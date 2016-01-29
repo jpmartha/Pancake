@@ -10,7 +10,7 @@ import Foundation
 import SourceKittenFramework
 import Himotoki
 
-class SwiftDocsParser {
+final class SwiftDocsParser {
     static var swiftObjects = [SwiftObject]()
     
     static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {

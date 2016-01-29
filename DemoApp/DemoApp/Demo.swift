@@ -22,6 +22,8 @@ public class Demo {
       - pram1: aaa
       - pram2: bbb
     - returns: true/false
+    - seealso:
+      [The Swift Standard Library Reference](https://developer.apple.com/library/prerelease/ios//documentation/General/Reference/SwiftStandardLibraryReference/index.html)
     */
     public func doAction(pram1: Int, pram2: String) -> Bool {
         return true
