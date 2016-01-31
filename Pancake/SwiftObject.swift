@@ -26,7 +26,7 @@ struct SwiftObject: Decodable {
             kind: e <|? "key.kind",
             name: e <|? "key.name",
             parsed_declaration: e <|? "key.parsed_declaration",
-            doc_comment: e <|? "key.doc_comment",
+            doc_comment: e <|? "key.doc.comment",
             parameters: e <||? "key.doc.parameters",
             result_discussion: e <||? "key.doc.result_discussion",
             substructure: e <||? "key.substructure"

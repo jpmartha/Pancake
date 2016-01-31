@@ -1,3 +1,3 @@
 ### Methods
 
-%ClassMethods%
+{% MemberMethods %}

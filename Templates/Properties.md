@@ -1,3 +1,3 @@
 ### Properties
 
-%ClassProperties%
+{% MemberProperties %}

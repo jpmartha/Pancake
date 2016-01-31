@@ -18,8 +18,8 @@ final class SwiftDocsParser {
             return
         }
 
-        for swiftDoc in swiftDocs {
-            let string = swiftDoc.description
+        swiftDocs.forEach {
+            let string = $0.description
             print(string)
             if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
                 var anyObject: AnyObject
@@ -29,14 +29,12 @@ final class SwiftDocsParser {
                     anyObject = error.debugDescription
                 }
                 
-                if let filePath = swiftDoc.file.path {
-                    if let dictionary = anyObject as? NSDictionary {
-                        if let filePathValue = dictionary[filePath] {
-                            let swiftObject: SwiftObject? = try? decode(filePathValue)
-                            if let file = swiftObject {
-                                self.swiftObjects.append(file)
-                            }
-                        }
+                if let filePath = $0.file.path,
+                    dictionary = anyObject as? NSDictionary,
+                    filePathValue = dictionary[filePath] {
+                    let swiftObject: SwiftObject? = try? decode(filePathValue)
+                    if let file = swiftObject {
+                        self.swiftObjects.append(file)
                     }
                 }
             }

@@ -10,72 +10,92 @@ import XCTest
 @testable import Pancake
 
 class TemplateTests: XCTestCase {
+    func testReplaceTarget() {
+        XCTAssertEqual(ReplaceTarget.name,"{% name %}")
+        XCTAssertEqual(ReplaceTarget.see_also, "{% see_also %}")
+    }
+    
     func testClassTemplate() {
-        let template = MarkdownTemplate(fileName: "Class.md")
+        let template = MarkdownTemplate(fileName: "ClassesAndStructures.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("%name%"))
+        XCTAssertTrue(template.markdownString.containsString("{% name %}"))
         XCTAssertTrue(template.markdownString.containsString("Methods"))
     }
     
     func testMethodsTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassMethod.md")
+        let template = MarkdownTemplate(fileName: "MemberMethod.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("`%name%`"))
-        XCTAssertTrue(template.markdownString.containsString("%ClassComment.md%"))
-        XCTAssertTrue(template.markdownString.containsString("%ClassDeclaration.md%"))
-        XCTAssertTrue(template.markdownString.containsString("%ClassParameters.md%"))
-        XCTAssertTrue(template.markdownString.containsString("%ClassReturnValue.md%"))
-        XCTAssertTrue(template.markdownString.containsString("%ClassSeeAlso.md%"))
+        XCTAssertTrue(template.markdownString.containsString("`{% name %}`"))
+        XCTAssertTrue(template.markdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% MemberSeeAlso.md %}"))
     }
     
     func testCommentTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassComment.md")
+        let template = MarkdownTemplate(fileName: "MemberDocComment.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("%doc_comment%"))
+        XCTAssertTrue(template.markdownString.containsString("{% doc_comment %}"))
     }
     
     func testMethodDeclarationTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassDeclaration.md")
+        let template = MarkdownTemplate(fileName: "MemberDeclaration.md")
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("Declaration"))
-        XCTAssertTrue(template.markdownString.containsString("```swift\n  %parsed_declaration%\n  ```"))
+        XCTAssertTrue(template.markdownString.containsString("```swift\n  {% parsed_declaration %}\n  ```"))
     }
     
     func testParametersTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassParameters.md")
+        let template = MarkdownTemplate(fileName: "MemberParameters.md")
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("Parameters"))
-        XCTAssertTrue(template.markdownString.containsString("%parameters%"))
+        XCTAssertTrue(template.markdownString.containsString("{% parameters %}"))
     }
     
     func testParameterTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassParameter.md")
+        let template = MarkdownTemplate(fileName: "MemberParameter.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("%parameter_name%"))
-        XCTAssertTrue(template.markdownString.containsString("%parameter_description%"))
+        XCTAssertTrue(template.markdownString.containsString("{% parameter_name %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% parameter_description %}"))
     }
     
     func testReturnValueTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassReturnValue.md")
+        let template = MarkdownTemplate(fileName: "MemberReturnValue.md")
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("Return Value"))
-        XCTAssertTrue(template.markdownString.containsString("%result_discussion%"))
+        XCTAssertTrue(template.markdownString.containsString("{% result_discussion %}"))
     }
     
     func testSeeAlsoTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassSeeAlso.md")
+        let template = MarkdownTemplate(fileName: "MemberSeeAlso.md")
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("See Also"))
-        XCTAssertTrue(template.markdownString.containsString("%see_also%"))
+        XCTAssertTrue(template.markdownString.containsString("{% see_also %}"))
     }
     
     func testEnumTemplate() {
-        let template = MarkdownTemplate(fileName: "Enumeration.md")
+        let template = MarkdownTemplate(fileName: "Enumerations.md")
         XCTAssertNotNil(template)
     }
     
     func testEnumDeclarationTemplate() {
-        let template = MarkdownTemplate(fileName: "EnumerationDeclaration.md")
+        let template = MarkdownTemplate(fileName: "TopLevelDeclaration.md")
         XCTAssertNotNil(template)
+    }
+    
+    func testMarkdownStringWithTemplateTypeMemberProperty() {
+        let markdownString = TemplateType.MemberProperty.markdownStringWithTargetString(ReplaceTarget.name, withString: "TestName")
+        XCTAssertTrue(markdownString.containsString("TestName"))
+    }
+    
+    func testMarkdownStringWithTemplateTypeMemberMethod() {
+        let markdownString = TemplateType.MemberMethod.markdownStringWithTargetString(ReplaceTarget.name, withString: "TestName")
+        XCTAssertTrue(markdownString.containsString("TestName"))
+    }
+    
+    func testMarkdownStringWithTemplateTypeMemberDocComment() {
+        let markdownString = TemplateType.MemberDocComment.markdownStringWithTargetString(ReplaceTarget.doc_comment, withString: "TestComment")
+        XCTAssertTrue(markdownString.containsString("TestComment"))
     }
 }

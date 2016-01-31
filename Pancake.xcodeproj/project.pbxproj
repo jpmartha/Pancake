@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E17FC5D1C58B05400200BA7 /* ClassParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* ClassParameter.md */; };
-		2E17FC5F1C58CEF900200BA7 /* EnumerationDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */; };
+		2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
+		2E17FC5F1C58CEF900200BA7 /* TopLevelDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
 		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
 		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
-		2E6A227C1C5B347E004E30C0 /* Enumeration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22781C5B347E004E30C0 /* Enumeration.md */; };
-		2E6A227D1C5B347E004E30C0 /* ClassMethod.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22791C5B347E004E30C0 /* ClassMethod.md */; };
-		2E6A227E1C5B347E004E30C0 /* ClassDeclaration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227A1C5B347E004E30C0 /* ClassDeclaration.md */; };
-		2E6A227F1C5B347E004E30C0 /* ClassProperty.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227B1C5B347E004E30C0 /* ClassProperty.md */; };
+		2E6A227C1C5B347E004E30C0 /* Enumerations.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22781C5B347E004E30C0 /* Enumerations.md */; };
+		2E6A227D1C5B347E004E30C0 /* MemberMethod.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22791C5B347E004E30C0 /* MemberMethod.md */; };
+		2E6A227E1C5B347E004E30C0 /* MemberDeclaration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */; };
+		2E6A227F1C5B347E004E30C0 /* MemberProperty.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227B1C5B347E004E30C0 /* MemberProperty.md */; };
 		2E6A22821C5B5210004E30C0 /* Methods.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22801C5B5210004E30C0 /* Methods.md */; };
 		2E6A22831C5B5210004E30C0 /* Properties.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22811C5B5210004E30C0 /* Properties.md */; };
 		2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22841C5B611A004E30C0 /* WriteToFile.swift */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
-		2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* Class.md */; };
+		2E8C4C6E1C560E63002E6ABC /* ClassesAndStructures.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* ClassesAndStructures.md */; };
 		2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */; };
-		2E8C4C761C56403A002E6ABC /* ClassParameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* ClassParameters.md */; };
-		2E8C4C771C56403A002E6ABC /* ClassReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* ClassReturnValue.md */; };
-		2E8C4C781C56403A002E6ABC /* ClassSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* ClassSeeAlso.md */; };
-		2E8C4C7B1C5641EA002E6ABC /* ClassComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* ClassComment.md */; };
+		2E8C4C761C56403A002E6ABC /* MemberParameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* MemberParameters.md */; };
+		2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */; };
+		2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */; };
+		2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
 		2E9790551C59DC62009115D2 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; };
 		2E9790571C59DC66009115D2 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790561C59DC66009115D2 /* SWXMLHash.framework */; };
 		2E9790591C59DC69009115D2 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790581C59DC69009115D2 /* Himotoki.framework */; };
@@ -49,17 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E17FC5C1C58B05400200BA7 /* ClassParameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassParameter.md; sourceTree = "<group>"; };
-		2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = EnumerationDeclaration.md; sourceTree = "<group>"; };
+		2E17FC5C1C58B05400200BA7 /* MemberParameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameter.md; sourceTree = "<group>"; };
+		2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TopLevelDeclaration.md; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
 		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Markdown.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
-		2E6A22781C5B347E004E30C0 /* Enumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumeration.md; sourceTree = "<group>"; };
-		2E6A22791C5B347E004E30C0 /* ClassMethod.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassMethod.md; sourceTree = "<group>"; };
-		2E6A227A1C5B347E004E30C0 /* ClassDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassDeclaration.md; sourceTree = "<group>"; };
-		2E6A227B1C5B347E004E30C0 /* ClassProperty.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassProperty.md; sourceTree = "<group>"; };
+		2E6A22781C5B347E004E30C0 /* Enumerations.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumerations.md; sourceTree = "<group>"; };
+		2E6A22791C5B347E004E30C0 /* MemberMethod.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = MemberMethod.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDeclaration.md; sourceTree = "<group>"; };
+		2E6A227B1C5B347E004E30C0 /* MemberProperty.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = MemberProperty.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		2E6A22801C5B5210004E30C0 /* Methods.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Methods.md; sourceTree = "<group>"; };
 		2E6A22811C5B5210004E30C0 /* Properties.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Properties.md; sourceTree = "<group>"; };
 		2E6A22841C5B611A004E30C0 /* WriteToFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteToFile.swift; sourceTree = "<group>"; };
@@ -69,19 +69,19 @@
 		2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E8C4C6D1C560E63002E6ABC /* Class.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Class.md; sourceTree = "<group>"; };
-		2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTemplate.swift; sourceTree = "<group>"; };
-		2E8C4C731C56403A002E6ABC /* ClassParameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassParameters.md; sourceTree = "<group>"; };
-		2E8C4C741C56403A002E6ABC /* ClassReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassReturnValue.md; sourceTree = "<group>"; };
-		2E8C4C751C56403A002E6ABC /* ClassSeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassSeeAlso.md; sourceTree = "<group>"; };
-		2E8C4C791C5641EA002E6ABC /* ClassComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassComment.md; sourceTree = "<group>"; };
+		2E8C4C6D1C560E63002E6ABC /* ClassesAndStructures.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassesAndStructures.md; sourceTree = "<group>"; };
+		2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E8C4C731C56403A002E6ABC /* MemberParameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameters.md; sourceTree = "<group>"; };
+		2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberReturnValue.md; sourceTree = "<group>"; };
+		2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberSeeAlso.md; sourceTree = "<group>"; };
+		2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDocComment.md; sourceTree = "<group>"; };
 		2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
 		2E9790561C59DC66009115D2 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
 		2E9790581C59DC69009115D2 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Himotoki.framework"; sourceTree = "<group>"; };
 		2E97905A1C59DCD8009115D2 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug/Commandant.framework; sourceTree = "<group>"; };
 		2E97905C1C59DCDF009115D2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
-		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTests.swift; sourceTree = "<group>"; };
+		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,19 +161,19 @@
 		2EFFB7731C55B1FB0034F60C /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				2E6A22781C5B347E004E30C0 /* Enumeration.md */,
-				2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */,
-				2E8C4C6D1C560E63002E6ABC /* Class.md */,
+				2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */,
+				2E6A22781C5B347E004E30C0 /* Enumerations.md */,
+				2E8C4C6D1C560E63002E6ABC /* ClassesAndStructures.md */,
 				2E6A22811C5B5210004E30C0 /* Properties.md */,
 				2E6A22801C5B5210004E30C0 /* Methods.md */,
-				2E6A227B1C5B347E004E30C0 /* ClassProperty.md */,
-				2E6A22791C5B347E004E30C0 /* ClassMethod.md */,
-				2E6A227A1C5B347E004E30C0 /* ClassDeclaration.md */,
-				2E8C4C791C5641EA002E6ABC /* ClassComment.md */,
-				2E8C4C731C56403A002E6ABC /* ClassParameters.md */,
-				2E17FC5C1C58B05400200BA7 /* ClassParameter.md */,
-				2E8C4C741C56403A002E6ABC /* ClassReturnValue.md */,
-				2E8C4C751C56403A002E6ABC /* ClassSeeAlso.md */,
+				2E6A227B1C5B347E004E30C0 /* MemberProperty.md */,
+				2E6A22791C5B347E004E30C0 /* MemberMethod.md */,
+				2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */,
+				2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */,
+				2E8C4C731C56403A002E6ABC /* MemberParameters.md */,
+				2E17FC5C1C58B05400200BA7 /* MemberParameter.md */,
+				2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */,
+				2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -269,13 +269,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E17FC5F1C58CEF900200BA7 /* EnumerationDeclaration.md in Resources */,
-				2E8C4C7B1C5641EA002E6ABC /* ClassComment.md in Resources */,
-				2E8C4C761C56403A002E6ABC /* ClassParameters.md in Resources */,
-				2E17FC5D1C58B05400200BA7 /* ClassParameter.md in Resources */,
-				2E8C4C781C56403A002E6ABC /* ClassSeeAlso.md in Resources */,
-				2E8C4C771C56403A002E6ABC /* ClassReturnValue.md in Resources */,
-				2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */,
+				2E17FC5F1C58CEF900200BA7 /* TopLevelDeclaration.md in Resources */,
+				2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */,
+				2E8C4C761C56403A002E6ABC /* MemberParameters.md in Resources */,
+				2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */,
+				2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */,
+				2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */,
+				2E8C4C6E1C560E63002E6ABC /* ClassesAndStructures.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,16 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */,
-				2E6A227D1C5B347E004E30C0 /* ClassMethod.md in Sources */,
+				2E6A227D1C5B347E004E30C0 /* MemberMethod.md in Sources */,
 				2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
 				2E6A22821C5B5210004E30C0 /* Methods.md in Sources */,
-				2E6A227F1C5B347E004E30C0 /* ClassProperty.md in Sources */,
-				2E6A227C1C5B347E004E30C0 /* Enumeration.md in Sources */,
+				2E6A227F1C5B347E004E30C0 /* MemberProperty.md in Sources */,
+				2E6A227C1C5B347E004E30C0 /* Enumerations.md in Sources */,
 				2E6A22831C5B5210004E30C0 /* Properties.md in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
-				2E6A227E1C5B347E004E30C0 /* ClassDeclaration.md in Sources */,
+				2E6A227E1C5B347E004E30C0 /* MemberDeclaration.md in Sources */,
 				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 ##### Declaration
 
 ```swift
-%parsed_declaration%
+{% parsed_declaration %}
 ```

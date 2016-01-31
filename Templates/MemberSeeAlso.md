@@ -1,4 +1,3 @@
   ##### See Also
 
-  %see_also%
-
+  {% see_also %}

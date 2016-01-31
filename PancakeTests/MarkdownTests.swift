@@ -10,19 +10,26 @@ import XCTest
 @testable import Pancake
 
 class MarkdownTests: XCTestCase {
-    func testMarkdownTemplate() {
-        XCTAssertNotNil(Markdown.classTemplate)
-        XCTAssertNotNil(Markdown.propertiesTemplate)
-        XCTAssertNotNil(Markdown.methodsTemplate)
-        XCTAssertNotNil(Markdown.c_methodTemplate)
-        XCTAssertNotNil(Markdown.c_commentTemplate)
-        XCTAssertNotNil(Markdown.c_DeclarationTemplate)
-        XCTAssertNotNil(Markdown.c_parametersTemplate)
-        XCTAssertNotNil(Markdown.c_parameterTemplate)
-        XCTAssertNotNil(Markdown.c_returnValueTemplate)
-        XCTAssertNotNil(Markdown.c_seeAlsoTemplate)
-        XCTAssertNotNil(Markdown.enumTemplate)
-        XCTAssertNotNil(Markdown.enumDeclarationTemplate)
+    func testMarkdownString() {
+        TemplateType.Enum.markdownString()
+    }
+    
+    func testClassMarkdownWithSwiftObject() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: "TestKind",
+            name: "TestName",
+            parsed_declaration: "TestDec",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
+            parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
+            result_discussion: [Discussion(para: "TestResultDiscussion")],
+            substructure: nil
+        )
+        let markdownString = Markdown.classesAndStructuresMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(markdownString.containsString("TestName"))
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.enumerations))
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.properties))
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.methods))
     }
     
     func testMethodMarkdownWithAll() {
@@ -31,48 +38,30 @@ class MarkdownTests: XCTestCase {
             kind: "TestKind",
             name: "TestName",
             parsed_declaration: "TestDec",
-            doc_comment: "This is a test comment.",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
             parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
             result_discussion: [Discussion(para: "TestResultDiscussion")],
             substructure: nil
         )
-        let methodMarkdownString = Markdown.classMethodMarkdownWithSwiftObject(swiftObject)
-        XCTAssertTrue(methodMarkdownString.containsString("Declaration"))
+        let methodMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(methodMarkdownString.containsString(" Declaration"))
         XCTAssertTrue(methodMarkdownString.containsString("TestDec"))
         XCTAssertTrue(methodMarkdownString.containsString("This is a test comment."))
-        XCTAssertTrue(methodMarkdownString.containsString("Parameters"))
+        XCTAssertTrue(methodMarkdownString.containsString(" Parameters"))
         XCTAssertTrue(methodMarkdownString.containsString("TestParameter"))
         XCTAssertTrue(methodMarkdownString.containsString("TestDiscussion"))
-        XCTAssertTrue(methodMarkdownString.containsString("Return Value"))
+        XCTAssertTrue(methodMarkdownString.containsString(" Return Value"))
         XCTAssertTrue(methodMarkdownString.containsString("TestResultDiscussion"))
-        // TODO:
-        //XCTAssertTrue(methodMarkdownString.containsString("See Also"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassParameters.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassReturnValue.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassSeeAlso.md%"))
+        XCTAssertTrue(methodMarkdownString.containsString(" See Also"))
+        XCTAssertTrue(methodMarkdownString.containsString("The Swift Standard Library Reference"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
     }
     
-    func testMethodMarkdowntWithComment() {
-        let swiftObject = SwiftObject(
-            accessibility: nil,
-            kind: nil,
-            name: nil,
-            parsed_declaration: nil,
-            doc_comment: "This is a test comment.",
-            parameters: nil,
-            result_discussion: nil,
-            substructure: nil
-        )
-        let commentMarkdownString = Markdown.classMethodMarkdownWithSwiftObject(swiftObject)
-        XCTAssertFalse(commentMarkdownString.containsString("This is a test comment."))
-        XCTAssertFalse(commentMarkdownString.containsString("Parameters"))
-        XCTAssertFalse(commentMarkdownString.containsString("Return Value"))
-        XCTAssertFalse(commentMarkdownString.containsString("See Also"))
-    }
-    
-    func testMethodMarkdownWithNameAndComment() {
+    func testMethodMarkdownWithNameAndDocComment() {
         let swiftObject = SwiftObject(
             accessibility: nil,
             kind: nil,
@@ -83,59 +72,88 @@ class MarkdownTests: XCTestCase {
             result_discussion: nil,
             substructure: nil
         )
-        let commentMarkdownString = Markdown.classMethodMarkdownWithSwiftObject(swiftObject)
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.containsString("TestName"))
         XCTAssertTrue(commentMarkdownString.containsString("This is a test comment."))
-        XCTAssertFalse(commentMarkdownString.containsString("Parameters"))
-        XCTAssertFalse(commentMarkdownString.containsString("Return Value"))
-        XCTAssertFalse(commentMarkdownString.containsString("See Also"))
+        XCTAssertFalse(commentMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(commentMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(commentMarkdownString.containsString(" See Also"))
     }
     
-    func testMethodMarkdownString() {
+    func testMethodMarkdowntWithNoNameAndAccessibility() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: nil,
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: nil,
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.isEmpty, "No Name.")
+    }
+    
+    func testMethodMarkdowntWithNoNameAndKind() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: "TestKind",
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: nil,
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.isEmpty, "No Name.")
+    }
+    
+    func testMethodMarkdowntWithNoNameAndParsedDeclaration() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: nil,
+            name: nil,
+            parsed_declaration: "TestParsedDeclaration",
+            doc_comment: nil,
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.isEmpty, "No Name.")
+    }
+    
+    func testMethodMarkdowntWithNoNameAndDocComment() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: nil,
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: "TestDocComment",
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.isEmpty, "No Name.")
+    }
+    
+    func testMethodMarkdowntWithNoNameAndParameters() {
+        let docParameter = DocParameters(name: "TestParameter", discussion: [Discussion(para: "p1")])
         let swiftObject = SwiftObject(
             accessibility: nil,
             kind: nil,
             name: nil,
             parsed_declaration: nil,
             doc_comment: nil,
-            parameters: nil,
-            result_discussion:[Discussion(para: "testReturnValue")],
+            parameters: [docParameter],
+            result_discussion: nil,
             substructure: nil
         )
-        var methodMarkdownString = Markdown.c_methodTemplate.stringByReplacingOccurrencesOfString("%name%", withString: "TestName")
-        
-        XCTAssertTrue(methodMarkdownString.containsString("%ClassComment.md%"))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassComment.md%", withString: Markdown.classCommentMarkdownString(swiftObject))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-
-        XCTAssertTrue(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassDeclaration.md%", withString: Markdown.classDeclarationMarkdownString(swiftObject))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        
-        XCTAssertTrue(methodMarkdownString.containsString("%ClassParameters.md%"))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassParameters.md%", withString: Markdown.classParametersMarkdownString(swiftObject))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassParameters.md%"))
-        
-        XCTAssertTrue(methodMarkdownString.containsString("%ClassReturnValue.md%"))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassReturnValue.md%", withString: Markdown.classReturnValueMarkdownString(swiftObject))
-        XCTAssertTrue(methodMarkdownString.containsString("Return Value"))
-        XCTAssertTrue(methodMarkdownString.containsString("testReturnValue"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassParameters.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassReturnValue.md%"))
-        
-        XCTAssertTrue(methodMarkdownString.containsString("%ClassSeeAlso.md%"))
-        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("%ClassSeeAlso.md%", withString: Markdown.classSeeAlsoMarkdownString(swiftObject))
-        XCTAssertTrue(methodMarkdownString.containsString("Return Value"))
-        XCTAssertTrue(methodMarkdownString.containsString("testReturnValue"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassDeclaration.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassParameters.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassReturnValue.md%"))
-        XCTAssertFalse(methodMarkdownString.containsString("%ClassSeeAlso.md%"))
+        let commentMarkdownString = Markdown.memberMethodMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(commentMarkdownString.isEmpty, "No Name.")
     }
     
     func testReturnValue() {
@@ -149,13 +167,164 @@ class MarkdownTests: XCTestCase {
             result_discussion: [Discussion(para: "testReturnValue")],
             substructure: nil
         )
-        let resuleReturnValueString = Markdown.classReturnValueMarkdownString(swiftObject)
-        XCTAssertTrue(resuleReturnValueString.containsString("Return Value"))
+        let resuleReturnValueString = Markdown.memberReturnValueMarkdownString(swiftObject)
+        XCTAssertTrue(resuleReturnValueString.containsString(" Return Value"))
         XCTAssertTrue(resuleReturnValueString.containsString("testReturnValue"))
-        XCTAssertFalse(resuleReturnValueString.containsString("%ClassComment.md%"))
-        XCTAssertFalse(resuleReturnValueString.containsString("%ClassDeclaration.md%"))
-        XCTAssertFalse(resuleReturnValueString.containsString("%ClassParameters.md%"))
-        XCTAssertFalse(resuleReturnValueString.containsString("%ClassReturnValue.md%"))
-        XCTAssertFalse(resuleReturnValueString.containsString("%ClassSeeAlso.md%"))
+        XCTAssertFalse(resuleReturnValueString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(resuleReturnValueString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(resuleReturnValueString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(resuleReturnValueString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertFalse(resuleReturnValueString.containsString("{% MemberSeeAlso.md %}"))
+    }
+    
+    func testMethodMarkdownStringReturnValue() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: nil,
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: nil,
+            parameters: nil,
+            result_discussion:[Discussion(para: "testReturnValue")],
+            substructure: nil
+        )
+        var methodMarkdownString = TemplateType.MemberMethod.markdownStringWithTargetString(ReplaceTarget.name, withString: "TestName")
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberDocComment.md %}", withString: Markdown.memberDocCommentMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberDeclaration.md %}", withString: Markdown.memberDeclarationMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberParameters.md %}", withString: Markdown.memberParametersMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberReturnValue.md %}", withString: Markdown.memberReturnValueMarkdownString(swiftObject))
+        XCTAssertTrue(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertTrue(methodMarkdownString.containsString("testReturnValue"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberSeeAlso.md %}", withString: Markdown.memberSeeAlsoMarkdownString(swiftObject))
+        XCTAssertTrue(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertTrue(methodMarkdownString.containsString("testReturnValue"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
+    }
+    
+    func testSeeAlsoString() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: nil,
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: "- seealso:\n  The Swift Standard Library Reference",
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        let seeAlsoString = Markdown.memberSeeAlsoMarkdownString(swiftObject)
+        XCTAssertTrue(seeAlsoString.containsString(" See Also"))
+        XCTAssertTrue(seeAlsoString.containsString("The Swift Standard Library Reference"))
+        XCTAssertFalse(seeAlsoString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(seeAlsoString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(seeAlsoString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(seeAlsoString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertFalse(seeAlsoString.containsString("{% MemberSeeAlso.md %}"))
+    }
+    
+    func testMethodMarkdownStringSeeAlso() {
+        let swiftObject = SwiftObject(
+            accessibility: nil,
+            kind: nil,
+            name: nil,
+            parsed_declaration: nil,
+            doc_comment: "- seealso:\n  The Swift Standard Library Reference",
+            parameters: nil,
+            result_discussion: nil,
+            substructure: nil
+        )
+        var methodMarkdownString = TemplateType.MemberMethod.markdownStringWithTargetString(ReplaceTarget.name, withString: "TestName")
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberDocComment.md %}", withString: Markdown.memberDocCommentMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberDeclaration.md %}", withString: Markdown.memberDeclarationMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberParameters.md %}", withString: Markdown.memberParametersMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Return Value"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberReturnValue.md %}", withString: Markdown.memberReturnValueMarkdownString(swiftObject))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" See Also"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        
+        XCTAssertTrue(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
+        methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberSeeAlso.md %}", withString: Markdown.memberSeeAlsoMarkdownString(swiftObject))
+        XCTAssertTrue(methodMarkdownString.containsString(" See Also"))
+        // FIXME:
+        XCTAssertTrue(methodMarkdownString.containsString("The Swift Standard Library Reference"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberDeclaration.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString(" Parameters"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberParameters.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberReturnValue.md %}"))
+        XCTAssertFalse(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
     }
 }

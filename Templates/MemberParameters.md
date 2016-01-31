@@ -2,5 +2,4 @@
 
   Parameter | Description
   ----------|------------
-  %parameters%
-
+{% parameters %}

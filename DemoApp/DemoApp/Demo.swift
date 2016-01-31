@@ -13,8 +13,12 @@ public enum TestEnumerationType {
     case Enumeration1
 }
 
+struct DemoStruct {
+    let p1: Int = 0
+    let p2: String = "0"
+}
+
 public class Demo {
-    
     let string = "This is String."
     /**
     DoAction
