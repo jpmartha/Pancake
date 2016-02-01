@@ -22,8 +22,9 @@ struct MarkdownTemplate {
 }
 
 enum TemplateType: String {
+    case Global = "Global.md"
     case Enum = "Enumerations.md"
-    case EnumDeclaration = "TopLevelDeclaration.md"
+    case Declaration = "Declaration.md"
     case ClassesAndStructures = "ClassesAndStructures.md"
     case Properties = "Properties.md"
     case Methods = "Methods.md"
@@ -46,11 +47,11 @@ enum TemplateType: String {
 }
 
 struct ReplaceTarget {
-    static let topLevelDeclaration = "{% TopLevelDeclaration.md %}"
+    static let declaration = "{% Declaration.md %}" // FIXME: まぎらわしい
     
     static let name = "{% name %}"
     static let doc_comment = "{% doc_comment %}"
-    static let parsed_declaration = "{% parsed_declaration %}"
+    static let parsed_declaration = "{% parsed_declaration %}" // FIXME: まぎらわしい
     static let parameters = "{% parameters %}"
     static let result_discussion = "{% result_discussion %}"
     static let see_also = "{% see_also %}"
@@ -60,11 +61,10 @@ struct ReplaceTarget {
         static let properties = "{% Properties %}"
         static let methods = "{% Methods %}"
     }
-    
-    static let memberProperties = "{% MemberProperties %}"
-    static let memberMethods = "{% MemberMethods %}"
-    
+
     struct Member {
+        static let properties = "{% MemberProperties %}"
+        static let methods = "{% MemberMethods %}"
         static let docComment = "{% MemberDocComment.md %}"
         static let declaration = "{% MemberDeclaration.md %}"
         static let parameters =  "{% MemberParameters.md %}"

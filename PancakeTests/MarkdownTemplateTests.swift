@@ -10,11 +10,6 @@ import XCTest
 @testable import Pancake
 
 class TemplateTests: XCTestCase {
-    func testReplaceTarget() {
-        XCTAssertEqual(ReplaceTarget.name,"{% name %}")
-        XCTAssertEqual(ReplaceTarget.see_also, "{% see_also %}")
-    }
-    
     func testClassTemplate() {
         let template = MarkdownTemplate(fileName: "ClassesAndStructures.md")
         XCTAssertNotNil(template)
@@ -80,7 +75,7 @@ class TemplateTests: XCTestCase {
     }
     
     func testEnumDeclarationTemplate() {
-        let template = MarkdownTemplate(fileName: "TopLevelDeclaration.md")
+        let template = MarkdownTemplate(fileName: "Declaration.md")
         XCTAssertNotNil(template)
     }
     
@@ -97,5 +92,28 @@ class TemplateTests: XCTestCase {
     func testMarkdownStringWithTemplateTypeMemberDocComment() {
         let markdownString = TemplateType.MemberDocComment.markdownStringWithTargetString(ReplaceTarget.doc_comment, withString: "TestComment")
         XCTAssertTrue(markdownString.containsString("TestComment"))
+    }
+    
+    func testReplaceTarget() {
+        XCTAssertEqual(ReplaceTarget.declaration, "{% Declaration.md %}")
+        XCTAssertEqual(ReplaceTarget.name, "{% name %}")
+        XCTAssertEqual(ReplaceTarget.doc_comment, "{% doc_comment %}")
+        XCTAssertEqual(ReplaceTarget.parsed_declaration, "{% parsed_declaration %}")
+        XCTAssertEqual(ReplaceTarget.parameters, "{% parameters %}")
+        XCTAssertEqual(ReplaceTarget.result_discussion, "{% result_discussion %}")
+        XCTAssertEqual(ReplaceTarget.see_also, "{% see_also %}")
+        XCTAssertEqual(ReplaceTarget.ClassesAndStructures.enumerations, "{% Enumerations %}")
+        XCTAssertEqual(ReplaceTarget.ClassesAndStructures.properties, "{% Properties %}")
+        XCTAssertEqual(ReplaceTarget.ClassesAndStructures.methods, "{% Methods %}")
+        XCTAssertEqual(ReplaceTarget.Member.properties, "{% MemberProperties %}")
+        XCTAssertEqual(ReplaceTarget.Member.methods, "{% MemberMethods %}")
+        XCTAssertEqual(ReplaceTarget.Member.docComment, "{% MemberDocComment.md %}")
+        XCTAssertEqual(ReplaceTarget.Member.declaration, "{% MemberDeclaration.md %}")
+        XCTAssertEqual(ReplaceTarget.Member.parameters, "{% MemberParameters.md %}")
+        XCTAssertEqual(ReplaceTarget.Member.returnValue, "{% MemberReturnValue.md %}")
+        XCTAssertEqual(ReplaceTarget.Member.seeAlso, "{% MemberSeeAlso.md %}")
+        XCTAssertEqual(ReplaceTarget.Parameter.name, "{% parameter_name %}")
+        XCTAssertEqual(ReplaceTarget.Parameter.description, "{% parameter_description %}")
+        XCTAssertEqual(ReplaceTarget.DocComment.seeAlso, "- seealso:")
     }
 }

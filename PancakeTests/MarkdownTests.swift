@@ -11,7 +11,15 @@ import XCTest
 
 class MarkdownTests: XCTestCase {
     func testMarkdownString() {
-        TemplateType.Enum.markdownString()
+        XCTAssertNotNil(TemplateType.Enum.markdownString())
+        XCTAssertFalse((TemplateType.Enum.markdownString().isEmpty))
+        XCTAssertNotNil(TemplateType.Declaration.markdownString())
+        XCTAssertFalse((TemplateType.Declaration.markdownString().isEmpty))
+    }
+    
+    func testMarkdownWithTargetString() {
+        let enumString = TemplateType.Enum.markdownStringWithTargetString(ReplaceTarget.name, withString: "EnumName")
+        XCTAssertTrue(enumString.containsString("EnumName"))
     }
     
     func testClassMarkdownWithSwiftObject() {

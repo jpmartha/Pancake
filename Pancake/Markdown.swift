@@ -12,6 +12,23 @@ import SourceKittenFramework
 final class Markdown {
     static let outPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
     
+    // MARK: - source.lang.swift.decl.var.global
+    
+    static func varGlobalMarkdownStringWithSwiftObject(swiftObject: SwiftObject) -> String {
+        guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
+            return ""
+        }
+        
+        let memberDeclaration = TemplateType.MemberDeclaration.markdownStringWithTargetString(ReplaceTarget.parsed_declaration, withString: parsed_declaration)
+        var memberProperties = TemplateType.MemberProperty.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
+        memberProperties = memberProperties.stringByReplacingOccurrencesOfString(ReplaceTarget.Member.docComment, withString: "")
+        memberProperties = memberProperties.stringByReplacingOccurrencesOfString(ReplaceTarget.Member.declaration, withString: memberDeclaration)
+        
+        let globalMarkdownString = TemplateType.Global.markdownStringWithTargetString(ReplaceTarget.Member.properties, withString: memberProperties)
+        
+        return globalMarkdownString
+    }
+    
     // MARK: - Top Level
     
     static func enumMarkdownStringWithSwiftObject(swiftObject: SwiftObject) -> String {
@@ -35,9 +52,9 @@ final class Markdown {
             enumDeclaration = enumDeclaration + "\n}"
         }
         
-        let enumDeclarationMarkdownString = TemplateType.EnumDeclaration.markdownStringWithTargetString(ReplaceTarget.parsed_declaration, withString: enumDeclaration)
+        let enumDeclarationMarkdownString = TemplateType.Declaration.markdownStringWithTargetString(ReplaceTarget.parsed_declaration, withString: enumDeclaration)
         
-        return enumMarkdownString.stringByReplacingOccurrencesOfString(ReplaceTarget.topLevelDeclaration, withString: enumDeclarationMarkdownString)
+        return enumMarkdownString.stringByReplacingOccurrencesOfString(ReplaceTarget.declaration, withString: enumDeclarationMarkdownString)
     }
     
     // MARK: - Classes And Structures
@@ -140,7 +157,6 @@ final class Markdown {
         
         let scanner = NSScanner(string: doc_comment)
         scanner.scanUpToString(targetString, intoString: nil)  // false
-        
         scanner.scanLocation += targetString.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
         var scanNSString: NSString?
         guard scanner.scanUpToString(",", intoString: &scanNSString),
@@ -155,8 +171,9 @@ final class Markdown {
     
     static func outputMarkdown() {
         SwiftDocsParser.swiftObjects.forEach {
-            if let swiftObject = $0.substructure {
-                swiftObject.forEach {
+            if let swiftObjects = $0.substructure {
+                print("swiftObjects.count: \(swiftObjects.count)")
+                swiftObjects.forEach {
                     writeMarkdownFile($0)
                 }
             }
@@ -172,6 +189,8 @@ final class Markdown {
         
         var moduleString = ""
         switch swiftDeclarationKind {
+        case .VarGlobal:
+            moduleString = varGlobalMarkdownStringWithSwiftObject(swiftObject)
         case .Class, .Struct:
             moduleString = classesAndStructuresMarkdownWithSwiftObject(swiftObject)
         case .Enum:
@@ -199,6 +218,13 @@ final class Markdown {
             }
         }
         
+        if methodsString.isEmpty {
+            moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.methods, withString: "")
+        } else {
+            let m = TemplateType.Methods.markdownStringWithTargetString(ReplaceTarget.Member.methods, withString: methodsString)
+            moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.methods, withString: m)
+        }
+        
         // MARK: -
     
         if enumerationsString.isEmpty {
@@ -210,18 +236,13 @@ final class Markdown {
         if propertiesString.isEmpty {
                 moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.properties, withString: "")
         } else {
-            let p = TemplateType.Properties.markdownStringWithTargetString(ReplaceTarget.memberProperties, withString: propertiesString)
+            let p = TemplateType.Properties.markdownStringWithTargetString(ReplaceTarget.Member.properties, withString: propertiesString)
             moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.properties, withString: p)
         }
         
-        if methodsString.isEmpty {
-            moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.methods, withString: "")
-        } else {
-            let m = TemplateType.Methods.markdownStringWithTargetString(ReplaceTarget.memberMethods, withString: methodsString)
-            moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.ClassesAndStructures.methods, withString: m)
-        }
-
         switch swiftDeclarationKind {
+        case .VarGlobal:
+            name = "Global"
         case .Enum:
             name += "Enumeration"
         case .Class:

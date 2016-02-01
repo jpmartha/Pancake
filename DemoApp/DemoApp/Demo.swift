@@ -8,6 +8,8 @@
 
 import Foundation
 
+let constant: String = "This is a constant."
+
 public enum TestEnumerationType {
     case Enumeration0
     case Enumeration1
@@ -20,6 +22,7 @@ struct DemoStruct {
 
 public class Demo {
     let string = "This is String."
+    
     /**
     DoAction
     - parameters:
@@ -29,7 +32,15 @@ public class Demo {
     - seealso:
       [The Swift Standard Library Reference](https://developer.apple.com/library/prerelease/ios//documentation/General/Reference/SwiftStandardLibraryReference/index.html)
     */
-    public func doAction(pram1: Int, pram2: String) -> Bool {
+    public func doAction(param1: Int, param2: String) -> Bool {
+        return true
+    }
+    
+    /**
+     DoAction2
+     - parameter para: p1
+     */
+    public func doAction2(para p1: Int) {
         return true
     }
 }

@@ -7,8 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E01BB261C5F857B000DEA0E /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E01BB251C5F857B000DEA0E /* Himotoki.framework */; };
 		2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
-		2E17FC5F1C58CEF900200BA7 /* TopLevelDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */; };
+		2E17FC5F1C58CEF900200BA7 /* Declaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* Declaration.md */; };
+		2E1C8DE51C5EDA4F001D9AEE /* Global.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C8DE41C5EDA4F001D9AEE /* Global.md */; };
+		2E1C8DE71C5F5454001D9AEE /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C8DE61C5F5454001D9AEE /* PancakeError.swift */; };
+		2E1C8DE91C5F5511001D9AEE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C8DE81C5F5511001D9AEE /* main.swift */; };
+		2E1C8E4A1C5F732C001D9AEE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E2D1C5F732C001D9AEE /* .gitignore */; };
+		2E1C8E4B1C5F732C001D9AEE /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E2F1C5F732C001D9AEE /* Common.xcconfig */; };
+		2E1C8E4C1C5F732C001D9AEE /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E311C5F732C001D9AEE /* Debug.xcconfig */; };
+		2E1C8E4D1C5F732C001D9AEE /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E321C5F732C001D9AEE /* Profile.xcconfig */; };
+		2E1C8E4E1C5F732C001D9AEE /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E331C5F732C001D9AEE /* Release.xcconfig */; };
+		2E1C8E4F1C5F732C001D9AEE /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E341C5F732C001D9AEE /* Test.xcconfig */; };
+		2E1C8E501C5F732C001D9AEE /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E361C5F732C001D9AEE /* Application.xcconfig */; };
+		2E1C8E511C5F732C001D9AEE /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E371C5F732C001D9AEE /* Framework.xcconfig */; };
+		2E1C8E521C5F732C001D9AEE /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E381C5F732C001D9AEE /* StaticLibrary.xcconfig */; };
+		2E1C8E541C5F732C001D9AEE /* Himotoki.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E3D1C5F732C001D9AEE /* Himotoki.framework.dSYM */; };
+		2E1C8E551C5F732C001D9AEE /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E3F1C5F732C001D9AEE /* iOS-Application.xcconfig */; };
+		2E1C8E561C5F732C001D9AEE /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E401C5F732C001D9AEE /* iOS-Base.xcconfig */; };
+		2E1C8E571C5F732C001D9AEE /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E411C5F732C001D9AEE /* iOS-Framework.xcconfig */; };
+		2E1C8E581C5F732C001D9AEE /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E421C5F732C001D9AEE /* iOS-StaticLibrary.xcconfig */; };
+		2E1C8E591C5F732C001D9AEE /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E441C5F732C001D9AEE /* Mac-Application.xcconfig */; };
+		2E1C8E5A1C5F732C001D9AEE /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E451C5F732C001D9AEE /* Mac-Base.xcconfig */; };
+		2E1C8E5B1C5F732C001D9AEE /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E461C5F732C001D9AEE /* Mac-DynamicLibrary.xcconfig */; };
+		2E1C8E5C1C5F732C001D9AEE /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E471C5F732C001D9AEE /* Mac-Framework.xcconfig */; };
+		2E1C8E5D1C5F732C001D9AEE /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E1C8E481C5F732C001D9AEE /* Mac-StaticLibrary.xcconfig */; };
+		2E1C8E5E1C5F732C001D9AEE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C8E491C5F732C001D9AEE /* README.md */; };
+		2E1C8E931C5F73E9001D9AEE /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E1C8E941C5F73E9001D9AEE /* Commandant.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E97905A1C59DCD8009115D2 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E1C8E961C5F73E9001D9AEE /* SWXMLHash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E9790561C59DC66009115D2 /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E1C8E971C5F73E9001D9AEE /* SourceKittenFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
 		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
@@ -31,7 +59,6 @@
 		2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
 		2E9790551C59DC62009115D2 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; };
 		2E9790571C59DC66009115D2 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790561C59DC66009115D2 /* SWXMLHash.framework */; };
-		2E9790591C59DC69009115D2 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790581C59DC69009115D2 /* Himotoki.framework */; };
 		2E97905B1C59DCD8009115D2 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905A1C59DCD8009115D2 /* Commandant.framework */; };
 		2E97905D1C59DCDF009115D2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
@@ -48,9 +75,50 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E1C8E921C5F73DB001D9AEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E1C8E931C5F73E9001D9AEE /* Result.framework in CopyFiles */,
+				2E1C8E941C5F73E9001D9AEE /* Commandant.framework in CopyFiles */,
+				2E1C8E961C5F73E9001D9AEE /* SWXMLHash.framework in CopyFiles */,
+				2E1C8E971C5F73E9001D9AEE /* SourceKittenFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2E01BB251C5F857B000DEA0E /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Himotoki.framework"; sourceTree = "<group>"; };
 		2E17FC5C1C58B05400200BA7 /* MemberParameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameter.md; sourceTree = "<group>"; };
-		2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TopLevelDeclaration.md; sourceTree = "<group>"; };
+		2E17FC5E1C58CEF900200BA7 /* Declaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Declaration.md; sourceTree = "<group>"; };
+		2E1C8DE41C5EDA4F001D9AEE /* Global.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Global.md; sourceTree = "<group>"; };
+		2E1C8DE61C5F5454001D9AEE /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
+		2E1C8DE81C5F5511001D9AEE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2E1C8E2D1C5F732C001D9AEE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2E1C8E2F1C5F732C001D9AEE /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		2E1C8E311C5F732C001D9AEE /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2E1C8E321C5F732C001D9AEE /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		2E1C8E331C5F732C001D9AEE /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2E1C8E341C5F732C001D9AEE /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		2E1C8E361C5F732C001D9AEE /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		2E1C8E371C5F732C001D9AEE /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		2E1C8E381C5F732C001D9AEE /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		2E1C8E3C1C5F732C001D9AEE /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Himotoki.framework; sourceTree = "<group>"; };
+		2E1C8E3D1C5F732C001D9AEE /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Himotoki.framework.dSYM; sourceTree = "<group>"; };
+		2E1C8E3F1C5F732C001D9AEE /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E401C5F732C001D9AEE /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E411C5F732C001D9AEE /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E421C5F732C001D9AEE /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E441C5F732C001D9AEE /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E451C5F732C001D9AEE /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E461C5F732C001D9AEE /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E471C5F732C001D9AEE /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E481C5F732C001D9AEE /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		2E1C8E491C5F732C001D9AEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
 		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Markdown.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -77,7 +145,6 @@
 		2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDocComment.md; sourceTree = "<group>"; };
 		2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
 		2E9790561C59DC66009115D2 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
-		2E9790581C59DC69009115D2 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Himotoki.framework"; sourceTree = "<group>"; };
 		2E97905A1C59DCD8009115D2 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug/Commandant.framework; sourceTree = "<group>"; };
 		2E97905C1C59DCDF009115D2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
@@ -89,9 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E01BB261C5F857B000DEA0E /* Himotoki.framework in Frameworks */,
 				2E97905D1C59DCDF009115D2 /* Result.framework in Frameworks */,
 				2E97905B1C59DCD8009115D2 /* Commandant.framework in Frameworks */,
-				2E9790591C59DC69009115D2 /* Himotoki.framework in Frameworks */,
 				2E9790571C59DC66009115D2 /* SWXMLHash.framework in Frameworks */,
 				2E9790551C59DC62009115D2 /* SourceKittenFramework.framework in Frameworks */,
 			);
@@ -107,18 +174,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1C8E2C1C5F732C001D9AEE /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E2D1C5F732C001D9AEE /* .gitignore */,
+				2E1C8E2E1C5F732C001D9AEE /* Base */,
+				2E1C8E391C5F732C001D9AEE /* Carthage */,
+				2E1C8E3E1C5F732C001D9AEE /* iOS */,
+				2E1C8E431C5F732C001D9AEE /* Mac OS X */,
+				2E1C8E491C5F732C001D9AEE /* README.md */,
+			);
+			name = xcconfigs;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		2E1C8E2E1C5F732C001D9AEE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E2F1C5F732C001D9AEE /* Common.xcconfig */,
+				2E1C8E301C5F732C001D9AEE /* Configurations */,
+				2E1C8E351C5F732C001D9AEE /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2E1C8E301C5F732C001D9AEE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E311C5F732C001D9AEE /* Debug.xcconfig */,
+				2E1C8E321C5F732C001D9AEE /* Profile.xcconfig */,
+				2E1C8E331C5F732C001D9AEE /* Release.xcconfig */,
+				2E1C8E341C5F732C001D9AEE /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2E1C8E351C5F732C001D9AEE /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E361C5F732C001D9AEE /* Application.xcconfig */,
+				2E1C8E371C5F732C001D9AEE /* Framework.xcconfig */,
+				2E1C8E381C5F732C001D9AEE /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		2E1C8E391C5F732C001D9AEE /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E3A1C5F732C001D9AEE /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		2E1C8E3A1C5F732C001D9AEE /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E3B1C5F732C001D9AEE /* Mac */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		2E1C8E3B1C5F732C001D9AEE /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E3C1C5F732C001D9AEE /* Himotoki.framework */,
+				2E1C8E3D1C5F732C001D9AEE /* Himotoki.framework.dSYM */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		2E1C8E3E1C5F732C001D9AEE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E3F1C5F732C001D9AEE /* iOS-Application.xcconfig */,
+				2E1C8E401C5F732C001D9AEE /* iOS-Base.xcconfig */,
+				2E1C8E411C5F732C001D9AEE /* iOS-Framework.xcconfig */,
+				2E1C8E421C5F732C001D9AEE /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2E1C8E431C5F732C001D9AEE /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				2E1C8E441C5F732C001D9AEE /* Mac-Application.xcconfig */,
+				2E1C8E451C5F732C001D9AEE /* Mac-Base.xcconfig */,
+				2E1C8E461C5F732C001D9AEE /* Mac-DynamicLibrary.xcconfig */,
+				2E1C8E471C5F732C001D9AEE /* Mac-Framework.xcconfig */,
+				2E1C8E481C5F732C001D9AEE /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
+				2E01BB251C5F857B000DEA0E /* Himotoki.framework */,
 				2E97905C1C59DCDF009115D2 /* Result.framework */,
 				2E97905A1C59DCD8009115D2 /* Commandant.framework */,
-				2E9790581C59DC69009115D2 /* Himotoki.framework */,
 				2E9790561C59DC66009115D2 /* SWXMLHash.framework */,
 				2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */,
 				2E8C08721C4EE17B00DDBBDD /* Pancake */,
 				2EFFB7731C55B1FB0034F60C /* Templates */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
+				2E1C8E2C1C5F732C001D9AEE /* xcconfigs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +302,8 @@
 				2E5623541C5103DE00EAAEF9 /* Markdown.swift */,
 				2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */,
 				2E4BF38F1C5766BD003924BE /* SwiftObject.swift */,
+				2E1C8DE61C5F5454001D9AEE /* PancakeError.swift */,
+				2E1C8DE81C5F5511001D9AEE /* main.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
 			);
 			path = Pancake;
@@ -161,8 +324,9 @@
 		2EFFB7731C55B1FB0034F60C /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				2E17FC5E1C58CEF900200BA7 /* TopLevelDeclaration.md */,
+				2E1C8DE41C5EDA4F001D9AEE /* Global.md */,
 				2E6A22781C5B347E004E30C0 /* Enumerations.md */,
+				2E17FC5E1C58CEF900200BA7 /* Declaration.md */,
 				2E8C4C6D1C560E63002E6ABC /* ClassesAndStructures.md */,
 				2E6A22811C5B5210004E30C0 /* Properties.md */,
 				2E6A22801C5B5210004E30C0 /* Methods.md */,
@@ -200,6 +364,7 @@
 				2E8C086C1C4EE17B00DDBBDD /* Frameworks */,
 				2E8C086D1C4EE17B00DDBBDD /* Headers */,
 				2E8C086E1C4EE17B00DDBBDD /* Resources */,
+				2E1C8E921C5F73DB001D9AEE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -269,13 +434,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E17FC5F1C58CEF900200BA7 /* TopLevelDeclaration.md in Resources */,
+				2E1C8E511C5F732C001D9AEE /* Framework.xcconfig in Resources */,
+				2E1C8E4A1C5F732C001D9AEE /* .gitignore in Resources */,
+				2E1C8E521C5F732C001D9AEE /* StaticLibrary.xcconfig in Resources */,
+				2E1C8E591C5F732C001D9AEE /* Mac-Application.xcconfig in Resources */,
+				2E17FC5F1C58CEF900200BA7 /* Declaration.md in Resources */,
+				2E1C8E4B1C5F732C001D9AEE /* Common.xcconfig in Resources */,
 				2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */,
+				2E1C8E4F1C5F732C001D9AEE /* Test.xcconfig in Resources */,
 				2E8C4C761C56403A002E6ABC /* MemberParameters.md in Resources */,
+				2E1C8E581C5F732C001D9AEE /* iOS-StaticLibrary.xcconfig in Resources */,
+				2E1C8E5C1C5F732C001D9AEE /* Mac-Framework.xcconfig in Resources */,
 				2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */,
+				2E1C8E501C5F732C001D9AEE /* Application.xcconfig in Resources */,
+				2E1C8E561C5F732C001D9AEE /* iOS-Base.xcconfig in Resources */,
+				2E1C8E5D1C5F732C001D9AEE /* Mac-StaticLibrary.xcconfig in Resources */,
+				2E1C8E541C5F732C001D9AEE /* Himotoki.framework.dSYM in Resources */,
 				2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */,
 				2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */,
+				2E1C8E4E1C5F732C001D9AEE /* Release.xcconfig in Resources */,
+				2E1C8E4C1C5F732C001D9AEE /* Debug.xcconfig in Resources */,
+				2E1C8E5B1C5F732C001D9AEE /* Mac-DynamicLibrary.xcconfig in Resources */,
 				2E8C4C6E1C560E63002E6ABC /* ClassesAndStructures.md in Resources */,
+				2E1C8E4D1C5F732C001D9AEE /* Profile.xcconfig in Resources */,
+				2E1C8E5A1C5F732C001D9AEE /* Mac-Base.xcconfig in Resources */,
+				2E1C8E551C5F732C001D9AEE /* iOS-Application.xcconfig in Resources */,
+				2E1C8E571C5F732C001D9AEE /* iOS-Framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +483,13 @@
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
 				2E6A22821C5B5210004E30C0 /* Methods.md in Sources */,
 				2E6A227F1C5B347E004E30C0 /* MemberProperty.md in Sources */,
+				2E1C8E5E1C5F732C001D9AEE /* README.md in Sources */,
+				2E1C8DE51C5EDA4F001D9AEE /* Global.md in Sources */,
 				2E6A227C1C5B347E004E30C0 /* Enumerations.md in Sources */,
 				2E6A22831C5B5210004E30C0 /* Properties.md in Sources */,
+				2E1C8DE71C5F5454001D9AEE /* PancakeError.swift in Sources */,
 				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
+				2E1C8DE91C5F5511001D9AEE /* main.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
 				2E6A227E1C5B347E004E30C0 /* MemberDeclaration.md in Sources */,
 				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
@@ -434,6 +622,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Pancake/Info.plist;
@@ -464,6 +653,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Pancake/Info.plist;

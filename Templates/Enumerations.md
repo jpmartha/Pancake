@@ -1,3 +1,3 @@
 # {% name %}
 
-{% TopLevelDeclaration.md %}
+{% Declaration.md %}
