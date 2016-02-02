@@ -10,10 +10,10 @@ import Foundation
 import SourceKittenFramework
 import Himotoki
 
-final class SwiftDocsParser {
+public final class SwiftDocsParser {
     static var swiftObjects = [SwiftObject]()
     
-    static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {
+    public static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {
         guard swiftDocs.count > 0 else {
             return
         }

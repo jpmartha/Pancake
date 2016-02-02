@@ -6,6 +6,8 @@
 //  Copyright © 2016 JPMartha. All rights reserved.
 //
 
+import Foundation
+
 struct MarkdownTemplate {
     let fileDirectory = NSHomeDirectory() + "/Pancake/Templates"
     let markdownString: String

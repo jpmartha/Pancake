@@ -41,6 +41,6 @@ public class Demo {
      - parameter para: p1
      */
     public func doAction2(para p1: Int) {
-        return true
+        return
     }
 }

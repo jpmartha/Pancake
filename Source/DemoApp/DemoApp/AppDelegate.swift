@@ -6,6 +6,7 @@
 //  Copyright © 2016 JPMartha. All rights reserved.
 //
 
+/*
 import Cocoa
 
 @NSApplicationMain
@@ -19,3 +20,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 }
+*/

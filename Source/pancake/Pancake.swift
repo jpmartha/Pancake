@@ -10,20 +10,10 @@ import Foundation
 import SourceKittenFramework
 import Commandant
 import Result
-
-public final class Pancake {
-    static let inPath = NSHomeDirectory() + "/Pancake/DemoApp"
-
-    public static func docs() {
-        let module = Module(xcodeBuildArguments: ["-scheme", "DemoApp"], name: nil, inPath: inPath)
-        if let docs = module?.docs {
-            SwiftDocsParser.parse(SwiftDocs: docs)
-        }
-    }
-}
+import PancakeKit
 
 struct PancakeCommand: CommandType {
-    let inPath = NSHomeDirectory() + "/Pancake/DemoApp" // 仮
+    let inPath = NSHomeDirectory() + "/Pancake/Source/DemoApp" // 仮
     
     typealias Options = PancakeOptions
     

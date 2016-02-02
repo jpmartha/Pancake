@@ -1,3 +1,4 @@
 github "ikesyo/Himotoki" "1.4.0"
 github "drmohundro/SWXMLHash" "2.1.0"
+github "jspahrsummers/xcconfigs" "0.8.1"
 github "jpsim/SourceKitten" "0.8.0"
