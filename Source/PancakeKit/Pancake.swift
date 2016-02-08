@@ -12,7 +12,7 @@ import Commandant
 import Result
 
 public final class Pancake {
-    static let inPath = NSHomeDirectory() + "/Pancake/DemoApp"
+    static let inPath = NSHomeDirectory() + "/Pancake/Source/DemoApp"
 
     public static func docs() {
         let module = Module(xcodeBuildArguments: ["-scheme", "DemoApp"], name: nil, inPath: inPath)

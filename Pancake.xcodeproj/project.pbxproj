@@ -10,6 +10,22 @@
 		2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
 		2E17FC5F1C58CEF900200BA7 /* Declaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* Declaration.md */; };
 		2E1C8DE51C5EDA4F001D9AEE /* Global.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C8DE41C5EDA4F001D9AEE /* Global.md */; };
+		2E2841AB1C648F41005FCACA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2841991C648F20005FCACA /* main.swift */; };
+		2E2841AC1C648F45005FCACA /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419A1C648F20005FCACA /* Pancake.swift */; };
+		2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419B1C648F20005FCACA /* PancakeError.swift */; };
+		2E2841CF1C64907E005FCACA /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CA1C64907E005FCACA /* Commandant.framework */; };
+		2E2841D01C64907E005FCACA /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CB1C64907E005FCACA /* Himotoki.framework */; };
+		2E2841D11C64907E005FCACA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CC1C64907E005FCACA /* Result.framework */; };
+		2E2841D21C64907E005FCACA /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */; };
+		2E2841D31C64907E005FCACA /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CE1C64907E005FCACA /* SWXMLHash.framework */; };
+		2E2841D41C649093005FCACA /* Commandant.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CA1C64907E005FCACA /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D51C649093005FCACA /* Himotoki.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CB1C64907E005FCACA /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D61C649093005FCACA /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CC1C64907E005FCACA /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D71C649093005FCACA /* SourceKittenFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D81C649093005FCACA /* SWXMLHash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CE1C64907E005FCACA /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841E11C64B962005FCACA /* PancakeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; };
+		2E2BBAFA1C689A32005ED44C /* PancakeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2BBAFC1C68B0D6005ED44C /* PublicCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BBAFB1C68B0D6005ED44C /* PublicCommand.swift */; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
 		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
@@ -30,22 +46,6 @@
 		2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */; };
 		2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */; };
 		2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
-		2E9F14171C60533900F08BF6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3AC1C604FBE0033E417 /* main.swift */; };
-		2E9F14181C60533D00F08BF6 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3AD1C604FBE0033E417 /* Pancake.swift */; };
-		2E9F14191C60534100F08BF6 /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3AE1C604FBE0033E417 /* PancakeError.swift */; };
-		2E9F141B1C60538C00F08BF6 /* PancakeKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F14211C607D9C00F08BF6 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC4C42C1C6050BE0033E417 /* Commandant.framework */; };
-		2E9F14221C607DA300F08BF6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; };
-		2E9F14231C607DBB00F08BF6 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; };
-		2E9F14241C607DC800F08BF6 /* Commandant.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2EC4C42C1C6050BE0033E417 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F14251C607DC800F08BF6 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F14261C607DC800F08BF6 /* SourceKittenFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F143D1C608EAD00F08BF6 /* Commandant.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2EC4C42C1C6050BE0033E417 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F143E1C608EAD00F08BF6 /* Himotoki.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E01BB251C5F857B000DEA0E /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F143F1C608EAD00F08BF6 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F14401C608EAD00F08BF6 /* SourceKittenFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2E9F14451C6090C600F08BF6 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F14441C6090C600F08BF6 /* SWXMLHash.framework */; };
-		2E9F14461C6090CC00F08BF6 /* SWXMLHash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E9F14441C6090C600F08BF6 /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EC4C4101C60500E0033E417 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3EF1C60500E0033E417 /* .gitignore */; };
 		2EC4C4111C60500E0033E417 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3F11C60500E0033E417 /* Common.xcconfig */; };
 		2EC4C4121C60500E0033E417 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3F31C60500E0033E417 /* Debug.xcconfig */; };
@@ -68,10 +68,6 @@
 		2EC4C4261C60500F0033E417 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */; };
 		2EC4C4271C60500F0033E417 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C40E1C60500E0033E417 /* Mac-StaticLibrary.xcconfig */; };
 		2EC4C4281C60500F0033E417 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C40F1C60500E0033E417 /* README.md */; };
-		2EC4C4291C6050BE0033E417 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E01BB251C5F857B000DEA0E /* Himotoki.framework */; };
-		2EC4C42A1C6050BE0033E417 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; };
-		2EC4C42B1C6050BE0033E417 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; };
-		2EC4C42E1C6050BE0033E417 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC4C42C1C6050BE0033E417 /* Commandant.framework */; };
 		2EC4C4471C6051AA0033E417 /* PancakeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; };
 		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
 		2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* MarkdownTests.swift */; };
@@ -95,17 +91,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2E9F141A1C60536900F08BF6 /* CopyFiles */ = {
+		2E2BBAF91C689A20005ED44C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2E9F14241C607DC800F08BF6 /* Commandant.framework in CopyFiles */,
-				2E9F14251C607DC800F08BF6 /* Result.framework in CopyFiles */,
-				2E9F14261C607DC800F08BF6 /* SourceKittenFramework.framework in CopyFiles */,
-				2E9F141B1C60538C00F08BF6 /* PancakeKit.framework in CopyFiles */,
+				2E2BBAFA1C689A32005ED44C /* PancakeKit.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2EC4C4301C6050D70033E417 /* CopyFiles */ = {
@@ -114,21 +108,31 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2E9F14461C6090CC00F08BF6 /* SWXMLHash.framework in CopyFiles */,
-				2E9F143D1C608EAD00F08BF6 /* Commandant.framework in CopyFiles */,
-				2E9F143E1C608EAD00F08BF6 /* Himotoki.framework in CopyFiles */,
-				2E9F143F1C608EAD00F08BF6 /* Result.framework in CopyFiles */,
-				2E9F14401C608EAD00F08BF6 /* SourceKittenFramework.framework in CopyFiles */,
+				2E2841D41C649093005FCACA /* Commandant.framework in CopyFiles */,
+				2E2841D51C649093005FCACA /* Himotoki.framework in CopyFiles */,
+				2E2841D61C649093005FCACA /* Result.framework in CopyFiles */,
+				2E2841D71C649093005FCACA /* SourceKittenFramework.framework in CopyFiles */,
+				2E2841D81C649093005FCACA /* SWXMLHash.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E01BB251C5F857B000DEA0E /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Himotoki.framework"; sourceTree = "<group>"; };
 		2E17FC5C1C58B05400200BA7 /* MemberParameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameter.md; sourceTree = "<group>"; };
 		2E17FC5E1C58CEF900200BA7 /* Declaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Declaration.md; sourceTree = "<group>"; };
 		2E1C8DE41C5EDA4F001D9AEE /* Global.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Global.md; sourceTree = "<group>"; };
+		2E2841981C648F20005FCACA /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
+		2E2841991C648F20005FCACA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2E28419A1C648F20005FCACA /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
+		2E28419B1C648F20005FCACA /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
+		2E2841AE1C648F8D005FCACA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2841CA1C64907E005FCACA /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
+		2E2841CB1C64907E005FCACA /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/Mac/Himotoki.framework; sourceTree = "<group>"; };
+		2E2841CC1C64907E005FCACA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = Carthage/Build/Mac/SourceKittenFramework.framework; sourceTree = "<group>"; };
+		2E2841CE1C64907E005FCACA /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/Mac/SWXMLHash.framework; sourceTree = "<group>"; };
+		2E2BBAFB1C68B0D6005ED44C /* PublicCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicCommand.swift; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
 		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Markdown.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -153,14 +157,6 @@
 		2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberReturnValue.md; sourceTree = "<group>"; };
 		2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberSeeAlso.md; sourceTree = "<group>"; };
 		2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDocComment.md; sourceTree = "<group>"; };
-		2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
-		2E97905C1C59DCDF009115D2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
-		2E9F14441C6090C600F08BF6 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/Mac/SWXMLHash.framework; sourceTree = "<group>"; };
-		2EAFB9021C60528500668944 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC4C3AB1C604FBE0033E417 /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
-		2EC4C3AC1C604FBE0033E417 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		2EC4C3AD1C604FBE0033E417 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
-		2EC4C3AE1C604FBE0033E417 /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
 		2EC4C3EF1C60500E0033E417 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2EC4C3F11C60500E0033E417 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		2EC4C3F31C60500E0033E417 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -186,12 +182,7 @@
 		2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		2EC4C40E1C60500E0033E417 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		2EC4C40F1C60500E0033E417 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2EC4C42C1C6050BE0033E417 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Commandant.framework"; sourceTree = "<group>"; };
 		2EC4C43A1C6051900033E417 /* pancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pancake.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC4C43C1C6051900033E417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EC4C43E1C6051900033E417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2EC4C4411C6051900033E417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2EC4C4431C6051900033E417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
 		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -201,11 +192,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9F14451C6090C600F08BF6 /* SWXMLHash.framework in Frameworks */,
-				2EC4C42E1C6050BE0033E417 /* Commandant.framework in Frameworks */,
-				2EC4C4291C6050BE0033E417 /* Himotoki.framework in Frameworks */,
-				2EC4C42A1C6050BE0033E417 /* Result.framework in Frameworks */,
-				2EC4C42B1C6050BE0033E417 /* SourceKittenFramework.framework in Frameworks */,
+				2E2841CF1C64907E005FCACA /* Commandant.framework in Frameworks */,
+				2E2841D01C64907E005FCACA /* Himotoki.framework in Frameworks */,
+				2E2841D11C64907E005FCACA /* Result.framework in Frameworks */,
+				2E2841D21C64907E005FCACA /* SourceKittenFramework.framework in Frameworks */,
+				2E2841D31C64907E005FCACA /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2841E11C64B962005FCACA /* PancakeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +212,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9F14231C607DBB00F08BF6 /* SourceKittenFramework.framework in Frameworks */,
-				2E9F14221C607DA300F08BF6 /* Result.framework in Frameworks */,
-				2E9F14211C607D9C00F08BF6 /* Commandant.framework in Frameworks */,
 				2EC4C4471C6051AA0033E417 /* PancakeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,19 +219,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2841971C648F20005FCACA /* pancake */ = {
+			isa = PBXGroup;
+			children = (
+				2E2841AE1C648F8D005FCACA /* Info.plist */,
+				2E2841981C648F20005FCACA /* components.plist */,
+				2E2841991C648F20005FCACA /* main.swift */,
+				2E28419A1C648F20005FCACA /* Pancake.swift */,
+				2E2BBAFB1C68B0D6005ED44C /* PublicCommand.swift */,
+				2E28419B1C648F20005FCACA /* PancakeError.swift */,
+			);
+			name = pancake;
+			path = Source/pancake;
+			sourceTree = "<group>";
+		};
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
-				2E9F14441C6090C600F08BF6 /* SWXMLHash.framework */,
-				2EC4C42C1C6050BE0033E417 /* Commandant.framework */,
-				2E01BB251C5F857B000DEA0E /* Himotoki.framework */,
-				2E97905C1C59DCDF009115D2 /* Result.framework */,
-				2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */,
-				2EC4C3AA1C604FBE0033E417 /* pancake */,
+				2E2841CA1C64907E005FCACA /* Commandant.framework */,
+				2E2841CB1C64907E005FCACA /* Himotoki.framework */,
+				2E2841CC1C64907E005FCACA /* Result.framework */,
+				2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */,
+				2E2841CE1C64907E005FCACA /* SWXMLHash.framework */,
+				2E2841971C648F20005FCACA /* pancake */,
 				2E8C08721C4EE17B00DDBBDD /* PancakeKit */,
 				2EFFB7731C55B1FB0034F60C /* Templates */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
-				2EC4C43B1C6051900033E417 /* pancake */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 				2EC4C3EE1C60500E0033E417 /* xcconfigs */,
 			);
@@ -285,19 +287,6 @@
 			);
 			name = PancakeTests;
 			path = Source/PancakeKitTests;
-			sourceTree = "<group>";
-		};
-		2EC4C3AA1C604FBE0033E417 /* pancake */ = {
-			isa = PBXGroup;
-			children = (
-				2EAFB9021C60528500668944 /* Info.plist */,
-				2EC4C3AB1C604FBE0033E417 /* components.plist */,
-				2EC4C3AC1C604FBE0033E417 /* main.swift */,
-				2EC4C3AD1C604FBE0033E417 /* Pancake.swift */,
-				2EC4C3AE1C604FBE0033E417 /* PancakeError.swift */,
-			);
-			name = pancake;
-			path = Source/pancake;
 			sourceTree = "<group>";
 		};
 		2EC4C3EE1C60500E0033E417 /* xcconfigs */ = {
@@ -397,17 +386,6 @@
 			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
-		2EC4C43B1C6051900033E417 /* pancake */ = {
-			isa = PBXGroup;
-			children = (
-				2EC4C43C1C6051900033E417 /* AppDelegate.swift */,
-				2EC4C43E1C6051900033E417 /* Assets.xcassets */,
-				2EC4C4401C6051900033E417 /* MainMenu.xib */,
-				2EC4C4431C6051900033E417 /* Info.plist */,
-			);
-			path = pancake;
-			sourceTree = "<group>";
-		};
 		2EFFB7731C55B1FB0034F60C /* Templates */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,7 +465,8 @@
 				2EC4C4361C6051900033E417 /* Sources */,
 				2EC4C4371C6051900033E417 /* Frameworks */,
 				2EC4C4381C6051900033E417 /* Resources */,
-				2E9F141A1C60536900F08BF6 /* CopyFiles */,
+				2E5026581C6192B6004AE29B /* Extract CLI Tool */,
+				2E2BBAF91C689A20005ED44C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,7 +499,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "PancakeKit" */;
+			buildConfigurationList = 2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "Pancake" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -592,6 +571,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E5026581C6192B6004AE29B /* Extract CLI Tool */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Extract CLI Tool";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = ". script/extract-tool";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E8C086B1C4EE17B00DDBBDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -629,9 +627,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9F14171C60533900F08BF6 /* main.swift in Sources */,
-				2E9F14191C60534100F08BF6 /* PancakeError.swift in Sources */,
-				2E9F14181C60533D00F08BF6 /* Pancake.swift in Sources */,
+				2E2BBAFC1C68B0D6005ED44C /* PublicCommand.swift in Sources */,
+				2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */,
+				2E2841AB1C648F41005FCACA /* main.swift in Sources */,
+				2E2841AC1C648F45005FCACA /* Pancake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,17 +648,6 @@
 			targetProxy = 2E9F141E1C607D2700F08BF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2EC4C4401C6051900033E417 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EC4C4411C6051900033E417 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2E8C08821C4EE17B00DDBBDD /* Debug */ = {
@@ -758,26 +746,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Source/pancake/xcconfigs/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/PancakeKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
+				INFOPLIST_FILE = Source/PancakeKit/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -791,25 +770,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Source/pancake/xcconfigs/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/PancakeKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
+				INFOPLIST_FILE = Source/PancakeKit/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -821,7 +791,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = PancakeTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/PancakeKitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -836,7 +806,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = PancakeTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/PancakeKitTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -847,16 +817,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/pancake/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/pancake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/. @executable_path/.@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -864,23 +832,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/pancake/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/pancake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/. @executable_path/.@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks/";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "PancakeKit" */ = {
+		2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "Pancake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8C08821C4EE17B00DDBBDD /* Debug */,

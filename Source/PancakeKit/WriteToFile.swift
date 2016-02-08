@@ -16,6 +16,6 @@ struct WriteToFile {
             print(error.debugDescription)
             return
         }
-        print(filePath)
+        //print(filePath)
     }
 }

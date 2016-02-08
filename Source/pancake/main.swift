@@ -12,3 +12,11 @@ import PancakeKit
 
 let commands = CommandRegistry<PancakeError>()
 commands.register(PancakeCommand())
+//commands.register(PublicCommand())
+
+let helpCommand = HelpCommand(registry: commands)
+commands.register(helpCommand)
+
+commands.main(defaultVerb: "help") { error in
+    fputs("\(error)\n", stderr)
+}

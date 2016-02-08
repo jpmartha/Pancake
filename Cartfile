@@ -1,4 +1,5 @@
 github "jpsim/SourceKitten"
-github "jspahrsummers/xcconfigs"
-github "ikesyo/Himotoki" ~> 1.3
+github "ikesyo/Himotoki"
 github "Carthage/Commandant"
+github "antitypical/Result"
+github "jspahrsummers/xcconfigs"

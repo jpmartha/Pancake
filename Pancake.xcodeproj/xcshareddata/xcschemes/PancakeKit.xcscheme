@@ -17,7 +17,7 @@
                BlueprintIdentifier = "2E8C086F1C4EE17B00DDBBDD"
                BuildableName = "PancakeKit.framework"
                BlueprintName = "PancakeKit"
-               ReferencedContainer = "container:PancakeKit.xcodeproj">
+               ReferencedContainer = "container:Pancake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "2E8C08791C4EE17B00DDBBDD"
                BuildableName = "PancakeKitTests.xctest"
                BlueprintName = "PancakeKitTests"
-               ReferencedContainer = "container:PancakeKit.xcodeproj">
+               ReferencedContainer = "container:Pancake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,6 +42,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E8C08791C4EE17B00DDBBDD"
+               BuildableName = "PancakeKitTests.xctest"
+               BlueprintName = "PancakeKitTests"
+               ReferencedContainer = "container:Pancake.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -49,7 +59,7 @@
             BlueprintIdentifier = "2E8C086F1C4EE17B00DDBBDD"
             BuildableName = "PancakeKit.framework"
             BlueprintName = "PancakeKit"
-            ReferencedContainer = "container:PancakeKit.xcodeproj">
+            ReferencedContainer = "container:Pancake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,7 +81,7 @@
             BlueprintIdentifier = "2E8C086F1C4EE17B00DDBBDD"
             BuildableName = "PancakeKit.framework"
             BlueprintName = "PancakeKit"
-            ReferencedContainer = "container:PancakeKit.xcodeproj">
+            ReferencedContainer = "container:Pancake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -89,7 +99,7 @@
             BlueprintIdentifier = "2E8C086F1C4EE17B00DDBBDD"
             BuildableName = "PancakeKit.framework"
             BlueprintName = "PancakeKit"
-            ReferencedContainer = "container:PancakeKit.xcodeproj">
+            ReferencedContainer = "container:Pancake.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

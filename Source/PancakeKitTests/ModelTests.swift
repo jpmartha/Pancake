@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Pancake
+@testable import PancakeKit
 
 class ModelTests: XCTestCase {
     var swiftObjects = [SwiftObject]()

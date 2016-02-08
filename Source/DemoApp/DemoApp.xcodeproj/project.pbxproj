@@ -10,10 +10,6 @@
 		2E2A3E551C55A0D700535AA6 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A3E541C55A0D700535AA6 /* Demo.swift */; };
 		2E383ADF1C50EEAA003FCC69 /* Pancake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEBBBC71C4EEDA000168E05 /* Pancake.framework */; };
 		2EC4C3601C6009220033E417 /* Pancake.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2EEBBBC71C4EEDA000168E05 /* Pancake.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2EC4C3621C6009650033E417 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3611C6009650033E417 /* main.swift */; };
-		2EC4C3641C600A970033E417 /* components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3631C600A970033E417 /* components.plist */; };
-		2EC4C3661C600D920033E417 /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3651C600D920033E417 /* PancakeError.swift */; };
-		2EC4C3681C600DC90033E417 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C3671C600DC90033E417 /* Pancake.swift */; };
 		2EEBBBB91C4EEBFB00168E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBBB81C4EEBFB00168E05 /* AppDelegate.swift */; };
 		2EEBBBBB1C4EEBFB00168E05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBBBA1C4EEBFB00168E05 /* ViewController.swift */; };
 		2EEBBBBD1C4EEBFB00168E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBBBBC1C4EEBFB00168E05 /* Assets.xcassets */; };
@@ -35,10 +31,6 @@
 
 /* Begin PBXFileReference section */
 		2E2A3E541C55A0D700535AA6 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
-		2EC4C3611C6009650033E417 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		2EC4C3631C600A970033E417 /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
-		2EC4C3651C600D920033E417 /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
-		2EC4C3671C600DC90033E417 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
 		2EEBBBB51C4EEBFB00168E05 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEBBBB81C4EEBFB00168E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EEBBBBA1C4EEBFB00168E05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,16 +72,12 @@
 		2EEBBBB71C4EEBFB00168E05 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				2EC4C3671C600DC90033E417 /* Pancake.swift */,
-				2EC4C3651C600D920033E417 /* PancakeError.swift */,
-				2EC4C3611C6009650033E417 /* main.swift */,
 				2EEBBBB81C4EEBFB00168E05 /* AppDelegate.swift */,
 				2EEBBBBA1C4EEBFB00168E05 /* ViewController.swift */,
 				2E2A3E541C55A0D700535AA6 /* Demo.swift */,
 				2EEBBBBC1C4EEBFB00168E05 /* Assets.xcassets */,
 				2EEBBBBE1C4EEBFB00168E05 /* Main.storyboard */,
 				2EEBBBC11C4EEBFB00168E05 /* Info.plist */,
-				2EC4C3631C600A970033E417 /* components.plist */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -155,7 +143,6 @@
 			files = (
 				2EEBBBBD1C4EEBFB00168E05 /* Assets.xcassets in Resources */,
 				2EEBBBC01C4EEBFB00168E05 /* Main.storyboard in Resources */,
-				2EC4C3641C600A970033E417 /* components.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,10 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC4C3661C600D920033E417 /* PancakeError.swift in Sources */,
 				2EEBBBBB1C4EEBFB00168E05 /* ViewController.swift in Sources */,
-				2EC4C3621C6009650033E417 /* main.swift in Sources */,
-				2EC4C3681C600DC90033E417 /* Pancake.swift in Sources */,
 				2EEBBBB91C4EEBFB00168E05 /* AppDelegate.swift in Sources */,
 				2E2A3E551C55A0D700535AA6 /* Demo.swift in Sources */,
 			);

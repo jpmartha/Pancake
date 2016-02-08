@@ -17,13 +17,16 @@ struct PancakeCommand: CommandType {
     
     typealias Options = PancakeOptions
     
-    let verb = "pancake"
-    let function = "generate doc"
+    let verb = "all"
+    let function = "Generate the documentation as Markdown format"
     
     func run(options: PancakeOptions) -> Result<(), PancakeError> {
         let module = Module(xcodeBuildArguments: ["-scheme", "DemoApp"], name: nil, inPath: inPath)
         if let docs = module?.docs {
             SwiftDocsParser.parse(SwiftDocs: docs)
+//            print("＿人人人人人人人＿")
+//            print("＞　Success!!　＜")
+//            print("￣Y^Y^Y^Y^Y^Y^Y￣")
             return .Success()
         }
         return .Failure(.CommandError)

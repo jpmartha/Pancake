@@ -4,7 +4,7 @@ BUILD_TOOL?=xcodebuild
 
 XCODEFLAGS=-workspace 'Pancake.xcworkspace' -scheme 'pancake' DSTROOT=$(TEMPORARY_FOLDER)
 
-OUTPUT_PACKAGE=pancake.pkg
+OUTPUT_PACKAGE=Pancake.pkg
 OUTPUT_FRAMEWORK=PancakeKit.framework
 
 BUILT_BUNDLE=$(TEMPORARY_FOLDER)/Applications/pancake.app
@@ -15,7 +15,7 @@ FRAMEWORKS_FOLDER=/Library/Frameworks
 BINARIES_FOLDER=/usr/local/bin
 
 VERSION_STRING=$(shell agvtool what-marketing-version -terse1)
-COMPONENTS_PLIST=Source/pancake/components.plist 
+COMPONENTS_PLIST=Source/pancake/components.plist
 
 .PHONY: all bootstrap clean install package test uninstall
 
@@ -34,7 +34,7 @@ clean:
 	$(BUILD_TOOL) $(XCODEFLAGS) clean
 
 install: package
-	sudo installer -pkg pancake.pkg -target /
+	sudo installer -pkg Pancake.pkg -target /
 
 uninstall:
 	rm -rf "$(FRAMEWORKS_FOLDER)/$(OUTPUT_FRAMEWORK)"

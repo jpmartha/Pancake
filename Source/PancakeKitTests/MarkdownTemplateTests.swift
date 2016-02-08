@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Pancake
+@testable import PancakeKit
 
 class TemplateTests: XCTestCase {
     func testClassTemplate() {

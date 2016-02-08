@@ -20,7 +20,7 @@ public final class SwiftDocsParser {
 
         swiftDocs.forEach {
             let string = $0.description
-            print(string)
+            //print(string)
             if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
                 var anyObject: AnyObject
                 do {

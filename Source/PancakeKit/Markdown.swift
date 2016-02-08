@@ -10,7 +10,8 @@ import Foundation
 import SourceKittenFramework
 
 final class Markdown {
-    static let outPath = NSHomeDirectory() + "/Pancake/DemoApp/Documentation"
+    // FIXME:
+    static let outPath = NSHomeDirectory() + "/Pancake/Source/DemoApp/Documentation"
     
     // MARK: - source.lang.swift.decl.var.global
     
@@ -18,6 +19,8 @@ final class Markdown {
         guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
             return ""
         }
+        
+        print("VarGlobal: \(parsed_declaration)")
         
         let memberDeclaration = TemplateType.MemberDeclaration.markdownStringWithTargetString(ReplaceTarget.parsed_declaration, withString: parsed_declaration)
         var memberProperties = TemplateType.MemberProperty.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
@@ -35,6 +38,8 @@ final class Markdown {
         guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
             return ""
         }
+        
+        print("Enumerations: \(parsed_declaration)")
         
         let enumMarkdownString = TemplateType.Enum.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
         
@@ -65,13 +70,17 @@ final class Markdown {
             return ""
         }
         
+        print("ClassesAndStructures: \(name)")
+        
         return TemplateType.ClassesAndStructures.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
     }
     
     static func memberMethodMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
-        guard let name = swiftObject.name else {
+        guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
             return ""
         }
+        
+        print("Methods: \(parsed_declaration)")
         
         var methodMarkdownString = TemplateType.MemberMethod.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString(ReplaceTarget.Member.docComment, withString: memberDocCommentMarkdownString(swiftObject))
@@ -84,9 +93,11 @@ final class Markdown {
     }
     
     static func memberPropertyMarkdownWithSwiftObject(swiftObject: SwiftObject) -> String {
-        guard let name = swiftObject.name else {
+        guard let name = swiftObject.name, parsed_declaration = swiftObject.parsed_declaration else {
             return ""
         }
+        
+        print("Properties: \(parsed_declaration)")
         
         var propertyMarkdownString = TemplateType.MemberProperty.markdownStringWithTargetString(ReplaceTarget.name, withString: name)
         propertyMarkdownString = propertyMarkdownString.stringByReplacingOccurrencesOfString(ReplaceTarget.Member.docComment, withString: memberDocCommentMarkdownString(swiftObject))
@@ -172,7 +183,7 @@ final class Markdown {
     static func outputMarkdown() {
         SwiftDocsParser.swiftObjects.forEach {
             if let swiftObjects = $0.substructure {
-                print("swiftObjects.count: \(swiftObjects.count)")
+                //print("swiftObjects.count: \(swiftObjects.count)")
                 swiftObjects.forEach {
                     writeMarkdownFile($0)
                 }
