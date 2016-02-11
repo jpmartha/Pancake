@@ -9,27 +9,32 @@
 import Foundation
 
 struct MarkdownTemplate {
-    let fileDirectory = NSHomeDirectory() + "/Pancake/Templates"
+    let fileDirectory = NSHomeDirectory() + "/Pancake/Template"
     let markdownString: String
     
     init(fileName: String) {
         let filePath = fileDirectory + "/" + fileName
         do {
-            self.markdownString = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
+            markdownString = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {
             print(error.debugDescription)
-            self.markdownString = ""
+            markdownString = ""
         }
     }
 }
 
 enum TemplateType: String {
-    case Global = "Global.md"
-    case Enum = "Enumerations.md"
-    case Declaration = "Declaration.md"
-    case ClassesAndStructures = "ClassesAndStructures.md"
+    case GlobalVariables = "GlobalVariables.md"
+    case GlobalVariable = "GlobalVariable.md"
+    case GlobalDocComment = "GlobalDocComment.md"
+    case GlobalEnumerations = "GlobalEnumerations.md"
+    case GlobalDeclaration = "GlobalDeclaration.md"
+    case Classes = "Classes.md"
+    case Structures = "Structures.md"
+    case Enumerations = "Enumerations.md"
     case Properties = "Properties.md"
     case Methods = "Methods.md"
+    case MemberEnumeration = "MemberEnumeration.md"
     case MemberProperty = "MemberProperty.md"
     case MemberMethod = "MemberMethod.md"
     case MemberDocComment = "MemberDocComment.md"
@@ -49,14 +54,18 @@ enum TemplateType: String {
 }
 
 struct ReplaceTarget {
-    static let declaration = "{% Declaration.md %}" // FIXME: まぎらわしい
-    
     static let name = "{% name %}"
     static let doc_comment = "{% doc_comment %}"
-    static let parsed_declaration = "{% parsed_declaration %}" // FIXME: まぎらわしい
+    static let parsed_declaration = "{% parsed_declaration %}"
     static let parameters = "{% parameters %}"
     static let result_discussion = "{% result_discussion %}"
     static let see_also = "{% see_also %}"
+    
+    struct Global {
+        static let variables = "{% GlobalVariables %}"
+        static let doc_comment = "{% GlobalDocComment.md %}"
+        static let parsed_declaration = "{% GlobalDeclaration.md %}"
+    }
     
     struct ClassesAndStructures {
         static let enumerations = "{% Enumerations %}"
@@ -65,8 +74,10 @@ struct ReplaceTarget {
     }
 
     struct Member {
+        static let enumerations = "{% MemberEnumerations %}"
         static let properties = "{% MemberProperties %}"
         static let methods = "{% MemberMethods %}"
+        
         static let docComment = "{% MemberDocComment.md %}"
         static let declaration = "{% MemberDeclaration.md %}"
         static let parameters =  "{% MemberParameters.md %}"

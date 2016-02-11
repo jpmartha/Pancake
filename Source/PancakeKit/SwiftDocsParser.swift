@@ -11,6 +11,7 @@ import SourceKittenFramework
 import Himotoki
 
 public final class SwiftDocsParser {
+    static let defaultOutPath = NSFileManager.defaultManager().currentDirectoryPath + "/Pancake/Documentation"
     static var swiftObjects = [SwiftObject]()
     
     public static func parse(SwiftDocs swiftDocs: [SwiftDocs]) {
@@ -20,7 +21,6 @@ public final class SwiftDocsParser {
 
         swiftDocs.forEach {
             let string = $0.description
-            //print(string)
             if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
                 var anyObject: AnyObject
                 do {
@@ -39,6 +39,9 @@ public final class SwiftDocsParser {
                 }
             }
         }
-        Markdown.outputMarkdown()
+    }
+    
+    public static func outputMarkdown(outPath: String = defaultOutPath) {
+        Markdown.outputMarkdownWithOutPath(outPath)
     }
 }

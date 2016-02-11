@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  pancake
+//  Pancake
 //
 //  Created by JPMartha on 2016/02/02.
 //  Copyright © 2016 JPMartha. All rights reserved.
@@ -11,8 +11,7 @@ import Commandant
 import PancakeKit
 
 let commands = CommandRegistry<PancakeError>()
-commands.register(PancakeCommand())
-//commands.register(PublicCommand())
+commands.register(AllCommand())
 
 let helpCommand = HelpCommand(registry: commands)
 commands.register(helpCommand)

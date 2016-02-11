@@ -1,6 +1,6 @@
 //
 //  MarkdownTemplateTests.swift
-//  PancakeTests
+//  PancakeKitTests
 //
 //  Created by JPMartha on 2016/01/26.
 //  Copyright © 2016 JPMartha. All rights reserved.
@@ -10,17 +10,60 @@ import XCTest
 @testable import PancakeKit
 
 class TemplateTests: XCTestCase {
-    func testClassTemplate() {
-        let template = MarkdownTemplate(fileName: "ClassesAndStructures.md")
+    func testGlobalVariablesTemplate() {
+        let template = MarkdownTemplate(fileName: "GlobalVariables.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString(" Constants And Variables"))
+        XCTAssertTrue(template.markdownString.containsString("{% GlobalVariables %}"))
+    }
+    
+    func testGlobalVariableTemplate() {
+        let template = MarkdownTemplate(fileName: "GlobalVariable.md")
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("{% name %}"))
-        XCTAssertTrue(template.markdownString.containsString("Methods"))
+        XCTAssertTrue(template.markdownString.containsString("{% GlobalDocComment.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% GlobalDeclaration.md %}"))
+    }
+    
+    func testGlobalEnumerationsTemplate() {
+        let template = MarkdownTemplate(fileName: "GlobalEnumerations.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString("{% name %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% GlobalDocComment.md %}"))
+        XCTAssertTrue(template.markdownString.containsString("{% GlobalDeclaration.md %}"))
+    }
+    
+    func testGlobalDocCommentTemplate() {
+        let template = MarkdownTemplate(fileName: "GlobalDocComment.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString("{% doc_comment %}"))
+    }
+    
+    func testGlobalDeclarationTemplate() {
+        let template = MarkdownTemplate(fileName: "GlobalDeclaration.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString(" Declaration"))
+        XCTAssertTrue(template.markdownString.containsString("{% parsed_declaration %}"))
+    }
+    
+    func testClassesTemplate() {
+        let template = MarkdownTemplate(fileName: "Classes.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString("{% name %} Class"))
+        XCTAssertTrue(template.markdownString.containsString(" Methods"))
+    }
+    
+    func testStructuresTemplate() {
+        let template = MarkdownTemplate(fileName: "Structures.md")
+        XCTAssertNotNil(template)
+        XCTAssertTrue(template.markdownString.containsString("{% name %} Structure"))
+        XCTAssertTrue(template.markdownString.containsString(" Methods"))
     }
     
     func testMethodsTemplate() {
         let template = MarkdownTemplate(fileName: "MemberMethod.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("`{% name %}`"))
+        XCTAssertTrue(template.markdownString.containsString("{% name %}"))
         XCTAssertTrue(template.markdownString.containsString("{% MemberDocComment.md %}"))
         XCTAssertTrue(template.markdownString.containsString("{% MemberDeclaration.md %}"))
         XCTAssertTrue(template.markdownString.containsString("{% MemberParameters.md %}"))
@@ -37,14 +80,14 @@ class TemplateTests: XCTestCase {
     func testMethodDeclarationTemplate() {
         let template = MarkdownTemplate(fileName: "MemberDeclaration.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("Declaration"))
-        XCTAssertTrue(template.markdownString.containsString("```swift\n  {% parsed_declaration %}\n  ```"))
+        XCTAssertTrue(template.markdownString.containsString(" Declaration"))
+        XCTAssertTrue(template.markdownString.containsString("{% parsed_declaration %}"))
     }
     
     func testParametersTemplate() {
         let template = MarkdownTemplate(fileName: "MemberParameters.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("Parameters"))
+        XCTAssertTrue(template.markdownString.containsString(" Parameters"))
         XCTAssertTrue(template.markdownString.containsString("{% parameters %}"))
     }
     
@@ -58,14 +101,14 @@ class TemplateTests: XCTestCase {
     func testReturnValueTemplate() {
         let template = MarkdownTemplate(fileName: "MemberReturnValue.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("Return Value"))
+        XCTAssertTrue(template.markdownString.containsString(" Return Value"))
         XCTAssertTrue(template.markdownString.containsString("{% result_discussion %}"))
     }
     
     func testSeeAlsoTemplate() {
         let template = MarkdownTemplate(fileName: "MemberSeeAlso.md")
         XCTAssertNotNil(template)
-        XCTAssertTrue(template.markdownString.containsString("See Also"))
+        XCTAssertTrue(template.markdownString.containsString(" See Also"))
         XCTAssertTrue(template.markdownString.containsString("{% see_also %}"))
     }
     
@@ -95,7 +138,6 @@ class TemplateTests: XCTestCase {
     }
     
     func testReplaceTarget() {
-        XCTAssertEqual(ReplaceTarget.declaration, "{% Declaration.md %}")
         XCTAssertEqual(ReplaceTarget.name, "{% name %}")
         XCTAssertEqual(ReplaceTarget.doc_comment, "{% doc_comment %}")
         XCTAssertEqual(ReplaceTarget.parsed_declaration, "{% parsed_declaration %}")

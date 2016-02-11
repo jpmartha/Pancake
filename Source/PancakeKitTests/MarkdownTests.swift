@@ -1,6 +1,6 @@
 //
 //  MarkdownTests.swift
-//  PancakeTests
+//  PancakeKitTests
 //
 //  Created by JPMartha on 2016/01/25.
 //  Copyright © 2016 JPMartha. All rights reserved.
@@ -10,16 +10,39 @@ import XCTest
 @testable import PancakeKit
 
 class MarkdownTests: XCTestCase {
-    func testMarkdownString() {
-        XCTAssertNotNil(TemplateType.Enum.markdownString())
-        XCTAssertFalse((TemplateType.Enum.markdownString().isEmpty))
-        XCTAssertNotNil(TemplateType.Declaration.markdownString())
-        XCTAssertFalse((TemplateType.Declaration.markdownString().isEmpty))
+    func testGlobalVariablesMarkdownStringWithSwiftObject() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: "TestKind",
+            name: "TestName",
+            parsed_declaration: "TestDec",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
+            parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
+            result_discussion: [Discussion(para: "TestResultDiscussion")],
+            substructure: nil
+        )
+        let markdownString = Markdown.globalMarkdownStringWithSwiftObject(swiftObject)
+        XCTAssertTrue(markdownString.containsString(" Global"))
+        XCTAssertTrue(markdownString.containsString(" Constants And Variables"))
+        XCTAssertTrue(markdownString.containsString(" Declaration"))
+        XCTAssertFalse(markdownString.containsString("%"))
     }
     
-    func testMarkdownWithTargetString() {
-        let enumString = TemplateType.Enum.markdownStringWithTargetString(ReplaceTarget.name, withString: "EnumName")
-        XCTAssertTrue(enumString.containsString("EnumName"))
+    func testGlobalEnumerationsMarkdownStringWithSwiftObject() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: "TestKind",
+            name: "TestName",
+            parsed_declaration: "TestDec",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
+            parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
+            result_discussion: [Discussion(para: "TestResultDiscussion")],
+            substructure: nil
+        )
+        let markdownString = Markdown.globalEnumerationMarkdownStringWithSwiftObject(swiftObject)
+        XCTAssertTrue(markdownString.containsString(" Enumeration"))
+        XCTAssertTrue(markdownString.containsString(" Declaration"))
+        XCTAssertFalse(markdownString.containsString("%"))
     }
     
     func testClassMarkdownWithSwiftObject() {
@@ -33,14 +56,58 @@ class MarkdownTests: XCTestCase {
             result_discussion: [Discussion(para: "TestResultDiscussion")],
             substructure: nil
         )
-        let markdownString = Markdown.classesAndStructuresMarkdownWithSwiftObject(swiftObject)
-        XCTAssertTrue(markdownString.containsString("TestName"))
+        let markdownString = Markdown.classesMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(markdownString.containsString(" TestName"))
+        XCTAssertTrue(markdownString.containsString(" Class"))
+        
         XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.enumerations))
         XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.properties))
         XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.methods))
     }
     
-    func testMethodMarkdownWithAll() {
+    func testStructureMarkdownWithSwiftObject() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: "TestKind",
+            name: "TestName",
+            parsed_declaration: "TestDec",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
+            parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
+            result_discussion: [Discussion(para: "TestResultDiscussion")],
+            substructure: nil
+        )
+        let markdownString = Markdown.structuresMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(markdownString.containsString(" TestName"))
+        XCTAssertTrue(markdownString.containsString(" Structure"))
+        
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.enumerations))
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.properties))
+        XCTAssertTrue(markdownString.containsString(ReplaceTarget.ClassesAndStructures.methods))
+    }
+    
+    func testMemberPropertyMarkdownWithSwiftObject() {
+        let swiftObject = SwiftObject(
+            accessibility: "TestAccessibility",
+            kind: "TestKind",
+            name: "TestName",
+            parsed_declaration: "TestDec",
+            doc_comment: "This is a test comment.\n- seealso:\n  The Swift Standard Library Reference",
+            parameters: [DocParameters(name: "TestParameter", discussion: [Discussion(para: "TestDiscussion")])],
+            result_discussion: [Discussion(para: "TestResultDiscussion")],
+            substructure: nil
+        )
+        let memberProperty = Markdown.memberPropertyMarkdownWithSwiftObject(swiftObject)
+        XCTAssertTrue(memberProperty.containsString("`TestName`"))
+        XCTAssertTrue(memberProperty.containsString("This is a test comment."))
+        XCTAssertTrue(memberProperty.containsString(" Declaration"))
+        XCTAssertTrue(memberProperty.containsString("TestDec"))
+        XCTAssertFalse(memberProperty.containsString("%"))
+        XCTAssertFalse(memberProperty.containsString("{% name %}"))
+        XCTAssertFalse(memberProperty.containsString("{% MemberDocComment.md %}"))
+        XCTAssertFalse(memberProperty.containsString("{% MemberDeclaration.md %}"))
+    }
+    
+    func testMemberMethodMarkdownWithSwiftObject() {
         let swiftObject = SwiftObject(
             accessibility: "TestAccessibility",
             kind: "TestKind",
@@ -325,7 +392,7 @@ class MarkdownTests: XCTestCase {
         XCTAssertTrue(methodMarkdownString.containsString("{% MemberSeeAlso.md %}"))
         methodMarkdownString = methodMarkdownString.stringByReplacingOccurrencesOfString("{% MemberSeeAlso.md %}", withString: Markdown.memberSeeAlsoMarkdownString(swiftObject))
         XCTAssertTrue(methodMarkdownString.containsString(" See Also"))
-        // FIXME:
+        
         XCTAssertTrue(methodMarkdownString.containsString("The Swift Standard Library Reference"))
         XCTAssertFalse(methodMarkdownString.containsString("{% MemberDocComment.md %}"))
         XCTAssertFalse(methodMarkdownString.containsString(" Declaration"))

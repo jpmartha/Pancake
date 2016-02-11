@@ -8,6 +8,17 @@
 
 import Foundation
 
+struct CreateDocumentationDirectory {
+    static func createDirectoryAtPath(path: String) {
+        do {
+            try NSFileManager.defaultManager().createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil)
+        } catch let error as NSError {
+            print(error.debugDescription)
+            return
+        }
+    }
+}
+
 struct WriteToFile {
     static func writeToFileWithString(string: String, filePath: String) {
         do {
@@ -16,6 +27,5 @@ struct WriteToFile {
             print(error.debugDescription)
             return
         }
-        //print(filePath)
     }
 }

@@ -1,3 +1,0 @@
-# {% name %}
-
-{% Declaration.md %}

@@ -1,3 +1,0 @@
-# {% name %}
-
-{% Enumerations %}{% Properties %}{% Methods %}
