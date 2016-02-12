@@ -12,10 +12,10 @@ import XCTest
 
 class SwiftDocsParserTests: XCTestCase {
     func testOutputMarkdown() {
-        let module = Module(xcodeBuildArguments: ["-scheme", "DemoKit"], name: nil, inPath: NSHomeDirectory() + "/Pancake/Source/DemoKit")
+        let module = Module(xcodeBuildArguments: ["-scheme", "DemoKit"], name: nil, inPath: NSHomeDirectory() + "/Pancake/Sources/DemoKit")
         if let docs = module?.docs {
             SwiftDocsParser.parse(SwiftDocs: docs)
-            let outPath = NSHomeDirectory() + "/Pancake/Source/DemoKit/Pancake/Documentation"
+            let outPath = NSHomeDirectory() + "/Pancake/Sources/DemoKit/Pancake/Documentation"
             SwiftDocsParser.outputMarkdown(outPath)
         }
     }

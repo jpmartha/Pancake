@@ -15,7 +15,7 @@ FRAMEWORKS_FOLDER=/Library/Frameworks
 BINARIES_FOLDER=/usr/local/bin
 
 VERSION_STRING=$(shell agvtool what-marketing-version -terse1)
-COMPONENTS_PLIST=Source/pancake/components.plist
+COMPONENTS_PLIST=Sources/pancake/components.plist
 
 .PHONY: all bootstrap clean install package test uninstall
 
@@ -23,7 +23,7 @@ all: bootstrap
 	$(BUILD_TOOL) $(XCODEFLAGS) build
 
 bootstrap:
-	script/bootstrap
+	scripts/bootstrap
 
 test: clean bootstrap
 	$(BUILD_TOOL) $(XCODEFLAGS) test

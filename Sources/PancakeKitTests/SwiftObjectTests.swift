@@ -16,7 +16,7 @@ class SwiftObjectTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let inPath = NSHomeDirectory() + "/Pancake/Source/DemoKit"
+        let inPath = NSHomeDirectory() + "/Pancake/Sources/DemoKit"
         let module = Module(xcodeBuildArguments: ["-scheme", "DemoKit"], name: nil, inPath: inPath)
         if let docs = module?.docs {
             SwiftDocsParser.parse(SwiftDocs: docs)

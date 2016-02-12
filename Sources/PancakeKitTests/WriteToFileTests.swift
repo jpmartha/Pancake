@@ -10,7 +10,7 @@ import XCTest
 @testable import PancakeKit
 
 class WriteToFileTests: XCTestCase {
-    let documentationPath = "/Pancake/Source/DemoKit/Pancake/Documentation"
+    let documentationPath = "/Pancake/Sources/DemoKit/Pancake/Documentation"
     var demoGlobalContents: String = ""
     var demoEnumerationContents: String = ""
     var demoClassContents: String = ""

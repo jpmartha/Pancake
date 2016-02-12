@@ -9,7 +9,7 @@
 import Foundation
 
 struct MarkdownTemplate {
-    let fileDirectory = NSHomeDirectory() + "/Pancake/Template"
+    let fileDirectory = NSHomeDirectory() + "/Pancake/Templates"
     let markdownString: String
     
     init(fileName: String) {
