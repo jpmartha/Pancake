@@ -10,6 +10,7 @@ import XCTest
 @testable import PancakeKit
 
 class TemplateTests: XCTestCase {
+    
     func testGlobalVariablesTemplate() {
         let template = MarkdownTemplate(fileName: "GlobalVariables.md")
         XCTAssertNotNil(template)
@@ -48,16 +49,19 @@ class TemplateTests: XCTestCase {
     
     func testClassesTemplate() {
         let template = MarkdownTemplate(fileName: "Classes.md")
-        XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("{% name %} Class"))
         XCTAssertTrue(template.markdownString.containsString(" Methods"))
     }
     
     func testStructuresTemplate() {
         let template = MarkdownTemplate(fileName: "Structures.md")
-        XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString("{% name %} Structure"))
         XCTAssertTrue(template.markdownString.containsString(" Methods"))
+    }
+    
+    func testEnumerationsTemplate() {
+        let template = MarkdownTemplate(fileName: "Enumerations.md")
+        XCTAssertNotNil(template)
     }
     
     func testMethodsTemplate() {
@@ -110,16 +114,6 @@ class TemplateTests: XCTestCase {
         XCTAssertNotNil(template)
         XCTAssertTrue(template.markdownString.containsString(" See Also"))
         XCTAssertTrue(template.markdownString.containsString("{% see_also %}"))
-    }
-    
-    func testEnumTemplate() {
-        let template = MarkdownTemplate(fileName: "Enumerations.md")
-        XCTAssertNotNil(template)
-    }
-    
-    func testEnumDeclarationTemplate() {
-        let template = MarkdownTemplate(fileName: "Declaration.md")
-        XCTAssertNotNil(template)
     }
     
     func testMarkdownStringWithTemplateTypeMemberProperty() {

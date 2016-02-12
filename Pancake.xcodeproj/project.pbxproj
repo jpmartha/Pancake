@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E088C9B1C6A002D0032A7F7 /* Classes.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E088C991C6A002D0032A7F7 /* Classes.md */; };
-		2E088C9C1C6A002D0032A7F7 /* Structures.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E088C9A1C6A002D0032A7F7 /* Structures.md */; };
-		2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
 		2E2297D01C6AC61E00AD05B0 /* WriteToFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297CF1C6AC61E00AD05B0 /* WriteToFileTests.swift */; };
-		2E2297D21C6ACBA600AD05B0 /* GlobalVariable.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297D11C6ACBA600AD05B0 /* GlobalVariable.md */; };
-		2E2297D41C6AD1BE00AD05B0 /* GlobalDocComment.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */; };
-		2E2297D71C6B2E3400AD05B0 /* Enumerations.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297D51C6B2E3400AD05B0 /* Enumerations.md */; };
-		2E2297D81C6B2E3400AD05B0 /* Properties.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297D61C6B2E3400AD05B0 /* Properties.md */; };
 		2E2841AB1C648F41005FCACA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2841991C648F20005FCACA /* main.swift */; };
 		2E2841AC1C648F45005FCACA /* AllCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419A1C648F20005FCACA /* AllCommand.swift */; };
 		2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419B1C648F20005FCACA /* PancakeError.swift */; };
@@ -34,22 +27,10 @@
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
 		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
 		2E5A62031C50BF4700346318 /* SwiftObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */; };
-		2E5B90DA1C6A83410047F424 /* MemberEnumeration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E5B90D81C6A83410047F424 /* MemberEnumeration.md */; };
-		2E5B90DB1C6A83410047F424 /* GlobalDeclaration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
-		2E6A227C1C5B347E004E30C0 /* GlobalEnumerations.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22781C5B347E004E30C0 /* GlobalEnumerations.md */; };
-		2E6A227D1C5B347E004E30C0 /* MemberMethod.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22791C5B347E004E30C0 /* MemberMethod.md */; };
-		2E6A227E1C5B347E004E30C0 /* MemberDeclaration.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */; };
-		2E6A227F1C5B347E004E30C0 /* MemberProperty.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A227B1C5B347E004E30C0 /* MemberProperty.md */; };
-		2E6A22821C5B5210004E30C0 /* Methods.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22801C5B5210004E30C0 /* Methods.md */; };
-		2E6A22831C5B5210004E30C0 /* GlobalVariables.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22811C5B5210004E30C0 /* GlobalVariables.md */; };
 		2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22841C5B611A004E30C0 /* WriteToFile.swift */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */; };
-		2E8C4C761C56403A002E6ABC /* MemberParameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* MemberParameters.md */; };
-		2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */; };
-		2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */; };
-		2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
 		2EBF82691C6BF58200851960 /* SwiftDocsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF82681C6BF58200851960 /* SwiftDocsParserTests.swift */; };
 		2EC4C4101C60500E0033E417 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3EF1C60500E0033E417 /* .gitignore */; };
 		2EC4C4111C60500E0033E417 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3F11C60500E0033E417 /* Common.xcconfig */; };
@@ -72,8 +53,26 @@
 		2EC4C4251C60500F0033E417 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C40C1C60500E0033E417 /* Mac-DynamicLibrary.xcconfig */; };
 		2EC4C4261C60500F0033E417 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */; };
 		2EC4C4271C60500F0033E417 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C40E1C60500E0033E417 /* Mac-StaticLibrary.xcconfig */; };
-		2EC4C4281C60500F0033E417 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2EC4C40F1C60500E0033E417 /* README.md */; };
 		2EC4C4471C6051AA0033E417 /* PancakeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; };
+		2ED6404E1C6E1F90008AFF93 /* GlobalVariables.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22811C5B5210004E30C0 /* GlobalVariables.md */; };
+		2ED6404F1C6E1F90008AFF93 /* GlobalVariable.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D11C6ACBA600AD05B0 /* GlobalVariable.md */; };
+		2ED640501C6E1F90008AFF93 /* GlobalEnumerations.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22781C5B347E004E30C0 /* GlobalEnumerations.md */; };
+		2ED640511C6E1F90008AFF93 /* GlobalDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */; };
+		2ED640521C6E1F90008AFF93 /* GlobalDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */; };
+		2ED640531C6E1F90008AFF93 /* Classes.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E088C991C6A002D0032A7F7 /* Classes.md */; };
+		2ED640541C6E1F90008AFF93 /* Structures.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E088C9A1C6A002D0032A7F7 /* Structures.md */; };
+		2ED640551C6E1F90008AFF93 /* Enumerations.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D51C6B2E3400AD05B0 /* Enumerations.md */; };
+		2ED640561C6E1F90008AFF93 /* Properties.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D61C6B2E3400AD05B0 /* Properties.md */; };
+		2ED640571C6E1F90008AFF93 /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22801C5B5210004E30C0 /* Methods.md */; };
+		2ED640581C6E1F90008AFF93 /* MemberEnumeration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5B90D81C6A83410047F424 /* MemberEnumeration.md */; };
+		2ED640591C6E1F90008AFF93 /* MemberProperty.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A227B1C5B347E004E30C0 /* MemberProperty.md */; };
+		2ED6405A1C6E1F90008AFF93 /* MemberMethod.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22791C5B347E004E30C0 /* MemberMethod.md */; };
+		2ED6405B1C6E1F90008AFF93 /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
+		2ED6405C1C6E1F90008AFF93 /* MemberDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */; };
+		2ED6405D1C6E1F90008AFF93 /* MemberParameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* MemberParameters.md */; };
+		2ED6405E1C6E1F90008AFF93 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
+		2ED6405F1C6E1F90008AFF93 /* MemberReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */; };
+		2ED640601C6E1F90008AFF93 /* MemberSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */; };
 		2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* MarkdownTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -250,7 +249,6 @@
 				2E2841CE1C64907E005FCACA /* SWXMLHash.framework */,
 				2E2841971C648F20005FCACA /* pancake */,
 				2E8C08721C4EE17B00DDBBDD /* PancakeKit */,
-				2EFFB7731C55B1FB0034F60C /* Templates */,
 				2E8C087E1C4EE17B00DDBBDD /* PancakeKitTests */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 				2EC4C3EE1C60500E0033E417 /* xcconfigs */,
@@ -277,6 +275,7 @@
 				2E4BF38F1C5766BD003924BE /* SwiftObject.swift */,
 				2E6A22841C5B611A004E30C0 /* WriteToFile.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
+				2EFFB7731C55B1FB0034F60C /* Resources */,
 			);
 			name = PancakeKit;
 			path = Sources/PancakeKit;
@@ -393,7 +392,7 @@
 			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
-		2EFFB7731C55B1FB0034F60C /* Templates */ = {
+		2EFFB7731C55B1FB0034F60C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2E6A22811C5B5210004E30C0 /* GlobalVariables.md */,
@@ -416,7 +415,7 @@
 				2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */,
 				2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */,
 			);
-			path = Templates;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,17 +535,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED6404E1C6E1F90008AFF93 /* GlobalVariables.md in Resources */,
+				2ED6404F1C6E1F90008AFF93 /* GlobalVariable.md in Resources */,
+				2ED640501C6E1F90008AFF93 /* GlobalEnumerations.md in Resources */,
+				2ED640511C6E1F90008AFF93 /* GlobalDocComment.md in Resources */,
+				2ED640521C6E1F90008AFF93 /* GlobalDeclaration.md in Resources */,
+				2ED640531C6E1F90008AFF93 /* Classes.md in Resources */,
+				2ED640541C6E1F90008AFF93 /* Structures.md in Resources */,
+				2ED640551C6E1F90008AFF93 /* Enumerations.md in Resources */,
+				2ED640561C6E1F90008AFF93 /* Properties.md in Resources */,
+				2ED640571C6E1F90008AFF93 /* Methods.md in Resources */,
+				2ED640581C6E1F90008AFF93 /* MemberEnumeration.md in Resources */,
+				2ED640591C6E1F90008AFF93 /* MemberProperty.md in Resources */,
+				2ED6405A1C6E1F90008AFF93 /* MemberMethod.md in Resources */,
+				2ED6405B1C6E1F90008AFF93 /* MemberDocComment.md in Resources */,
+				2ED6405C1C6E1F90008AFF93 /* MemberDeclaration.md in Resources */,
+				2ED6405D1C6E1F90008AFF93 /* MemberParameters.md in Resources */,
+				2ED6405E1C6E1F90008AFF93 /* MemberParameter.md in Resources */,
+				2ED6405F1C6E1F90008AFF93 /* MemberReturnValue.md in Resources */,
+				2ED640601C6E1F90008AFF93 /* MemberSeeAlso.md in Resources */,
 				2EC4C4151C60500E0033E417 /* Test.xcconfig in Resources */,
 				2EC4C4131C60500E0033E417 /* Profile.xcconfig in Resources */,
 				2EC4C41E1C60500F0033E417 /* SWXMLHash.framework.dSYM in Resources */,
 				2EC4C4201C60500F0033E417 /* iOS-Base.xcconfig in Resources */,
 				2EC4C4211C60500F0033E417 /* iOS-Framework.xcconfig in Resources */,
 				2EC4C4141C60500E0033E417 /* Release.xcconfig in Resources */,
-				2E8C4C7B1C5641EA002E6ABC /* MemberDocComment.md in Resources */,
-				2E8C4C761C56403A002E6ABC /* MemberParameters.md in Resources */,
-				2E17FC5D1C58B05400200BA7 /* MemberParameter.md in Resources */,
 				2EC4C4111C60500E0033E417 /* Common.xcconfig in Resources */,
-				2E8C4C781C56403A002E6ABC /* MemberSeeAlso.md in Resources */,
 				2EC4C4261C60500F0033E417 /* Mac-Framework.xcconfig in Resources */,
 				2EC4C41C1C60500F0033E417 /* SourceKittenFramework.framework.dSYM in Resources */,
 				2EC4C4221C60500F0033E417 /* iOS-StaticLibrary.xcconfig in Resources */,
@@ -556,7 +570,6 @@
 				2EC4C4231C60500F0033E417 /* Mac-Application.xcconfig in Resources */,
 				2EC4C4251C60500F0033E417 /* Mac-DynamicLibrary.xcconfig in Resources */,
 				2EC4C4161C60500E0033E417 /* Application.xcconfig in Resources */,
-				2E8C4C771C56403A002E6ABC /* MemberReturnValue.md in Resources */,
 				2EC4C4101C60500E0033E417 /* .gitignore in Resources */,
 				2EC4C41F1C60500F0033E417 /* iOS-Application.xcconfig in Resources */,
 				2EC4C4171C60500E0033E417 /* Framework.xcconfig in Resources */,
@@ -605,26 +618,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E088C9C1C6A002D0032A7F7 /* Structures.md in Sources */,
 				2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */,
-				2E5B90DA1C6A83410047F424 /* MemberEnumeration.md in Sources */,
-				2E6A227D1C5B347E004E30C0 /* MemberMethod.md in Sources */,
 				2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
-				2E6A22821C5B5210004E30C0 /* Methods.md in Sources */,
-				2E088C9B1C6A002D0032A7F7 /* Classes.md in Sources */,
-				2E6A227F1C5B347E004E30C0 /* MemberProperty.md in Sources */,
-				2E2297D21C6ACBA600AD05B0 /* GlobalVariable.md in Sources */,
-				2E5B90DB1C6A83410047F424 /* GlobalDeclaration.md in Sources */,
-				2E2297D71C6B2E3400AD05B0 /* Enumerations.md in Sources */,
-				2E6A227C1C5B347E004E30C0 /* GlobalEnumerations.md in Sources */,
-				2E2297D81C6B2E3400AD05B0 /* Properties.md in Sources */,
-				2EC4C4281C60500F0033E417 /* README.md in Sources */,
-				2E6A22831C5B5210004E30C0 /* GlobalVariables.md in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
-				2E6A227E1C5B347E004E30C0 /* MemberDeclaration.md in Sources */,
 				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
-				2E2297D41C6AD1BE00AD05B0 /* GlobalDocComment.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

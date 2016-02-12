@@ -9,11 +9,10 @@
 import Foundation
 
 struct MarkdownTemplate {
-    let fileDirectory = NSHomeDirectory() + "/Pancake/Templates"
     let markdownString: String
     
     init(fileName: String) {
-        let filePath = fileDirectory + "/" + fileName
+        let filePath = "/Library/Frameworks/PancakeKit.framework/Resources/" + fileName
         do {
             markdownString = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {
