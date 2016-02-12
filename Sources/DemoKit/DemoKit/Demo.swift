@@ -8,23 +8,36 @@
 
 import Foundation
 
-let constant: String = "This is a constant."
+/// This is a constant.
+let demoConstant: Int = 9
+/// This is a variable.
+var demoVariable: String = "Demonstration"
 
-public enum DemoType {
-    case Enumeration0
-    case Enumeration1
+/// This is a enumeration.
+public enum EnumType {
+    case Enum0
+    case Enum1
 }
 
+/// This is a structure.
 struct Suffle {
-    let p1: Int = 0
-    let p2: String = "0"
+    let p1 = 0
+    var p2: String?
 }
 
+/// This is a class.
 public class Demo {
-    let string = "This is String."
+    /// This is a string.
+    let string = "String"
+    
+    /// This is a enumeration.
+    enum DemoType {
+        case iOS
+        case OSX
+    }
     
     /**
-    DemoAction
+    This is a method.
     - parameters:
       - pram1: aaa
       - pram2: bbb
@@ -37,7 +50,7 @@ public class Demo {
     }
     
     /**
-    DemoAction2
+    This is a method.
     - parameter para: p1
     */
     public func demoAction2(para p1: Int) {

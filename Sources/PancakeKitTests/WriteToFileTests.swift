@@ -28,7 +28,7 @@ class WriteToFileTests: XCTestCase {
             XCTFail()
         }
         
-        let demoEnumerationFilePath = NSHomeDirectory() + documentationPath + "/DemoTypeEnumeration.md"
+        let demoEnumerationFilePath = NSHomeDirectory() + documentationPath + "/EnumTypeEnumeration.md"
         do {
             demoEnumerationContents = try String(contentsOfFile: demoEnumerationFilePath, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {
