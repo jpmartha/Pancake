@@ -19,7 +19,7 @@ class WriteToFileTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let demoGlobalFilePath = NSHomeDirectory() + documentationPath + "/GlobaldemoConstant.md"
+        let demoGlobalFilePath = NSHomeDirectory() + documentationPath + "/Global.md"
         do {
             demoGlobalContents = try String(contentsOfFile: demoGlobalFilePath, encoding: NSUTF8StringEncoding)
         } catch let error as NSError {

@@ -37,7 +37,7 @@ public class Demo {
     }
     
     /// This is a enumeration.
-    enum DemoType {
+    enum DemoType2 {
         case watchOS
         case tvOS
     }
@@ -63,3 +63,6 @@ public class Demo {
         return
     }
 }
+
+/// This is a Boolean Value.
+let isDemo: Bool = true

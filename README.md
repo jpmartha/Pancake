@@ -24,7 +24,7 @@ If your project is in `./Source/DemoKit` directory and the scheme name is `DemoK
 1. Run `$ cd ./Source/DemoKit`
 2. Run `$ pancake all --scheme DemoKit`
 
-Generate files in `./Pancake/Documentation` directory.
+Generate files in [`./Pancake/Documentation`](https://github.com/JPMartha/Pancake/tree/kanmoba/Sources/DemoKit/Pancake/Documentation) directory.
 
 ## Available Commands
 

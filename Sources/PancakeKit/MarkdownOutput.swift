@@ -10,6 +10,9 @@ import Foundation
 import SourceKittenFramework
 
 struct MarkdownOutput {
+    static var swiftGlobalObjects = [SwiftObject]()
+    static var globalVariables = ""
+    
     static func outputMarkdownWithOutPath(outPath: String) {
         CreateDocumentationDirectory.createDirectoryAtPath(outPath)
         
@@ -19,6 +22,14 @@ struct MarkdownOutput {
                     writeMarkdownFile($0, outPath: outPath)
                 }
             }
+        }
+        
+        if swiftGlobalObjects.count > 0 {
+            var a = TemplateType.GlobalVariables.markdownString()
+            a = a.stringByReplacingOccurrencesOfString(ReplaceTarget.Global.variables, withString: globalVariables)
+            print("Generating Global.md")
+            let filePath = outPath + "/Global.md"
+            WriteToFile.writeToFileWithString(a, filePath: filePath)
         }
     }
     
@@ -32,9 +43,11 @@ struct MarkdownOutput {
         var moduleString = ""
         switch swiftDeclarationKind {
         case .VarGlobal:
-            moduleString = TemplateType.GlobalVariables.markdownString()
-            let globalVariables = MarkdownGenerator.memberPropertyMarkdownWithSwiftObject(swiftObject)
-            moduleString = moduleString.stringByReplacingOccurrencesOfString(ReplaceTarget.Global.variables, withString: globalVariables)
+            swiftGlobalObjects.append(swiftObject)
+            var valGlobal = MarkdownGenerator.memberPropertyMarkdownWithSwiftObject(swiftObject)
+            valGlobal = valGlobal.stringByReplacingOccurrencesOfString(ReplaceTarget.Global.variables, withString: valGlobal)
+            globalVariables += valGlobal
+            return
         case .Class:
             moduleString = MarkdownGenerator.classesMarkdownWithSwiftObject(swiftObject)
         case .Struct:
@@ -90,8 +103,6 @@ struct MarkdownOutput {
         }
         
         switch swiftDeclarationKind {
-        case .VarGlobal:
-            name = "Global" + name
         case .Enum:
             name += "Enumeration"
         case .Class:
@@ -99,7 +110,7 @@ struct MarkdownOutput {
         case .Struct:
             name += "Structure"
         default:
-            break
+            return
         }
         
         let filename = name + ".md"

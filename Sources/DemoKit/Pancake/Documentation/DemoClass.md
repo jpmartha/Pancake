@@ -16,13 +16,13 @@ enum DemoType {
 
 ===
 
-- `DemoType`
+- `DemoType2`
 
   This is a enumeration.
 ##### Declaration
 
 ```swift
-enum DemoType {
+enum DemoType2 {
     case watchOS
     case tvOS
 }
