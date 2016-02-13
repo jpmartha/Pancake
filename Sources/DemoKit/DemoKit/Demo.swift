@@ -36,6 +36,12 @@ public class Demo {
         case OSX
     }
     
+    /// This is a enumeration.
+    enum DemoType {
+        case watchOS
+        case tvOS
+    }
+    
     /**
     This is a method.
     - parameters:

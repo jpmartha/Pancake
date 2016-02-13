@@ -12,6 +12,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E278E2E1C6EFA1500F3C8EB /* DemoClass.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DemoClass.md; sourceTree = "<group>"; };
+		2E278E2F1C6EFA1500F3C8EB /* demoConstantGlobal.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = demoConstantGlobal.md; sourceTree = "<group>"; };
+		2E278E301C6EFA1500F3C8EB /* demoVariableGlobal.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = demoVariableGlobal.md; sourceTree = "<group>"; };
+		2E278E311C6EFA1500F3C8EB /* EnumTypeEnumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = EnumTypeEnumeration.md; sourceTree = "<group>"; };
+		2E278E321C6EFA1500F3C8EB /* SuffleStructure.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SuffleStructure.md; sourceTree = "<group>"; };
 		2E5B90E61C6AB3E40047F424 /* DemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5B90E91C6AB3E40047F424 /* DemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoKit.h; sourceTree = "<group>"; };
 		2E5B90EB1C6AB3E40047F424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,10 +34,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E278E2C1C6EFA1500F3C8EB /* Pancake */ = {
+			isa = PBXGroup;
+			children = (
+				2E278E2D1C6EFA1500F3C8EB /* Documentation */,
+			);
+			path = Pancake;
+			sourceTree = "<group>";
+		};
+		2E278E2D1C6EFA1500F3C8EB /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				2E278E2E1C6EFA1500F3C8EB /* DemoClass.md */,
+				2E278E2F1C6EFA1500F3C8EB /* demoConstantGlobal.md */,
+				2E278E301C6EFA1500F3C8EB /* demoVariableGlobal.md */,
+				2E278E311C6EFA1500F3C8EB /* EnumTypeEnumeration.md */,
+				2E278E321C6EFA1500F3C8EB /* SuffleStructure.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		2E5B90DC1C6AB3E40047F424 = {
 			isa = PBXGroup;
 			children = (
 				2E5B90E81C6AB3E40047F424 /* DemoKit */,
+				2E278E2C1C6EFA1500F3C8EB /* Pancake */,
 				2E5B90E71C6AB3E40047F424 /* Products */,
 			);
 			sourceTree = "<group>";

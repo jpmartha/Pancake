@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E2297D01C6AC61E00AD05B0 /* WriteToFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297CF1C6AC61E00AD05B0 /* WriteToFileTests.swift */; };
+		2E278E1F1C6E881200F3C8EB /* MarkdownOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */; };
 		2E2841AB1C648F41005FCACA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2841991C648F20005FCACA /* main.swift */; };
 		2E2841AC1C648F45005FCACA /* AllCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419A1C648F20005FCACA /* AllCommand.swift */; };
 		2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419B1C648F20005FCACA /* PancakeError.swift */; };
@@ -25,7 +26,7 @@
 		2E2BBAFA1C689A32005ED44C /* PancakeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
-		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
+		2E5623551C5103DE00EAAEF9 /* MarkdownGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */; };
 		2E5A62031C50BF4700346318 /* SwiftObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
 		2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22841C5B611A004E30C0 /* WriteToFile.swift */; };
@@ -130,6 +131,7 @@
 		2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalDocComment.md; sourceTree = "<group>"; };
 		2E2297D51C6B2E3400AD05B0 /* Enumerations.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumerations.md; sourceTree = "<group>"; };
 		2E2297D61C6B2E3400AD05B0 /* Properties.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Properties.md; sourceTree = "<group>"; };
+		2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownOutput.swift; sourceTree = "<group>"; };
 		2E2841981C648F20005FCACA /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
 		2E2841991C648F20005FCACA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2E28419A1C648F20005FCACA /* AllCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AllCommand.swift; sourceTree = "<group>"; };
@@ -142,7 +144,7 @@
 		2E2841CE1C64907E005FCACA /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/Mac/SWXMLHash.framework; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
 		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Markdown.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwiftObjectTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2E5B90D81C6A83410047F424 /* MemberEnumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberEnumeration.md; sourceTree = "<group>"; };
 		2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalDeclaration.md; sourceTree = "<group>"; };
@@ -270,8 +272,9 @@
 			children = (
 				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
 				2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */,
-				2E5623541C5103DE00EAAEF9 /* Markdown.swift */,
 				2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */,
+				2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */,
+				2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */,
 				2E4BF38F1C5766BD003924BE /* SwiftObject.swift */,
 				2E6A22841C5B611A004E30C0 /* WriteToFile.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
@@ -621,8 +624,9 @@
 				2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */,
 				2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
+				2E278E1F1C6E881200F3C8EB /* MarkdownOutput.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
-				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
+				2E5623551C5103DE00EAAEF9 /* MarkdownGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
