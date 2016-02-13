@@ -13,9 +13,7 @@ import Result
 import PancakeKit
 
 struct AllCommand: CommandType {
-    
     typealias Options = PancakeOptions
-    
     let verb = "all"
     let function = "Generate the documentation as Markdown format"
     

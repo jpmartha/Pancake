@@ -38,7 +38,7 @@ Available commands:
 
 ## Availability
 
-- OSX 10.0 and later
+- OS X 10.0 and later
 
 ## License
 

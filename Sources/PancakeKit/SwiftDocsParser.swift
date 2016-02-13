@@ -22,7 +22,8 @@ public struct SwiftDocsParser {
                 do {
                     anyObject = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
                 } catch let error as NSError {
-                    anyObject = error.debugDescription
+                    print(error.debugDescription)
+                    return
                 }
                 
                 if let filePath = $0.file.path,
