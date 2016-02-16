@@ -2,7 +2,7 @@
 
 This is a command line program to be run on OS X's Terminal utility that performs generating a Swift documentation as Markdown format.
 
-It's depended on [SourceKitten.Framework](https://github.com/jpsim/SourceKitten).
+It's depended on [SourceKittenFramework](https://github.com/jpsim/SourceKitten).
 
 <img src="./Documentation/Images/pancake_all_demo.gif">
 
@@ -39,6 +39,7 @@ Available commands:
 ## Availability
 
 - OS X 10.0 and later
+- Xcode 7.0 and later
 
 ## License
 

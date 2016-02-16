@@ -769,7 +769,8 @@
 				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -793,7 +794,8 @@
 				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -809,7 +811,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PancakeKitTests/Info.plist";
+				INFOPLIST_FILE = Sources/PancakeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -824,7 +826,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PancakeKitTests/Info.plist";
+				INFOPLIST_FILE = Sources/PancakeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -838,7 +840,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Sources/pancake/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks $(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -853,7 +855,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Sources/pancake/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks $(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
