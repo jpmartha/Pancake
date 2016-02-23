@@ -60,7 +60,12 @@ public class Demo {
     - parameter para: p1
     */
     public func demoAction2(para p1: Int) {
-        return
+        let type = DemoType.iOS
+        if case .iOS = type {
+            print("test")
+        } else {
+            print("test2")
+        }
     }
 }
 

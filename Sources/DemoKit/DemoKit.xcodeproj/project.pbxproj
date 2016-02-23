@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E5B90EA1C6AB3E40047F424 /* DemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5B90E91C6AB3E40047F424 /* DemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E5B90F21C6AB4330047F424 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5B90F11C6AB4330047F424 /* Demo.swift */; };
+		2E5E57C01C7C14CB00A8931F /* Demo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E57BF1C7C14CB00A8931F /* Demo3.swift */; };
+		2EB03A1E1C700726008E15D0 /* Demo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB03A1D1C700726008E15D0 /* Demo2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2E5B90E91C6AB3E40047F424 /* DemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoKit.h; sourceTree = "<group>"; };
 		2E5B90EB1C6AB3E40047F424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5B90F11C6AB4330047F424 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		2E5E57BF1C7C14CB00A8931F /* Demo3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo3.swift; sourceTree = "<group>"; };
+		2EB03A1D1C700726008E15D0 /* Demo2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				2E5B90F11C6AB4330047F424 /* Demo.swift */,
+				2EB03A1D1C700726008E15D0 /* Demo2.swift */,
+				2E5E57BF1C7C14CB00A8931F /* Demo3.swift */,
 				2E5B90E91C6AB3E40047F424 /* DemoKit.h */,
 				2E5B90EB1C6AB3E40047F424 /* Info.plist */,
 			);
@@ -156,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5B90F21C6AB4330047F424 /* Demo.swift in Sources */,
+				2E5E57C01C7C14CB00A8931F /* Demo3.swift in Sources */,
+				2EB03A1E1C700726008E15D0 /* Demo2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,3 +38,25 @@
 
 ===
 
+- `type`
+
+
+  ##### Declaration
+
+  ```swift
+  let type = DemoType.iOS
+  ```
+
+===
+
+- `demoIdentifier`
+
+
+  ##### Declaration
+
+  ```swift
+  static var demoIdentifier = "Demo99"
+  ```
+
+===
+

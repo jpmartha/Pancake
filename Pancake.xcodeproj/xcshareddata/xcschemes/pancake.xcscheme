@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0720"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Pancake.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E8C08791C4EE17B00DDBBDD"
+               BuildableName = "PancakeKitTests.xctest"
+               BlueprintName = "PancakeKitTests"
+               ReferencedContainer = "container:Pancake.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,20 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E8C08791C4EE17B00DDBBDD"
+               BuildableName = "PancakeKitTests.xctest"
+               BlueprintName = "PancakeKitTests"
+               ReferencedContainer = "container:Pancake.xcodeproj">
+            </BuildableReference>
+            <LocationScenarioReference
+               identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+               referenceType = "1">
+            </LocationScenarioReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

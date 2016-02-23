@@ -526,9 +526,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2EC4C4391C6051900033E417 /* pancake */,
 				2E8C086F1C4EE17B00DDBBDD /* PancakeKit */,
 				2E8C08791C4EE17B00DDBBDD /* PancakeKitTests */,
-				2EC4C4391C6051900033E417 /* pancake */,
 			);
 		};
 /* End PBXProject section */
@@ -670,6 +670,7 @@
 /* Begin XCBuildConfiguration section */
 		2E8C08821C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C3F31C60500E0033E417 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -717,6 +718,7 @@
 		};
 		2E8C08831C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C3F51C60500E0033E417 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -756,6 +758,7 @@
 		};
 		2E8C08851C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -781,6 +784,7 @@
 		};
 		2E8C08861C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -805,6 +809,7 @@
 		};
 		2E8C08881C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -820,6 +825,7 @@
 		};
 		2E8C08891C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -835,6 +841,7 @@
 		};
 		2EC4C4451C6051900033E417 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
@@ -850,6 +857,7 @@
 		};
 		2EC4C4461C6051900033E417 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
