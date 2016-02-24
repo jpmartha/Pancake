@@ -42,9 +42,6 @@
 		2EC4C4161C60500E0033E417 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3F81C60500E0033E417 /* Application.xcconfig */; };
 		2EC4C4171C60500E0033E417 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3F91C60500E0033E417 /* Framework.xcconfig */; };
 		2EC4C4181C60500E0033E417 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3FA1C60500E0033E417 /* StaticLibrary.xcconfig */; };
-		2EC4C41A1C60500E0033E417 /* Himotoki.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C3FF1C60500E0033E417 /* Himotoki.framework.dSYM */; };
-		2EC4C41C1C60500F0033E417 /* SourceKittenFramework.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C4011C60500E0033E417 /* SourceKittenFramework.framework.dSYM */; };
-		2EC4C41E1C60500F0033E417 /* SWXMLHash.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C4031C60500E0033E417 /* SWXMLHash.framework.dSYM */; };
 		2EC4C41F1C60500F0033E417 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C4051C60500E0033E417 /* iOS-Application.xcconfig */; };
 		2EC4C4201C60500F0033E417 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C4061C60500E0033E417 /* iOS-Base.xcconfig */; };
 		2EC4C4211C60500F0033E417 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4C4071C60500E0033E417 /* iOS-Framework.xcconfig */; };
@@ -176,12 +173,6 @@
 		2EC4C3F81C60500E0033E417 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
 		2EC4C3F91C60500E0033E417 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
 		2EC4C3FA1C60500E0033E417 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		2EC4C3FE1C60500E0033E417 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Himotoki.framework; sourceTree = "<group>"; };
-		2EC4C3FF1C60500E0033E417 /* Himotoki.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Himotoki.framework.dSYM; sourceTree = "<group>"; };
-		2EC4C4001C60500E0033E417 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SourceKittenFramework.framework; sourceTree = "<group>"; };
-		2EC4C4011C60500E0033E417 /* SourceKittenFramework.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SourceKittenFramework.framework.dSYM; sourceTree = "<group>"; };
-		2EC4C4021C60500E0033E417 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SWXMLHash.framework; sourceTree = "<group>"; };
-		2EC4C4031C60500E0033E417 /* SWXMLHash.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SWXMLHash.framework.dSYM; sourceTree = "<group>"; };
 		2EC4C4051C60500E0033E417 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		2EC4C4061C60500E0033E417 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		2EC4C4071C60500E0033E417 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
@@ -303,7 +294,6 @@
 			children = (
 				2EC4C3EF1C60500E0033E417 /* .gitignore */,
 				2EC4C3F01C60500E0033E417 /* Base */,
-				2EC4C3FB1C60500E0033E417 /* Carthage */,
 				2EC4C4041C60500E0033E417 /* iOS */,
 				2EC4C4091C60500E0033E417 /* Mac OS X */,
 				2EC4C40F1C60500E0033E417 /* README.md */,
@@ -341,35 +331,6 @@
 				2EC4C3FA1C60500E0033E417 /* StaticLibrary.xcconfig */,
 			);
 			path = Targets;
-			sourceTree = "<group>";
-		};
-		2EC4C3FB1C60500E0033E417 /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				2EC4C3FC1C60500E0033E417 /* Build */,
-			);
-			path = Carthage;
-			sourceTree = "<group>";
-		};
-		2EC4C3FC1C60500E0033E417 /* Build */ = {
-			isa = PBXGroup;
-			children = (
-				2EC4C3FD1C60500E0033E417 /* Mac */,
-			);
-			path = Build;
-			sourceTree = "<group>";
-		};
-		2EC4C3FD1C60500E0033E417 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				2EC4C3FE1C60500E0033E417 /* Himotoki.framework */,
-				2EC4C3FF1C60500E0033E417 /* Himotoki.framework.dSYM */,
-				2EC4C4001C60500E0033E417 /* SourceKittenFramework.framework */,
-				2EC4C4011C60500E0033E417 /* SourceKittenFramework.framework.dSYM */,
-				2EC4C4021C60500E0033E417 /* SWXMLHash.framework */,
-				2EC4C4031C60500E0033E417 /* SWXMLHash.framework.dSYM */,
-			);
-			path = Mac;
 			sourceTree = "<group>";
 		};
 		2EC4C4041C60500E0033E417 /* iOS */ = {
@@ -559,13 +520,11 @@
 				2ED640601C6E1F90008AFF93 /* MemberSeeAlso.md in Resources */,
 				2EC4C4151C60500E0033E417 /* Test.xcconfig in Resources */,
 				2EC4C4131C60500E0033E417 /* Profile.xcconfig in Resources */,
-				2EC4C41E1C60500F0033E417 /* SWXMLHash.framework.dSYM in Resources */,
 				2EC4C4201C60500F0033E417 /* iOS-Base.xcconfig in Resources */,
 				2EC4C4211C60500F0033E417 /* iOS-Framework.xcconfig in Resources */,
 				2EC4C4141C60500E0033E417 /* Release.xcconfig in Resources */,
 				2EC4C4111C60500E0033E417 /* Common.xcconfig in Resources */,
 				2EC4C4261C60500F0033E417 /* Mac-Framework.xcconfig in Resources */,
-				2EC4C41C1C60500F0033E417 /* SourceKittenFramework.framework.dSYM in Resources */,
 				2EC4C4221C60500F0033E417 /* iOS-StaticLibrary.xcconfig in Resources */,
 				2EC4C4241C60500F0033E417 /* Mac-Base.xcconfig in Resources */,
 				2EC4C4121C60500E0033E417 /* Debug.xcconfig in Resources */,
@@ -576,7 +535,6 @@
 				2EC4C4101C60500E0033E417 /* .gitignore in Resources */,
 				2EC4C41F1C60500F0033E417 /* iOS-Application.xcconfig in Resources */,
 				2EC4C4171C60500E0033E417 /* Framework.xcconfig in Resources */,
-				2EC4C41A1C60500E0033E417 /* Himotoki.framework.dSYM in Resources */,
 				2EC4C4181C60500E0033E417 /* StaticLibrary.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,8 +729,8 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
 				INSTALL_PATH = "@rpath";
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -797,8 +755,8 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
 				INSTALL_PATH = "@rpath";
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
