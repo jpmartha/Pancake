@@ -19,9 +19,9 @@ Generate the documentation as Markdown format in `./Pancake/Documentation` direc
 
 #### Example
 
-If your project is in `./Source/DemoKit` directory and the scheme name is `DemoKit`, please run the following commands.
+If your project is in `./Sources/DemoKit` directory and the scheme name is `DemoKit`, please run the following commands.
 
-1. Run `$ cd ./Source/DemoKit`
+1. Run `$ cd ./Sources/DemoKit`
 2. Run `$ pancake all --scheme DemoKit`
 
 Generate files in [`./Pancake/Documentation`](https://github.com/JPMartha/Pancake/tree/kanmoba/Sources/DemoKit/Pancake/Documentation) directory.
