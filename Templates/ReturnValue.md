@@ -1,4 +1,0 @@
-  ##### Return Value
-
-  %returns%
-

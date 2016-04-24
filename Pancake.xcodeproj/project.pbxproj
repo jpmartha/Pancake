@@ -7,30 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E17FC5D1C58B05400200BA7 /* Parameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* Parameter.md */; };
-		2E17FC5F1C58CEF900200BA7 /* EnumerationDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */; };
+		2E2297D01C6AC61E00AD05B0 /* WriteToFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2297CF1C6AC61E00AD05B0 /* WriteToFileTests.swift */; };
+		2E278E1F1C6E881200F3C8EB /* MarkdownOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */; };
+		2E2841AB1C648F41005FCACA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2841991C648F20005FCACA /* main.swift */; };
+		2E2841AC1C648F45005FCACA /* AllCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419A1C648F20005FCACA /* AllCommand.swift */; };
+		2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28419B1C648F20005FCACA /* PancakeError.swift */; };
+		2E2841CF1C64907E005FCACA /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CA1C64907E005FCACA /* Commandant.framework */; };
+		2E2841D01C64907E005FCACA /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CB1C64907E005FCACA /* Himotoki.framework */; };
+		2E2841D11C64907E005FCACA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CC1C64907E005FCACA /* Result.framework */; };
+		2E2841D21C64907E005FCACA /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */; };
+		2E2841D41C649093005FCACA /* Commandant.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CA1C64907E005FCACA /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D51C649093005FCACA /* Himotoki.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CB1C64907E005FCACA /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D61C649093005FCACA /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CC1C64907E005FCACA /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841D71C649093005FCACA /* SourceKittenFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E2841E11C64B962005FCACA /* PancakeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; };
+		2E2BBAFA1C689A32005ED44C /* PancakeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BF38F1C5766BD003924BE /* SwiftObject.swift */; };
-		2E4BF3961C57BBCC003924BE /* Enumeration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E4BF3951C57BBCC003924BE /* Enumeration.md */; };
 		2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */; };
-		2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* Markdown.swift */; };
-		2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* ModelTests.swift */; };
+		2E5623551C5103DE00EAAEF9 /* MarkdownGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */; };
+		2E5A62031C50BF4700346318 /* SwiftObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */; };
 		2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */; };
+		2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A22841C5B611A004E30C0 /* WriteToFile.swift */; };
 		2E8C08741C4EE17B00DDBBDD /* Pancake.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8C08731C4EE17B00DDBBDD /* Pancake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */; };
-		2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C6D1C560E63002E6ABC /* Class.md */; };
 		2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */; };
-		2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* Parameters.md */; };
-		2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* ReturnValue.md */; };
-		2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* SeeAlso.md */; };
-		2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* Comment.md */; };
-		2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C7A1C5641EA002E6ABC /* Declaration.md */; };
-		2E9790551C59DC62009115D2 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */; };
-		2E9790571C59DC66009115D2 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790561C59DC66009115D2 /* SWXMLHash.framework */; };
-		2E9790591C59DC69009115D2 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9790581C59DC69009115D2 /* Himotoki.framework */; };
-		2E97905B1C59DCD8009115D2 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905A1C59DCD8009115D2 /* Commandant.framework */; };
-		2E97905D1C59DCDF009115D2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E97905C1C59DCDF009115D2 /* Result.framework */; };
-		2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBBB811C4EE43D00168E05 /* Pancake.swift */; };
-		2EFFB7761C55B21C0034F60C /* Method.md in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFB7741C55B1FB0034F60C /* Method.md */; };
+		2EB1393A1C8282800039B1C4 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB139391C8282800039B1C4 /* SWXMLHash.framework */; };
+		2EB1393B1C8282860039B1C4 /* SWXMLHash.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2EB139391C8282800039B1C4 /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EBF82691C6BF58200851960 /* SwiftDocsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF82681C6BF58200851960 /* SwiftDocsParserTests.swift */; };
+		2EC4C4471C6051AA0033E417 /* PancakeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */; };
+		2ED6404E1C6E1F90008AFF93 /* GlobalVariables.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22811C5B5210004E30C0 /* GlobalVariables.md */; };
+		2ED6404F1C6E1F90008AFF93 /* GlobalVariable.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D11C6ACBA600AD05B0 /* GlobalVariable.md */; };
+		2ED640501C6E1F90008AFF93 /* GlobalEnumerations.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22781C5B347E004E30C0 /* GlobalEnumerations.md */; };
+		2ED640511C6E1F90008AFF93 /* GlobalDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */; };
+		2ED640521C6E1F90008AFF93 /* GlobalDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */; };
+		2ED640531C6E1F90008AFF93 /* Classes.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E088C991C6A002D0032A7F7 /* Classes.md */; };
+		2ED640541C6E1F90008AFF93 /* Structures.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E088C9A1C6A002D0032A7F7 /* Structures.md */; };
+		2ED640551C6E1F90008AFF93 /* Enumerations.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D51C6B2E3400AD05B0 /* Enumerations.md */; };
+		2ED640561C6E1F90008AFF93 /* Properties.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E2297D61C6B2E3400AD05B0 /* Properties.md */; };
+		2ED640571C6E1F90008AFF93 /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22801C5B5210004E30C0 /* Methods.md */; };
+		2ED640581C6E1F90008AFF93 /* MemberEnumeration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E5B90D81C6A83410047F424 /* MemberEnumeration.md */; };
+		2ED640591C6E1F90008AFF93 /* MemberProperty.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A227B1C5B347E004E30C0 /* MemberProperty.md */; };
+		2ED6405A1C6E1F90008AFF93 /* MemberMethod.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A22791C5B347E004E30C0 /* MemberMethod.md */; };
+		2ED6405B1C6E1F90008AFF93 /* MemberDocComment.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */; };
+		2ED6405C1C6E1F90008AFF93 /* MemberDeclaration.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */; };
+		2ED6405D1C6E1F90008AFF93 /* MemberParameters.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C731C56403A002E6ABC /* MemberParameters.md */; };
+		2ED6405E1C6E1F90008AFF93 /* MemberParameter.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E17FC5C1C58B05400200BA7 /* MemberParameter.md */; };
+		2ED6405F1C6E1F90008AFF93 /* MemberReturnValue.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */; };
+		2ED640601C6E1F90008AFF93 /* MemberSeeAlso.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */; };
 		2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFB7771C55B3150034F60C /* MarkdownTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,38 +64,108 @@
 			remoteGlobalIDString = 2E8C086F1C4EE17B00DDBBDD;
 			remoteInfo = Pancake;
 		};
+		2E9F141E1C607D2700F08BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8C08671C4EE17B00DDBBDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8C086F1C4EE17B00DDBBDD;
+			remoteInfo = PancakeKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E2BBAF91C689A20005ED44C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E2BBAFA1C689A32005ED44C /* PancakeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC4C4301C6050D70033E417 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2EB1393B1C8282860039B1C4 /* SWXMLHash.framework in CopyFiles */,
+				2E2841D41C649093005FCACA /* Commandant.framework in CopyFiles */,
+				2E2841D51C649093005FCACA /* Himotoki.framework in CopyFiles */,
+				2E2841D61C649093005FCACA /* Result.framework in CopyFiles */,
+				2E2841D71C649093005FCACA /* SourceKittenFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2E17FC5C1C58B05400200BA7 /* Parameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Parameter.md; sourceTree = "<group>"; };
-		2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = EnumerationDeclaration.md; sourceTree = "<group>"; };
+		2E088C991C6A002D0032A7F7 /* Classes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Classes.md; sourceTree = "<group>"; };
+		2E088C9A1C6A002D0032A7F7 /* Structures.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Structures.md; sourceTree = "<group>"; };
+		2E17FC5C1C58B05400200BA7 /* MemberParameter.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameter.md; sourceTree = "<group>"; };
+		2E2297CF1C6AC61E00AD05B0 /* WriteToFileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteToFileTests.swift; sourceTree = "<group>"; };
+		2E2297D11C6ACBA600AD05B0 /* GlobalVariable.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalVariable.md; sourceTree = "<group>"; };
+		2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalDocComment.md; sourceTree = "<group>"; };
+		2E2297D51C6B2E3400AD05B0 /* Enumerations.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumerations.md; sourceTree = "<group>"; };
+		2E2297D61C6B2E3400AD05B0 /* Properties.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Properties.md; sourceTree = "<group>"; };
+		2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownOutput.swift; sourceTree = "<group>"; };
+		2E2841981C648F20005FCACA /* components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = components.plist; sourceTree = "<group>"; };
+		2E2841991C648F20005FCACA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2E28419A1C648F20005FCACA /* AllCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AllCommand.swift; sourceTree = "<group>"; };
+		2E28419B1C648F20005FCACA /* PancakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeError.swift; sourceTree = "<group>"; };
+		2E2841AE1C648F8D005FCACA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2841CA1C64907E005FCACA /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
+		2E2841CB1C64907E005FCACA /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/Mac/Himotoki.framework; sourceTree = "<group>"; };
+		2E2841CC1C64907E005FCACA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = Carthage/Build/Mac/SourceKittenFramework.framework; sourceTree = "<group>"; };
 		2E4BF38F1C5766BD003924BE /* SwiftObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftObject.swift; sourceTree = "<group>"; };
-		2E4BF3951C57BBCC003924BE /* Enumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumeration.md; sourceTree = "<group>"; };
-		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; };
-		2E5623541C5103DE00EAAEF9 /* Markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
-		2E5A62021C50BF4700346318 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplateTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwiftObjectTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E5B90D81C6A83410047F424 /* MemberEnumeration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberEnumeration.md; sourceTree = "<group>"; };
+		2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalDeclaration.md; sourceTree = "<group>"; };
 		2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParser.swift; sourceTree = "<group>"; };
-		2E8C08701C4EE17B00DDBBDD /* Pancake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pancake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6A22781C5B347E004E30C0 /* GlobalEnumerations.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalEnumerations.md; sourceTree = "<group>"; };
+		2E6A22791C5B347E004E30C0 /* MemberMethod.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = MemberMethod.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDeclaration.md; sourceTree = "<group>"; };
+		2E6A227B1C5B347E004E30C0 /* MemberProperty.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; path = MemberProperty.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		2E6A22801C5B5210004E30C0 /* Methods.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Methods.md; sourceTree = "<group>"; };
+		2E6A22811C5B5210004E30C0 /* GlobalVariables.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GlobalVariables.md; sourceTree = "<group>"; };
+		2E6A22841C5B611A004E30C0 /* WriteToFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteToFile.swift; sourceTree = "<group>"; };
+		2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PancakeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C08731C4EE17B00DDBBDD /* Pancake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pancake.h; sourceTree = "<group>"; };
 		2E8C08751C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PancakeTests.swift; sourceTree = "<group>"; };
+		2E8C087A1C4EE17B00DDBBDD /* PancakeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PancakeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C08811C4EE17B00DDBBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E8C4C6D1C560E63002E6ABC /* Class.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Class.md; sourceTree = "<group>"; };
-		2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTemplate.swift; sourceTree = "<group>"; };
-		2E8C4C731C56403A002E6ABC /* Parameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Parameters.md; sourceTree = "<group>"; };
-		2E8C4C741C56403A002E6ABC /* ReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReturnValue.md; sourceTree = "<group>"; };
-		2E8C4C751C56403A002E6ABC /* SeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SeeAlso.md; sourceTree = "<group>"; };
-		2E8C4C791C5641EA002E6ABC /* Comment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Comment.md; sourceTree = "<group>"; };
-		2E8C4C7A1C5641EA002E6ABC /* Declaration.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Declaration.md; sourceTree = "<group>"; };
-		2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKittenFramework.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/SourceKittenFramework.framework"; sourceTree = "<group>"; };
-		2E9790561C59DC66009115D2 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Checkouts/SWXMLHash/build/Debug/SWXMLHash.framework; sourceTree = "<group>"; };
-		2E9790581C59DC69009115D2 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Himotoki.framework"; sourceTree = "<group>"; };
-		2E97905A1C59DCD8009115D2 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug/Commandant.framework; sourceTree = "<group>"; };
-		2E97905C1C59DCDF009115D2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../Library/Developer/Xcode/DerivedData/Pancake-fhbpkatlmpapxagemddpphrlieho/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
-		2EEBBB811C4EE43D00168E05 /* Pancake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
-		2EFFB7741C55B1FB0034F60C /* Method.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Method.md; sourceTree = "<group>"; };
-		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownTests.swift; sourceTree = "<group>"; };
+		2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTemplate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2E8C4C731C56403A002E6ABC /* MemberParameters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberParameters.md; sourceTree = "<group>"; };
+		2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberReturnValue.md; sourceTree = "<group>"; };
+		2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberSeeAlso.md; sourceTree = "<group>"; };
+		2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MemberDocComment.md; sourceTree = "<group>"; };
+		2EB139391C8282800039B1C4 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/Mac/SWXMLHash.framework; sourceTree = "<group>"; };
+		2EBF82681C6BF58200851960 /* SwiftDocsParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDocsParserTests.swift; sourceTree = "<group>"; };
+		2EC4C3F11C60500E0033E417 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F31C60500E0033E417 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F41C60500E0033E417 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F51C60500E0033E417 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F61C60500E0033E417 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F81C60500E0033E417 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		2EC4C3F91C60500E0033E417 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		2EC4C3FA1C60500E0033E417 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		2EC4C4051C60500E0033E417 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		2EC4C4061C60500E0033E417 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		2EC4C4071C60500E0033E417 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		2EC4C4081C60500E0033E417 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40B1C60500E0033E417 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40C1C60500E0033E417 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40E1C60500E0033E417 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		2EC4C40F1C60500E0033E417 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2EC4C43A1C6051900033E417 /* pancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pancake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFFB7771C55B3150034F60C /* MarkdownTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MarkdownTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +173,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E97905D1C59DCDF009115D2 /* Result.framework in Frameworks */,
-				2E97905B1C59DCD8009115D2 /* Commandant.framework in Frameworks */,
-				2E9790591C59DC69009115D2 /* Himotoki.framework in Frameworks */,
-				2E9790571C59DC66009115D2 /* SWXMLHash.framework in Frameworks */,
-				2E9790551C59DC62009115D2 /* SourceKittenFramework.framework in Frameworks */,
+				2EB1393A1C8282800039B1C4 /* SWXMLHash.framework in Frameworks */,
+				2E2841CF1C64907E005FCACA /* Commandant.framework in Frameworks */,
+				2E2841D01C64907E005FCACA /* Himotoki.framework in Frameworks */,
+				2E2841D11C64907E005FCACA /* Result.framework in Frameworks */,
+				2E2841D21C64907E005FCACA /* SourceKittenFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,23 +185,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2841E11C64B962005FCACA /* PancakeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC4C4371C6051900033E417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC4C4471C6051AA0033E417 /* PancakeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2841971C648F20005FCACA /* pancake */ = {
+			isa = PBXGroup;
+			children = (
+				2E2841AE1C648F8D005FCACA /* Info.plist */,
+				2E2841981C648F20005FCACA /* components.plist */,
+				2E2841991C648F20005FCACA /* main.swift */,
+				2E28419A1C648F20005FCACA /* AllCommand.swift */,
+				2E28419B1C648F20005FCACA /* PancakeError.swift */,
+			);
+			name = pancake;
+			path = Sources/pancake;
+			sourceTree = "<group>";
+		};
 		2E8C08661C4EE17B00DDBBDD = {
 			isa = PBXGroup;
 			children = (
-				2E97905C1C59DCDF009115D2 /* Result.framework */,
-				2E97905A1C59DCD8009115D2 /* Commandant.framework */,
-				2E9790581C59DC69009115D2 /* Himotoki.framework */,
-				2E9790561C59DC66009115D2 /* SWXMLHash.framework */,
-				2E9790541C59DC62009115D2 /* SourceKittenFramework.framework */,
-				2E8C08721C4EE17B00DDBBDD /* Pancake */,
-				2EFFB7731C55B1FB0034F60C /* Templates */,
-				2E8C087E1C4EE17B00DDBBDD /* PancakeTests */,
+				2EB139391C8282800039B1C4 /* SWXMLHash.framework */,
+				2E2841CA1C64907E005FCACA /* Commandant.framework */,
+				2E2841CB1C64907E005FCACA /* Himotoki.framework */,
+				2E2841CC1C64907E005FCACA /* Result.framework */,
+				2E2841CD1C64907E005FCACA /* SourceKittenFramework.framework */,
+				2E2841971C648F20005FCACA /* pancake */,
+				2E8C08721C4EE17B00DDBBDD /* PancakeKit */,
+				2E8C087E1C4EE17B00DDBBDD /* PancakeKitTests */,
+				2EC4C3EE1C60500E0033E417 /* xcconfigs */,
 				2E8C08711C4EE17B00DDBBDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,53 +232,134 @@
 		2E8C08711C4EE17B00DDBBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E8C08701C4EE17B00DDBBDD /* Pancake.framework */,
-				2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */,
+				2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */,
+				2E8C087A1C4EE17B00DDBBDD /* PancakeKitTests.xctest */,
+				2EC4C43A1C6051900033E417 /* pancake.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E8C08721C4EE17B00DDBBDD /* Pancake */ = {
+		2E8C08721C4EE17B00DDBBDD /* PancakeKit */ = {
 			isa = PBXGroup;
 			children = (
 				2E8C08731C4EE17B00DDBBDD /* Pancake.h */,
-				2EEBBB811C4EE43D00168E05 /* Pancake.swift */,
 				2E627F361C516A4200AFB753 /* SwiftDocsParser.swift */,
-				2E5623541C5103DE00EAAEF9 /* Markdown.swift */,
 				2E8C4C701C5625D5002E6ABC /* MarkdownTemplate.swift */,
+				2E5623541C5103DE00EAAEF9 /* MarkdownGenerator.swift */,
+				2E278E1E1C6E881200F3C8EB /* MarkdownOutput.swift */,
 				2E4BF38F1C5766BD003924BE /* SwiftObject.swift */,
+				2E6A22841C5B611A004E30C0 /* WriteToFile.swift */,
 				2E8C08751C4EE17B00DDBBDD /* Info.plist */,
+				2EFFB7731C55B1FB0034F60C /* Resources */,
 			);
-			path = Pancake;
+			name = PancakeKit;
+			path = Sources/PancakeKit;
 			sourceTree = "<group>";
 		};
-		2E8C087E1C4EE17B00DDBBDD /* PancakeTests */ = {
+		2E8C087E1C4EE17B00DDBBDD /* PancakeKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E8C087F1C4EE17B00DDBBDD /* PancakeTests.swift */,
-				2E5A62021C50BF4700346318 /* ModelTests.swift */,
+				2EBF82681C6BF58200851960 /* SwiftDocsParserTests.swift */,
 				2EFFB7771C55B3150034F60C /* MarkdownTests.swift */,
 				2E4BFB881C56A361006E3528 /* MarkdownTemplateTests.swift */,
+				2E5A62021C50BF4700346318 /* SwiftObjectTests.swift */,
+				2E2297CF1C6AC61E00AD05B0 /* WriteToFileTests.swift */,
 				2E8C08811C4EE17B00DDBBDD /* Info.plist */,
 			);
-			path = PancakeTests;
+			name = PancakeKitTests;
+			path = Sources/PancakeKitTests;
 			sourceTree = "<group>";
 		};
-		2EFFB7731C55B1FB0034F60C /* Templates */ = {
+		2EC4C3EE1C60500E0033E417 /* xcconfigs */ = {
 			isa = PBXGroup;
 			children = (
-				2E4BF3951C57BBCC003924BE /* Enumeration.md */,
-				2E17FC5E1C58CEF900200BA7 /* EnumerationDeclaration.md */,
-				2E8C4C6D1C560E63002E6ABC /* Class.md */,
-				2EFFB7741C55B1FB0034F60C /* Method.md */,
-				2E8C4C791C5641EA002E6ABC /* Comment.md */,
-				2E8C4C7A1C5641EA002E6ABC /* Declaration.md */,
-				2E17FC5C1C58B05400200BA7 /* Parameter.md */,
-				2E8C4C731C56403A002E6ABC /* Parameters.md */,
-				2E8C4C741C56403A002E6ABC /* ReturnValue.md */,
-				2E8C4C751C56403A002E6ABC /* SeeAlso.md */,
+				2EC4C3F01C60500E0033E417 /* Base */,
+				2EC4C4041C60500E0033E417 /* iOS */,
+				2EC4C4091C60500E0033E417 /* Mac OS X */,
+				2EC4C40F1C60500E0033E417 /* README.md */,
 			);
-			path = Templates;
+			name = xcconfigs;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		2EC4C3F01C60500E0033E417 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4C3F11C60500E0033E417 /* Common.xcconfig */,
+				2EC4C3F21C60500E0033E417 /* Configurations */,
+				2EC4C3F71C60500E0033E417 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2EC4C3F21C60500E0033E417 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4C3F31C60500E0033E417 /* Debug.xcconfig */,
+				2EC4C3F41C60500E0033E417 /* Profile.xcconfig */,
+				2EC4C3F51C60500E0033E417 /* Release.xcconfig */,
+				2EC4C3F61C60500E0033E417 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2EC4C3F71C60500E0033E417 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4C3F81C60500E0033E417 /* Application.xcconfig */,
+				2EC4C3F91C60500E0033E417 /* Framework.xcconfig */,
+				2EC4C3FA1C60500E0033E417 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		2EC4C4041C60500E0033E417 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4C4051C60500E0033E417 /* iOS-Application.xcconfig */,
+				2EC4C4061C60500E0033E417 /* iOS-Base.xcconfig */,
+				2EC4C4071C60500E0033E417 /* iOS-Framework.xcconfig */,
+				2EC4C4081C60500E0033E417 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2EC4C4091C60500E0033E417 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */,
+				2EC4C40B1C60500E0033E417 /* Mac-Base.xcconfig */,
+				2EC4C40C1C60500E0033E417 /* Mac-DynamicLibrary.xcconfig */,
+				2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */,
+				2EC4C40E1C60500E0033E417 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		2EFFB7731C55B1FB0034F60C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E6A22811C5B5210004E30C0 /* GlobalVariables.md */,
+				2E2297D11C6ACBA600AD05B0 /* GlobalVariable.md */,
+				2E6A22781C5B347E004E30C0 /* GlobalEnumerations.md */,
+				2E2297D31C6AD1BE00AD05B0 /* GlobalDocComment.md */,
+				2E5B90D91C6A83410047F424 /* GlobalDeclaration.md */,
+				2E088C991C6A002D0032A7F7 /* Classes.md */,
+				2E088C9A1C6A002D0032A7F7 /* Structures.md */,
+				2E2297D51C6B2E3400AD05B0 /* Enumerations.md */,
+				2E2297D61C6B2E3400AD05B0 /* Properties.md */,
+				2E6A22801C5B5210004E30C0 /* Methods.md */,
+				2E5B90D81C6A83410047F424 /* MemberEnumeration.md */,
+				2E6A227B1C5B347E004E30C0 /* MemberProperty.md */,
+				2E6A22791C5B347E004E30C0 /* MemberMethod.md */,
+				2E8C4C791C5641EA002E6ABC /* MemberDocComment.md */,
+				2E6A227A1C5B347E004E30C0 /* MemberDeclaration.md */,
+				2E8C4C731C56403A002E6ABC /* MemberParameters.md */,
+				2E17FC5C1C58B05400200BA7 /* MemberParameter.md */,
+				2E8C4C741C56403A002E6ABC /* MemberReturnValue.md */,
+				2E8C4C751C56403A002E6ABC /* MemberSeeAlso.md */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,27 +376,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E8C086F1C4EE17B00DDBBDD /* Pancake */ = {
+		2E8C086F1C4EE17B00DDBBDD /* PancakeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "Pancake" */;
+			buildConfigurationList = 2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeKit" */;
 			buildPhases = (
 				2E8C086B1C4EE17B00DDBBDD /* Sources */,
 				2E8C086C1C4EE17B00DDBBDD /* Frameworks */,
 				2E8C086D1C4EE17B00DDBBDD /* Headers */,
 				2E8C086E1C4EE17B00DDBBDD /* Resources */,
+				2EC4C4301C6050D70033E417 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Pancake;
+			name = PancakeKit;
 			productName = Pancake;
-			productReference = 2E8C08701C4EE17B00DDBBDD /* Pancake.framework */;
+			productReference = 2E8C08701C4EE17B00DDBBDD /* PancakeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2E8C08791C4EE17B00DDBBDD /* PancakeTests */ = {
+		2E8C08791C4EE17B00DDBBDD /* PancakeKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeTests" */;
+			buildConfigurationList = 2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeKitTests" */;
 			buildPhases = (
 				2E8C08761C4EE17B00DDBBDD /* Sources */,
 				2E8C08771C4EE17B00DDBBDD /* Frameworks */,
@@ -211,10 +408,30 @@
 			dependencies = (
 				2E8C087D1C4EE17B00DDBBDD /* PBXTargetDependency */,
 			);
-			name = PancakeTests;
+			name = PancakeKitTests;
 			productName = PancakeTests;
-			productReference = 2E8C087A1C4EE17B00DDBBDD /* PancakeTests.xctest */;
+			productReference = 2E8C087A1C4EE17B00DDBBDD /* PancakeKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EC4C4391C6051900033E417 /* pancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC4C4441C6051900033E417 /* Build configuration list for PBXNativeTarget "pancake" */;
+			buildPhases = (
+				2EC4C4361C6051900033E417 /* Sources */,
+				2EC4C4371C6051900033E417 /* Frameworks */,
+				2EC4C4381C6051900033E417 /* Resources */,
+				2E5026581C6192B6004AE29B /* Extract CLI Tool */,
+				2E2BBAF91C689A20005ED44C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E9F141F1C607D2700F08BF6 /* PBXTargetDependency */,
+			);
+			name = pancake;
+			productName = pancake;
+			productReference = 2EC4C43A1C6051900033E417 /* pancake.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -232,6 +449,9 @@
 					2E8C08791C4EE17B00DDBBDD = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					2EC4C4391C6051900033E417 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 2E8C086A1C4EE17B00DDBBDD /* Build configuration list for PBXProject "Pancake" */;
@@ -240,14 +460,16 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2E8C08661C4EE17B00DDBBDD;
 			productRefGroup = 2E8C08711C4EE17B00DDBBDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E8C086F1C4EE17B00DDBBDD /* Pancake */,
-				2E8C08791C4EE17B00DDBBDD /* PancakeTests */,
+				2EC4C4391C6051900033E417 /* pancake */,
+				2E8C086F1C4EE17B00DDBBDD /* PancakeKit */,
+				2E8C08791C4EE17B00DDBBDD /* PancakeKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,16 +479,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E17FC5F1C58CEF900200BA7 /* EnumerationDeclaration.md in Resources */,
-				2E8C4C7B1C5641EA002E6ABC /* Comment.md in Resources */,
-				2E8C4C761C56403A002E6ABC /* Parameters.md in Resources */,
-				2E17FC5D1C58B05400200BA7 /* Parameter.md in Resources */,
-				2E4BF3961C57BBCC003924BE /* Enumeration.md in Resources */,
-				2E8C4C781C56403A002E6ABC /* SeeAlso.md in Resources */,
-				2E8C4C771C56403A002E6ABC /* ReturnValue.md in Resources */,
-				2E8C4C7C1C5641EA002E6ABC /* Declaration.md in Resources */,
-				2E8C4C6E1C560E63002E6ABC /* Class.md in Resources */,
-				2EFFB7761C55B21C0034F60C /* Method.md in Resources */,
+				2ED6404E1C6E1F90008AFF93 /* GlobalVariables.md in Resources */,
+				2ED6404F1C6E1F90008AFF93 /* GlobalVariable.md in Resources */,
+				2ED640501C6E1F90008AFF93 /* GlobalEnumerations.md in Resources */,
+				2ED640511C6E1F90008AFF93 /* GlobalDocComment.md in Resources */,
+				2ED640521C6E1F90008AFF93 /* GlobalDeclaration.md in Resources */,
+				2ED640531C6E1F90008AFF93 /* Classes.md in Resources */,
+				2ED640541C6E1F90008AFF93 /* Structures.md in Resources */,
+				2ED640551C6E1F90008AFF93 /* Enumerations.md in Resources */,
+				2ED640561C6E1F90008AFF93 /* Properties.md in Resources */,
+				2ED640571C6E1F90008AFF93 /* Methods.md in Resources */,
+				2ED640581C6E1F90008AFF93 /* MemberEnumeration.md in Resources */,
+				2ED640591C6E1F90008AFF93 /* MemberProperty.md in Resources */,
+				2ED6405A1C6E1F90008AFF93 /* MemberMethod.md in Resources */,
+				2ED6405B1C6E1F90008AFF93 /* MemberDocComment.md in Resources */,
+				2ED6405C1C6E1F90008AFF93 /* MemberDeclaration.md in Resources */,
+				2ED6405D1C6E1F90008AFF93 /* MemberParameters.md in Resources */,
+				2ED6405E1C6E1F90008AFF93 /* MemberParameter.md in Resources */,
+				2ED6405F1C6E1F90008AFF93 /* MemberReturnValue.md in Resources */,
+				2ED640601C6E1F90008AFF93 /* MemberSeeAlso.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +508,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2EC4C4381C6051900033E417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E5026581C6192B6004AE29B /* Extract CLI Tool */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Extract CLI Tool";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = ". scripts/extract-tool";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E8C086B1C4EE17B00DDBBDD /* Sources */ = {
@@ -285,10 +542,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C4C711C5625D5002E6ABC /* MarkdownTemplate.swift in Sources */,
+				2E6A22851C5B611A004E30C0 /* WriteToFile.swift in Sources */,
 				2E627F371C516A4200AFB753 /* SwiftDocsParser.swift in Sources */,
-				2EEBBB821C4EE43D00168E05 /* Pancake.swift in Sources */,
+				2E278E1F1C6E881200F3C8EB /* MarkdownOutput.swift in Sources */,
 				2E4BF3901C5766BD003924BE /* SwiftObject.swift in Sources */,
-				2E5623551C5103DE00EAAEF9 /* Markdown.swift in Sources */,
+				2E5623551C5103DE00EAAEF9 /* MarkdownGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +554,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8C08801C4EE17B00DDBBDD /* PancakeTests.swift in Sources */,
+				2EBF82691C6BF58200851960 /* SwiftDocsParserTests.swift in Sources */,
 				2E4BFB891C56A361006E3528 /* MarkdownTemplateTests.swift in Sources */,
-				2E5A62031C50BF4700346318 /* ModelTests.swift in Sources */,
+				2E5A62031C50BF4700346318 /* SwiftObjectTests.swift in Sources */,
+				2E2297D01C6AC61E00AD05B0 /* WriteToFileTests.swift in Sources */,
 				2EFFB7781C55B3150034F60C /* MarkdownTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC4C4361C6051900033E417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2841AD1C648F48005FCACA /* PancakeError.swift in Sources */,
+				2E2841AB1C648F41005FCACA /* main.swift in Sources */,
+				2E2841AC1C648F45005FCACA /* AllCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +577,20 @@
 /* Begin PBXTargetDependency section */
 		2E8C087D1C4EE17B00DDBBDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E8C086F1C4EE17B00DDBBDD /* Pancake */;
+			target = 2E8C086F1C4EE17B00DDBBDD /* PancakeKit */;
 			targetProxy = 2E8C087C1C4EE17B00DDBBDD /* PBXContainerItemProxy */;
+		};
+		2E9F141F1C607D2700F08BF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8C086F1C4EE17B00DDBBDD /* PancakeKit */;
+			targetProxy = 2E9F141E1C607D2700F08BF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2E8C08821C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C3F31C60500E0033E417 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -331,7 +606,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -363,6 +638,7 @@
 		};
 		2E8C08831C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C3F51C60500E0033E417 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -378,7 +654,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -402,6 +678,7 @@
 		};
 		2E8C08851C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -409,29 +686,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Pancake/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.Pancake;
+				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
 		2E8C08861C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40D1C60500E0033E417 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -439,53 +712,84 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftXPC/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Curry/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Himotoki/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SourceKitten/Carthage/Checkouts/Commandant/build/Debug",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Pancake/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.Pancake;
+				INFOPLIST_FILE = Sources/PancakeKit/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 		2E8C08881C4EE17B00DDBBDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = PancakeTests/Info.plist;
+				INFOPLIST_FILE = Sources/PancakeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
 			};
 			name = Debug;
 		};
 		2E8C08891C4EE17B00DDBBDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/SWXMLHash/build/Debug",
 				);
-				INFOPLIST_FILE = PancakeTests/Info.plist;
+				INFOPLIST_FILE = Sources/PancakeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.PancakeKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_PATHS = "";
+			};
+			name = Release;
+		};
+		2EC4C4451C6051900033E417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Sources/pancake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks $(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		2EC4C4461C6051900033E417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC4C40A1C60500E0033E417 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Sources/pancake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/. @executable_path/PancakeKit.framework/Versions/Current/Frameworks /Library/Frameworks /Library/Frameworks/PancakeKit.framework/Versions/Current/Frameworks $(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.martha.pancake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -501,7 +805,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "Pancake" */ = {
+		2E8C08841C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8C08851C4EE17B00DDBBDD /* Debug */,
@@ -510,11 +814,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeTests" */ = {
+		2E8C08871C4EE17B00DDBBDD /* Build configuration list for PBXNativeTarget "PancakeKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8C08881C4EE17B00DDBBDD /* Debug */,
 				2E8C08891C4EE17B00DDBBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC4C4441C6051900033E417 /* Build configuration list for PBXNativeTarget "pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC4C4451C6051900033E417 /* Debug */,
+				2EC4C4461C6051900033E417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

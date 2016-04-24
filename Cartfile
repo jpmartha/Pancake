@@ -1,2 +1,6 @@
 github "jpsim/SourceKitten"
-github "ikesyo/Himotoki" ~> 1.3
+github "ikesyo/Himotoki"
+github "Carthage/Commandant"
+github "antitypical/Result"
+github "jspahrsummers/xcconfigs"
+github "drmohundro/SWXMLHash"

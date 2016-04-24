@@ -60,4 +60,6 @@ fastlane/screenshots
 
 # Pancake
 
-DemoApp/Documentation
+.DS_Store
+Pancake.pkg
+Documentation

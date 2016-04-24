@@ -1,3 +1,6 @@
-github "ikesyo/Himotoki" "1.4.0"
+github "ikesyo/Himotoki" "1.5.0"
+github "antitypical/Result" "1.0.2"
 github "drmohundro/SWXMLHash" "2.1.0"
-github "jpsim/SourceKitten" "0.8.0"
+github "jspahrsummers/xcconfigs" "0.9"
+github "Carthage/Commandant" "0.8.3"
+github "jpsim/SourceKitten" "0.10.0"

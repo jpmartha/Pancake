@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode7.2
+xcode_workspace: Pancake.xcworkspace
+xcode_scheme: pancake
+git:
+  submodules: false
+script:
+  - make test
+notifications:
+  email: false
