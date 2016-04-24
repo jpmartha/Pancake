@@ -8,9 +8,9 @@
 
 import Foundation
 
-static var demoIdentifier = "Demo99"
+var demoIdentifier = "Demo99"
 
 /// Make
 func make() {
-    
+    let a = UIAttachmentBehavior()
 }
