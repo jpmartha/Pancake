@@ -1,4 +1,4 @@
-# Pancake (Coming soon) [![Build Status](https://travis-ci.org/JPMartha/Pancake.svg?branch=master)](https://travis-ci.org/JPMartha/Pancake)
+# 🥞 Pancake (Coming soon) [![Build Status](https://travis-ci.org/JPMartha/Pancake.svg?branch=master)](https://travis-ci.org/JPMartha/Pancake)
 
 This is a command line program to be run on OS X's Terminal utility that performs generating a Swift documentation as Markdown format.
 
